@@ -129,33 +129,44 @@ def add_content(location, parent_path, copy_files=True, file_name=None, license=
 
         # Add all files
         sorted_files = [f for f in sorted(os.listdir(location)) if os.path.isfile(os.path.join(location, f))]
-        normalized_files = [normalize_basename(f) for f in sorted_files]
 
-        for full_filename in normalized_files:
+        for full_filename in sorted_files:
             kind = get_kind_by_extension(full_filename)
 
             filename = os.path.splitext(full_filename)[0]
             extension = os.path.splitext(full_filename)[1].lower()
-            file_slug = slugify(filename)
-            normalized_filename = "%s%s" % (ensure_unique_lc_filename(file_slug), extension)
+            file_slug = slugify(normalize_basename(filename))
+
+            # If the file exists and is what we need, use what exists.
+            #   Otherwise, fail.
+            dest_filename = "%s%s" % (file_slug, extension)
+            src_filepath = os.path.join(location, full_filename)
+            dest_filepath = os.path.join(CONTENT_ROOT, dest_filename)
+#            assert not os.path.exists(dest_filepath) or os.path.getsize(src_filepath) == os.path.getsize(dest_filepath), "Video with id=%s already exists." % dest_filepath
+#                filename = "%s%s" % (ensure_unique_lc_filename(file_slug), extension)
+#                dest_filepath = os.path.join(CONTENT_ROOT, dest_filename)
+
             node["children"].append({
                 "youtube_id": file_slug,
                 "id": file_slug,
-                "title": humanize_name(filename),
+                "title": humanize_name(normalize_basename(filename)),
                 "path": add_slash(os.path.join(current_path, file_slug)),
                 "content_type": extension,  # need this for later
                 "ancestor_ids": filter(None, current_path.split("/")),
                 "slug": file_slug,
                 "parent_id": os.path.basename(topic_slug),
                 "kind": kind,
-                "unique_filename": normalized_filename,
+                "unique_filename": filename,
                 "attribution": attribution,
             })
 
             # Copy over content
             file_fn = shutil.copy if copy_files else shutil.move
-            #file_fn(os.path.join(location, full_filename), os.path.join(CONTENT_ROOT, normalized_filename))
-            logging.debug("%s file %s to local content directory." % ("Copied" if copy_files else "Moved", normalized_filename))
+            if os.path.exists(dest_filepath):
+                logging.debug("Skipping file %s, as it already exists." % src_filepath)
+            else:
+                logging.debug("%s file %s to local content directory." % ("Copying" if copy_files else "Moving", src_filepath))
+                file_fn(src_filepath, dest_filepath)
 
         # Finally, can add contains and attributions
         contains = set([])
