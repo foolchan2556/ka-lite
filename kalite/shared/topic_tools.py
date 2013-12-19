@@ -104,7 +104,7 @@ def generate_slug_to_video_id_map(node_cache=None):
 
     # Make a map from youtube ID to video slug
     for video_id, v in node_cache.get('Video', {}).iteritems():
-        assert v[0]["slug"] not in slug2id_map, "Make sure there's a 1-to-1 mapping between slug and video_id"
+        #assert v[0]["slug"] not in slug2id_map or slug2id_map[v[0]["slug"]] == video_id, "Make sure there's a 1-to-1 mapping between slug and video_id"
         slug2id_map[v[0]['slug']] = video_id
 
     return slug2id_map

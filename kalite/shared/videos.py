@@ -115,6 +115,7 @@ def stamp_availability_on_video(video, format="mp4", force=False, stamp_urls=Tru
         any_available = any_on_disk or bool(settings.BACKUP_VIDEO_SOURCE)
 
     if stamp_urls:
+
         # Loop over all known dubbed videos
         for lang_code, youtube_id in video_map.iteritems():
             urls = compute_video_urls(youtube_id, format, on_disk=video_availability[lang_code]["on_disk"], videos_path=videos_path)
