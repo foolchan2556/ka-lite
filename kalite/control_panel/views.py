@@ -28,9 +28,20 @@ from main.models import ExerciseLog, VideoLog, UserLog, UserLogSummary
 from securesync.forms import FacilityForm
 from securesync.models import Facility, FacilityUser, FacilityGroup, DeviceZone, Device, Zone, SyncSession
 from settings import LOG as logging
-from shared.decorators import require_authorized_admin, require_authorized_access_to_student_data
+from shared.decorators import require_authorized_admin, require_authorized_access_to_student_data, facility_required
 from shared.topic_tools import get_node_cache
 from utils.internet import CsvResponse, render_to_csv
+
+
+def set_clock_context(request):
+    return {
+        "clock_set": settings.ENABLE_CLOCK_SET,
+    }
+
+def sync_now_context(request):
+    return {
+        "in_a_zone":  Device.get_own_device().get_zone() is not None,
+    }
 
 
 @require_authorized_admin
@@ -56,9 +67,10 @@ def zone_form(request, zone_id, org_id=None):
 
 @require_authorized_admin
 @render_to("control_panel/zone_management.html")
-def zone_management(request, zone_id, org_id=None):
+def zone_management(request, zone_id="None", org_id=None):
     context = control_panel_context(request, org_id=org_id, zone_id=zone_id)
     own_device = Device.get_own_device()
+
     if not context["zone"] and (zone_id != "None" or Zone.objects.count() != 0 or settings.CENTRAL_SERVER):
         raise Http404()  # on distributed server, we can make due if they're not registered.
 
@@ -83,6 +95,7 @@ def zone_management(request, zone_id, org_id=None):
             "num_times_synced": sync_sessions.count() if sync_sessions is not None else None,
             "last_time_synced": sync_sessions.aggregate(Max("timestamp"))["timestamp__max"] if sync_sessions is not None else None,
             "is_demo_device": device.get_metadata().is_demo_device,
+            "is_own_device": device.get_metadata().is_own_device and not settings.CENTRAL_SERVER,
             "last_time_used":   exercise_activity.order_by("-completion_timestamp")[0:1] if user_activity.count() == 0 else user_activity.order_by("-last_activity_datetime", "-end_datetime")[0],
             "counter": device.get_counter_position(),
         }
@@ -104,6 +117,7 @@ def zone_management(request, zone_id, org_id=None):
             "num_groups": FacilityGroup.objects.filter(facility=facility).count(),
             "id": facility.id,
             "last_time_used":   exercise_activity.order_by("-completion_timestamp")[0:1] if user_activity.count() == 0 else user_activity.order_by("-last_activity_datetime", "-end_datetime")[0],
+            "is_deletable": facility.is_deletable(),
         }
 
     context.update({
@@ -112,14 +126,16 @@ def zone_management(request, zone_id, org_id=None):
         "upload_form": UploadFileForm(),
         "own_device_is_trusted": Device.get_own_device().get_metadata().is_trusted,
     })
+    context.update(set_clock_context(request))
     return context
 
 
+@facility_required
 @require_authorized_admin
 @render_to("control_panel/facility_usage.html")
 @render_to_csv(["students", "teachers"], key_label="user_id", order="stacked")
-def facility_usage(request, facility_id, org_id=None, zone_id=None, frequency=None, period_start="", period_end=""):
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility_id)
+def facility_usage(request, facility, org_id=None, zone_id=None, frequency=None, period_start="", period_end=""):
+    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id)
 
     # Basic data
     groups = FacilityGroup.objects.filter(facility=context["facility"]).order_by("name")
@@ -167,19 +183,21 @@ def device_management(request, device_id, org_id=None, zone_id=None, n_sessions=
     context.update({
         "shown_sessions": shown_sessions,
         "total_sessions": total_sessions,
+        "is_own_device": not settings.CENTRAL_SERVER and device_id == Device.get_own_device().id,
     })
 
     # If local (and, for security purposes, a distributed server), get device metadata
-    if not settings.CENTRAL_SERVER and device_id == Device.get_own_device().id:
+    if context["is_own_device"]:
         context.update(local_device_context(request))
 
     return context
 
 
+@facility_required
 @require_authorized_admin
 @render_to("control_panel/facility_form.html")
-def facility_form(request, facility_id, org_id=None, zone_id=None):
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility_id)
+def facility_form(request, facility, org_id=None, zone_id=None):
+    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id)
 
     if request.method != "POST":
         form = FacilityForm(instance=context["facility"])
@@ -195,34 +213,60 @@ def facility_form(request, facility_id, org_id=None, zone_id=None):
     return context
 
 
+@facility_required
 @require_authorized_admin
 @render_to("control_panel/group_report.html")
-def group_report(request, facility_id, group_id=None, org_id=None, zone_id=None):
+def group_report(request, facility, group_id=None, org_id=None, zone_id=None):
     context = group_report_context(
-        facility_id=facility_id,
+        facility_id=facility.id,
         group_id=group_id or request.REQUEST.get("group", ""),
         topic_id=request.REQUEST.get("topic", ""),
         org_id=org_id,
         zone_id=zone_id
     )
 
-    context.update(control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility_id, group_id=group_id))
+    context.update(control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id, group_id=group_id))
     return context
 
 
+@facility_required
 @require_authorized_admin
-@render_to("control_panel/group_users_management.html")
-def facility_user_management(request, facility_id, group_id="", org_id=None, zone_id=None):
-    group_id=group_id or request.REQUEST.get("group","")  # TODO(bcipolli) remove the need for this
+@render_to("control_panel/facility_user_management.html")
+def facility_user_management(request, facility, user_type=None, group_id=None, org_id=None, zone_id=None, per_page=25):
+    page=request.REQUEST.get("page","1")
+    groups = FacilityGroup.objects \
+        .filter(facility=facility) \
+        .order_by("name")
+    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id, group_id=group_id)
 
-    context = user_management_context(
-        request=request,
-        facility_id=facility_id,
-        group_id=group_id,
-        page=request.REQUEST.get("page","1"),
-    )
+    # This could be moved into a function shared across files, if necessary.
+    #   For now, moving into function, as outside if function it looks more
+    #   general-purpose than it's being used / tested now.
+    def get_users_from_group(user_type, group_id, facility=None):
+        if user_type == "teachers":
+            user_list = FacilityUser.objects \
+                .filter(is_teacher=True) \
+                .filter(facility=facility)
+        elif group_id == _("Ungrouped"):
+            user_list = FacilityUser.objects \
+                .filter(is_teacher=False) \
+                .filter(facility=facility, group__isnull=True)
+        elif not group_id or group_id == "None":
+            return []
+        else:
+            user_list = get_object_or_404(FacilityGroup, pk=group_id) \
+                .facilityuser_set
+        return list(user_list \
+                    .order_by("first_name", "last_name", "username"))
+    teachers = get_users_from_group(user_type="teachers", group_id=group_id, facility=facility)
+    students = get_users_from_group(user_type="students", group_id=group_id, facility=facility)
 
-    context.update(control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility_id, group_id=group_id))
+    context.update({
+        "students": students,
+        "coaches": teachers,
+        "groups": groups,
+    })
+
     return context
 
 
@@ -373,16 +417,16 @@ def control_panel_context(request, **kwargs):
         context["org_id"] = kwargs["org_id"]
     if "zone_id" in kwargs:
         context["zone"] = get_object_or_None(Zone, pk=kwargs["zone_id"]) if kwargs["zone_id"] else None
-        context["zone_id"] = kwargs["zone_id"]
+        context["zone_id"] = kwargs["zone_id"] or "None"
     if "facility_id" in kwargs:
         context["facility"] = get_object_or_404(Facility, pk=kwargs["facility_id"]) if kwargs["facility_id"] != "new" else None
-        context["facility_id"] = kwargs["facility_id"]
+        context["facility_id"] = kwargs["facility_id"] or "None"
     if "group_id" in kwargs:
         context["group"] = get_object_or_None(FacilityGroup, pk=kwargs["group_id"])
-        context["group_id"] = kwargs["group_id"]
+        context["group_id"] = kwargs["group_id"] or "None"
     if "device_id" in kwargs:
         context["device"] = get_object_or_404(Device, pk=kwargs["device_id"])
-        context["device_id"] = kwargs["device_id"]
+        context["device_id"] = kwargs["device_id"] or "None"
 
     return context
 
@@ -399,59 +443,3 @@ def local_device_context(request):
         "database_size": os.stat(settings.DATABASES["default"]["NAME"]).st_size / float(1024**2),
     }
 
-
-def user_management_context(request, facility_id, group_id, page=1, per_page=25):
-    facility = Facility.objects.get(id=facility_id)
-    groups = FacilityGroup.objects \
-        .filter(facility=facility) \
-        .order_by("name")
-
-    # This could be moved into a function shared across files, if necessary.
-    #   For now, moving into function, as outside if function it looks more
-    #   general-purpose than it's being used / tested now.
-    def get_users_from_group(group_id, facility=None):
-        if group_id == _("Ungrouped"):
-            return FacilityUser.objects \
-                .filter(facility=facility, group__isnull=True) \
-                .order_by("first_name", "last_name")
-        elif not group_id:
-            return []
-        else:
-            return get_object_or_404(FacilityGroup, pk=group_id).facilityuser_set.order_by("first_name", "last_name", "username")
-    user_list = get_users_from_group(group_id, facility=facility)
-
-    # Get the user list from the group
-    if not user_list:
-        users = []
-    else:
-        paginator = Paginator(user_list, per_page)
-        try:
-            users = paginator.page(page)
-        except PageNotAnInteger:
-            users = paginator.page(1)
-        except EmptyPage:
-            users = paginator.page(paginator.num_pages)
-
-    if users:
-        if users.has_previous():
-            prevGETParam = request.GET.copy()
-            prevGETParam["page"] = users.previous_page_number()
-            previous_page_url = "?" + prevGETParam.urlencode()
-        else:
-            previous_page_url = ""
-        if users.has_next():
-            nextGETParam = request.GET.copy()
-            nextGETParam["page"] = users.next_page_number()
-            next_page_url = "?" + nextGETParam.urlencode()
-        else:
-            next_page_url = ""
-    context = {
-        "facility": facility,
-        "users": users,
-        "groups": groups,
-        "group_id": group_id,
-        "facility_id": facility_id,
-    }
-    if users:
-        context["pageurls"] = {"next_page": next_page_url, "prev_page": previous_page_url}
-    return context

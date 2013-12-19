@@ -2,6 +2,7 @@ from django.conf.urls.defaults import patterns, url
 
 urlpatterns = patterns('control_panel.views',
     # Zone
+    url(r'zone/None/$', 'zone_management', {}, 'zone_management'),
     url(r'zone/(?P<zone_id>\w+)/$', 'zone_management', {}, 'zone_management'),
     url(r'zone/(?P<zone_id>\w+)/edit$', 'zone_form', {}, 'zone_form'),
 
@@ -11,10 +12,14 @@ urlpatterns = patterns('control_panel.views',
     # Facility
     url(r'zone/(?P<zone_id>\w+)/facility/(?P<facility_id>\w+)/edit$', 'facility_form', {}, 'facility_form'),
     url(r'zone/(?P<zone_id>\w+)/facility/(?P<facility_id>\w+)/usage/$', 'facility_usage', {}, 'facility_usage'),
-#    url(r'zone/(?P<zone_id>\w+)/facility/(?P<facility_id>\w+)/users/manage/$', 'facility_user_management', {}, 'facility_user_management'),
 
     url(r'account/$', 'account_management', {}, 'account_management'),
 
     # Group
-    url(r'zone/(?P<zone_id>\w+)/facility/(?P<facility_id>\w+)/group/(?P<group_id>\w+)/users/manage/$', 'facility_user_management', {}, 'facility_user_management'),
+    url(r'zone/None/facility/None/group/None/users/manage/$', 'facility_user_management', {"user_type": "student"}, 'student_management'),
+    url(r'zone/None/facility/(?P<facility_id>\w+)/group/None/users/manage/$', 'facility_user_management', {"user_type": "student"}, 'student_management'),
+    url(r'zone/None/facility/None/group/(?P<group_id>\w+)/users/manage/$', 'facility_user_management', {"user_type": "student"}, 'student_management'),
+    url(r'zone/None/facility/(?P<facility_id>\w+)/group/(?P<group_id>\w+)/users/manage/$', 'facility_user_management', {"user_type": "student"}, 'student_management'),
+    url(r'zone/(?P<zone_id>\w+)/facility/(?P<facility_id>\w+)/group/(teachers)/manage/$', 'facility_user_management', {"group_id": None, "user_type": "teacher"}, 'teacher_management'),
+    url(r'zone/(?P<zone_id>\w+)/facility/(?P<facility_id>\w+)/group/(?P<group_id>\w+)/users/manage/$', 'facility_user_management', {"user_type": "student"}, 'student_management'),
 )

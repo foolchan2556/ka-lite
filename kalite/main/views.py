@@ -21,7 +21,6 @@ from django.utils.translation import ugettext as _
 
 import settings
 from config.models import Settings
-from control_panel.views import user_management_context
 from main import topicdata
 from main.models import VideoLog, ExerciseLog
 from securesync.api_client import BaseClient
@@ -320,46 +319,30 @@ def homepage(request, topics):
     })
     return context
 
+def help(request):
+    if request.is_admin:
+        return help_admin(request)
+    else:
+        return help_student(request)
+
 @require_admin
-@check_setup_status
-@render_to("admin_distributed.html")
-def easy_admin(request):
+@render_to("help_admin.html")
+def help_admin(request):
     context = {
         "wiki_url" : settings.CENTRAL_WIKI_URL,
         "central_server_host" : settings.CENTRAL_SERVER_HOST,
-        "in_a_zone":  Device.get_own_device().get_zone() is not None,
-        "clock_set": settings.ENABLE_CLOCK_SET,
         "ips": get_ip_addresses(include_loopback=False),
         "port": request.META.get("SERVER_PORT") or settings.user_facing_port(),
     }
     return context
 
 
-@require_admin
-@facility_required
-@render_to("current_users.html")
-def user_list(request, facility):
+@render_to("help_student.html")
+def help_student(request):
 
-    # Use default group
-    group_id = request.REQUEST.get("group")
-    if not group_id:
-        groups = FacilityGroup.objects \
-            .annotate(Count("facilityuser")) \
-            .filter(facilityuser__count__gt=0)
-        ngroups = groups.count()
-        ngroups += int(FacilityUser.objects.filter(group__isnull=True).count() > 0)
-        if ngroups == 1:
-            group_id = groups[0].id if groups.count() else "Ungrouped"
-
-    context = user_management_context(
-        request=request,
-        facility_id=facility.id,
-        group_id=group_id,
-        page=request.REQUEST.get("page","1"),
-    )
-    context.update({
-        "singlefacility": Facility.objects.count() == 1,
-    })
+    context = {
+        "wiki_url" : settings.CENTRAL_WIKI_URL,
+    }
     return context
 
 
