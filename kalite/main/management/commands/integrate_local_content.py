@@ -6,6 +6,7 @@ into the topic tree and content directory.
 import glob
 import json
 import os
+import re
 import shutil
 from functools import partial
 from optparse import make_option
@@ -89,6 +90,14 @@ class Command(BaseCommand):
                 logging.info("Successfully removed content bundle %s" % file_name)
 
 
+def normalize_basename(filename):
+    dirname = os.path.dirname(filename)
+    basename = os.path.basename(filename)
+    numbering_match = re.match("^[0-9]+\\.?\\s+(.*)$", basename)
+    if numbering_match:
+        basename = numbering_match.groups()[0]
+    return os.path.join(dirname, basename)
+
 def add_content(location, parent_path, copy_files=True, file_name=None, license=license):
     """
     Take a "root" location and add content to system by mapping file
@@ -101,7 +110,7 @@ def add_content(location, parent_path, copy_files=True, file_name=None, license=
         """Return list of dictionaries of subdirectories and/or files in the location"""
         # Recursively add all subdirectories
         children = []
-        base_name = os.path.basename(trim_slash(location))
+        base_name = os.path.basename(normalize_basename(trim_slash(location)))
         topic_slug = slugify(base_name)
         current_path = add_slash(os.path.join(parent_path, topic_slug))
         node= {
@@ -115,12 +124,14 @@ def add_content(location, parent_path, copy_files=True, file_name=None, license=
             "parent_id": os.path.basename(parent_path[:-1]),
             "ancestor_ids": filter(None, parent_path.split("/")),  # TODO(bcipolli) get this from the parent node directly
             "hide": False,
-            "children": [construct_node(os.path.join(location, s), current_path, attribution) for s in os.listdir(location) if os.path.isdir(os.path.join(location, s))],
+            "children": [construct_node(os.path.join(location, s), current_path, attribution) for s in sorted(os.listdir(location)) if os.path.isdir(os.path.join(location, s))],
         }
 
         # Add all files
-        files = [f for f in os.listdir(location) if os.path.isfile(os.path.join(location, f))]
-        for full_filename in files:
+        sorted_files = [f for f in sorted(os.listdir(location)) if os.path.isfile(os.path.join(location, f))]
+        normalized_files = [normalize_basename(f) for f in sorted_files]
+
+        for full_filename in normalized_files:
             kind = get_kind_by_extension(full_filename)
 
             filename = os.path.splitext(full_filename)[0]
