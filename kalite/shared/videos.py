@@ -181,7 +181,7 @@ def stamp_availability_on_topic(topic, videos_path=settings.CONTENT_ROOT, force=
                 nvideos_local += child["nvideos_local"]
                 nvideos_known += child["nvideos_known"]
 
-            else:
+            elif child["kind"] == "Video":
                 video = child
                 if force or "availability" not in video:
                     stamp_availability_on_video(video, force=force, stamp_urls=stamp_urls)
