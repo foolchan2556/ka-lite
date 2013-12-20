@@ -17,12 +17,6 @@ from django.utils.translation import ugettext as _
 import settings
 import version
 from .forms import ZoneForm, UploadFileForm, DateRangeForm
-try:
-    from central.models import Organization
-except:
-    from django.db import models
-    class Organization(models.Model):
-        pass
 from coachreports.views import student_view_context
 from main.models import ExerciseLog, VideoLog, UserLog, UserLogSummary
 from securesync.forms import FacilityForm
@@ -46,18 +40,18 @@ def sync_now_context(request):
 
 @require_authorized_admin
 @render_to("control_panel/zone_form.html")
-def zone_form(request, zone_id, org_id=None):
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id)
+def zone_form(request, zone_id):
+    context = control_panel_context(request, zone_id=zone_id)
 
     if request.method == "POST":
         form = ZoneForm(data=request.POST, instance=context["zone"])
         if form.is_valid():
             form.instance.save()
-            if context["org"]:
-                context["org"].zones.add(form.instance)
+#            if context["org"]:
+#                context["org"].zones.add(form.instance)
             if zone_id == "new":
                 zone_id = form.instance.pk
-            return HttpResponseRedirect(reverse("zone_management", kwargs={ "org_id": org_id, "zone_id": zone_id }))
+            return HttpResponseRedirect(reverse("zone_management", kwargs={ "zone_id": zone_id }))
     else:
         form = ZoneForm(instance=context["zone"])
 
@@ -67,8 +61,8 @@ def zone_form(request, zone_id, org_id=None):
 
 @require_authorized_admin
 @render_to("control_panel/zone_management.html")
-def zone_management(request, zone_id="None", org_id=None):
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id)
+def zone_management(request, zone_id="None"):
+    context = control_panel_context(request, zone_id=zone_id)
     own_device = Device.get_own_device()
 
     if not context["zone"] and (zone_id != "None" or Zone.objects.count() != 0 or settings.CENTRAL_SERVER):
@@ -134,8 +128,8 @@ def zone_management(request, zone_id="None", org_id=None):
 @require_authorized_admin
 @render_to("control_panel/facility_usage.html")
 @render_to_csv(["students", "teachers"], key_label="user_id", order="stacked")
-def facility_usage(request, facility, org_id=None, zone_id=None, frequency=None, period_start="", period_end=""):
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id)
+def facility_usage(request, facility, zone_id=None, frequency=None, period_start="", period_end=""):
+    context = control_panel_context(request, zone_id=zone_id, facility_id=facility.id)
 
     # Basic data
     groups = FacilityGroup.objects.filter(facility=context["facility"]).order_by("name")
@@ -157,7 +151,7 @@ def facility_usage(request, facility, org_id=None, zone_id=None, frequency=None,
             (period_start, period_end) = _get_date_range(frequency, period_start, period_end)
     else:
         form = DateRangeForm()
-    (student_data, group_data) = _get_user_usage_data(students, period_start=period_start, period_end=period_end)
+    (student_data, group_data) = _get_user_usage_data(students, groups, period_start=period_start, period_end=period_end)
     (teacher_data, _) = _get_user_usage_data(teachers, period_start=period_start, period_end=period_end)
 
     context.update({
@@ -172,8 +166,8 @@ def facility_usage(request, facility, org_id=None, zone_id=None, frequency=None,
 
 @require_authorized_admin
 @render_to("control_panel/device_management.html")
-def device_management(request, device_id, org_id=None, zone_id=None, n_sessions=10):
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, device_id=device_id)
+def device_management(request, device_id, zone_id=None, n_sessions=10):
+    context = control_panel_context(request, zone_id=zone_id, device_id=device_id)
 
     # Retrieve sync sessions
     all_sessions = SyncSession.objects.filter(client_device=context["device"])
@@ -196,8 +190,8 @@ def device_management(request, device_id, org_id=None, zone_id=None, n_sessions=
 @facility_required
 @require_authorized_admin
 @render_to("control_panel/facility_form.html")
-def facility_form(request, facility, org_id=None, zone_id=None):
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id)
+def facility_form(request, facility, zone_id=None):
+    context = control_panel_context(request, zone_id=zone_id, facility_id=facility.id)
 
     if request.method != "POST":
         form = FacilityForm(instance=context["facility"])
@@ -207,7 +201,7 @@ def facility_form(request, facility, org_id=None, zone_id=None):
         if form.is_valid():
             form.instance.zone_fallback = get_object_or_404(Zone, pk=zone_id)
             form.save()
-            return HttpResponseRedirect(reverse("zone_management", kwargs={"org_id": org_id, "zone_id": zone_id}))
+            return HttpResponseRedirect(reverse("zone_management", kwargs={"zone_id": zone_id}))
 
     context.update({"form": form})
     return context
@@ -216,28 +210,27 @@ def facility_form(request, facility, org_id=None, zone_id=None):
 @facility_required
 @require_authorized_admin
 @render_to("control_panel/group_report.html")
-def group_report(request, facility, group_id=None, org_id=None, zone_id=None):
+def group_report(request, facility, group_id=None, zone_id=None):
     context = group_report_context(
         facility_id=facility.id,
         group_id=group_id or request.REQUEST.get("group", ""),
         topic_id=request.REQUEST.get("topic", ""),
-        org_id=org_id,
         zone_id=zone_id
     )
 
-    context.update(control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id, group_id=group_id))
+    context.update(control_panel_context(request, zone_id=zone_id, facility_id=facility.id, group_id=group_id))
     return context
 
 
 @facility_required
 @require_authorized_admin
 @render_to("control_panel/facility_user_management.html")
-def facility_user_management(request, facility, user_type=None, group_id=None, org_id=None, zone_id=None, per_page=25):
+def facility_user_management(request, facility, user_type=None, group_id=None, zone_id=None, per_page=25):
     page=request.REQUEST.get("page","1")
     groups = FacilityGroup.objects \
         .filter(facility=facility) \
         .order_by("name")
-    context = control_panel_context(request, org_id=org_id, zone_id=zone_id, facility_id=facility.id, group_id=group_id)
+    context = control_panel_context(request, zone_id=zone_id, facility_id=facility.id, group_id=group_id)
 
     # This could be moved into a function shared across files, if necessary.
     #   For now, moving into function, as outside if function it looks more
@@ -272,7 +265,7 @@ def facility_user_management(request, facility, user_type=None, group_id=None, o
 
 @require_authorized_access_to_student_data
 @render_to("control_panel/account_management.html")
-def account_management(request, org_id=None):
+def account_management(request):
 
     # Only log 'coachreport' activity for students,
     #   (otherwise it's hard to compare teachers)
@@ -314,10 +307,12 @@ def _get_date_range(frequency, period_start, period_end):
     return (period_start, period_end)
 
 
-def _get_user_usage_data(users, period_start=None, period_end=None):
+def _get_user_usage_data(users, groups=None, period_start=None, period_end=None):
     """
     Returns facility user data, within the given date range.
     """
+
+    groups = groups or set([user.group for user in users])
 
     # compute period start and end
     # Now compute stats, based on queried data
@@ -382,20 +377,22 @@ def _get_user_usage_data(users, period_start=None, period_end=None):
             user_data[llog["user__pk"]]["total_hours"] += (llog["total_seconds"]) / 3600.
             user_data[llog["user__pk"]]["total_logins"] += 1
 
+    for group in list(groups) + [None]:  # None for ungrouped
+        group_pk = getattr(group, "pk", None)
+        group_name = getattr(group, "name", _("Ungrouped"))
+        group_data[group_pk] = {
+            "name": group_name,
+            "total_logins": 0,
+            "total_hours": 0,
+            "total_users": 0,
+            "total_videos": 0,
+            "total_exercises": 0,
+            "pct_mastery": 0,
+        }
+
     # Add group data.  Allow a fake group "Ungrouped"
     for user in users:
         group_pk = getattr(user.group, "pk", None)
-        group_name = getattr(user.group, "name", _("Ungrouped"))
-        if not group_pk in group_data:
-            group_data[group_pk] = {
-                "name": group_name,
-                "total_logins": 0,
-                "total_hours": 0,
-                "total_users": 0,
-                "total_videos": 0,
-                "total_exercises": 0,
-                "pct_mastery": 0,
-            }
         group_data[group_pk]["total_users"] += 1
         group_data[group_pk]["total_logins"] += user_data[user.pk]["total_logins"]
         group_data[group_pk]["total_hours"] += user_data[user.pk]["total_hours"]
@@ -412,9 +409,10 @@ def _get_user_usage_data(users, period_start=None, period_end=None):
 
 def control_panel_context(request, **kwargs):
     context = {}
-    if "org_id" in kwargs:
-        context["org"] = get_object_or_None(Organization, pk=kwargs["org_id"]) if kwargs["org_id"] else None
-        context["org_id"] = kwargs["org_id"]
+    for key, val in kwargs.iteritems():
+        if key.endswith("_id") and val == "None":
+            kwargs[key] = None
+
     if "zone_id" in kwargs:
         context["zone"] = get_object_or_None(Zone, pk=kwargs["zone_id"]) if kwargs["zone_id"] else None
         context["zone_id"] = kwargs["zone_id"] or "None"
