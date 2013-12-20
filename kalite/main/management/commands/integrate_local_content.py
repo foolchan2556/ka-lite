@@ -147,7 +147,7 @@ def add_content(location, parent_path, copy_files=True, file_name=None, license=
 #                dest_filepath = os.path.join(CONTENT_ROOT, dest_filename)
 
             node["children"].append({
-                "youtube_id": file_slug,
+                "youtube_id": None,  # assume they're not for
                 "id": file_slug,
                 "title": humanize_name(normalize_basename(filename)),
                 "path": add_slash(os.path.join(current_path, file_slug)),
