@@ -8,8 +8,8 @@ from annoying.functions import get_object_or_None
 from functools import partial
 
 from django.contrib import messages
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.core.management import call_command
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.core.urlresolvers import reverse
 from django.db.models import Sum, Count
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseNotFound, HttpResponseRedirect, Http404, HttpResponseServerError
@@ -18,6 +18,7 @@ from django.template import RequestContext
 from django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext as _
+from django.views.i18n import javascript_catalog
 
 import settings
 from config.models import Settings
@@ -29,7 +30,7 @@ from securesync.views import require_admin, facility_required
 from settings import LOG as logging
 from shared import topic_tools
 from shared.caching import backend_cache_page
-from shared.decorators import require_admin
+from shared.decorators import require_admin, distributed_server_only
 from shared.i18n import select_best_available_language
 from shared.jobs import force_job
 from shared.topic_tools import get_ancestor, get_parent, get_neighbor_nodes, get_topic_tree
@@ -97,7 +98,7 @@ def refresh_topic_cache(handler, force=False):
                 "(and urls) " if stamp_urls else "",
                 node["path"],
             ))
-            (_a, _b, _c, changed) = stamp_availability_on_topic(topic=node, force=force, stamp_urls=stamp_urls)
+            (_a, _b, _c, _d, changed) = stamp_availability_on_topic(topic=node, force=force, stamp_urls=stamp_urls)
             if changed:
                 strip_counts_from_ancestors(node)
         return node
@@ -123,7 +124,6 @@ def refresh_topic_cache(handler, force=False):
             # Propertes not yet marked
             if node["kind"] == "Video":
                 if force or not has_computed_urls(node):
-                    #stamp_availability_on_topic(node, force=force)  # will be done by force below
                     recount_videos_and_invalidate_parents(get_parent(node), force=True, stamp_urls=True)
 
             elif node["kind"] == "Exercise":
@@ -191,7 +191,7 @@ def topic_context(topic):
     videos    = topic_tools.get_videos(topic)
     exercises = topic_tools.get_exercises(topic)
     topics    = topic_tools.get_live_topics(topic)
-    my_topics = [dict((k, t[k]) for k in ('title', 'path', 'nvideos_local', 'nvideos_known')) for t in topics]
+    my_topics = [dict((k, t[k]) for k in ('title', 'path', 'nvideos_local', 'nvideos_known', 'nvideos_available')) for t in topics]
 
     exercises_path = os.path.join(settings.STATIC_ROOT, "js", "khan-exercises", "exercises")
     exercise_langs = dict([(exercise["id"], ["en"]) for exercise in exercises])
@@ -216,7 +216,6 @@ def topic_context(topic):
         "exercises": exercises,
         "exercise_langs": exercise_langs,
         "topics": my_topics,
-        "backup_vids_available": bool(settings.BACKUP_VIDEO_SOURCE),
     }
     context.update(license_context(topic))
     return context
@@ -236,19 +235,21 @@ def video_handler(request, video, format="mp4", prev=None, next=None):
         elif not request.is_logged_in:
             messages.warning(request, _("This video was not found! You must login as an admin/teacher to download the video."))
 
-    if video["available"] and not any([avail["on_disk"] for avail in video["availability"].values()]):
-        messages.success(request, "Got video content from %s" % video["availability"]["default"]["stream_url"])
-
     # Fallback mechanism
     available_urls = dict([(lang, avail) for lang, avail in video["availability"].iteritems() if avail["on_disk"]])
-    vid_lang = select_best_available_language(available_urls.keys(), target_code=request.language, )
+    if video["available"] and not available_urls:
+        vid_lang = "en"
+        messages.success(request, "Got video content from %s" % video["availability"]["en"]["stream"])
+    else:
+        vid_lang = select_best_available_language(available_urls.keys(), target_code=request.language)
+
 
     context = {
         "video": video,
         "title": video["title"],
-        "available_videos": available_urls,
         "selected_language": vid_lang,
-        "video_urls": available_urls[vid_lang] if vid_lang else None,
+        "video_urls": video["availability"].get(vid_lang),
+        "subtitle_urls": video["availability"].get(vid_lang, {}).get("subtitles"),
         "prev": prev,
         "next": next,
         "backup_vids_available": bool(settings.BACKUP_VIDEO_SOURCE),
@@ -265,7 +266,7 @@ def exercise_handler(request, exercise, prev=None, next=None, **related_videos):
     """
     Display an exercise
     """
-    lang = request.session["django_language"]
+    lang = request.session[settings.LANGUAGE_COOKIE_NAME]
     exercise_root = os.path.join(settings.STATIC_ROOT, "js", "khan-exercises", "exercises")
     exercise_file = exercise["slug"] + ".html"
     exercise_template = exercise_file
@@ -324,7 +325,6 @@ def homepage(request, topics):
     context.update(license_context(topics))
     context.update({
         "title": "Home",
-        "backup_vids_available": bool(settings.BACKUP_VIDEO_SOURCE),
     })
     return context
 
@@ -378,6 +378,22 @@ def device_redirect(request):
         return HttpResponseRedirect(reverse("device_management", kwargs={"zone_id": zone.pk, "device_id": device.pk}))
     else:
         raise Http404(_("This device is not on any zone."))
+
+JS_CATALOG_CACHE = {}
+@distributed_server_only
+def javascript_catalog_cached(request):
+    global JS_CATALOG_CACHE
+    lang = request.session['default_language']
+    if lang in JS_CATALOG_CACHE:
+        logging.debug('Using js translation catalog cache for %s' % lang)
+        src = JS_CATALOG_CACHE[lang]
+        return HttpResponse(src, 'text/javascript')
+    else:
+        logging.debug('Generating js translation catalog for %s' % lang)
+        resp = javascript_catalog(request, 'djangojs', settings.INSTALLED_APPS)
+        src = resp.content
+        JS_CATALOG_CACHE[lang] = src
+        return resp
 
 @render_to('search_page.html')
 @refresh_topic_cache

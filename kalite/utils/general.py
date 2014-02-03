@@ -6,8 +6,6 @@ General string, integer, date functions.
 import datetime
 import errno
 import json
-import logging
-import ntpath
 import os
 import re
 import requests
@@ -124,8 +122,9 @@ def version_diff(v1, v2):
 
     v1_parts = v1.split(".")
     v2_parts = v2.split(".")
-    if len(v1_parts) != len(v2_parts):
-        raise Exception("versions must have the same number of components (periods)")
+
+    v1_parts += ["0"] * (len(v2_parts) - len(v1_parts))
+    v2_parts += ["0"] * (len(v1_parts) - len(v2_parts))
 
     for v1p,v2p in zip(v1_parts,v2_parts):
         cur_diff = int(v1p)-int(v2p)
@@ -264,6 +263,8 @@ def humanize_name(filename):
     return re.sub('[-_]', ' ', filename)
 
 def softload_json(json_filepath, default={}, raises=False, logger=None, errmsg="Failed to read json file"):
+    if default == {}:
+        default = {}
     try:
         with open(json_filepath, "r") as fp:
             return json.load(fp)

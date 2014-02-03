@@ -51,6 +51,26 @@
         </button>
     </div>
 
+    <div class="download-actions vertical-shadow">
+        <h2>{% trans "Installed Language Packs" %}
+            {# Translators: this text is a link; when clicked, admins will be able to manage locally installed resources. #}
+          <a href="{% url update_languages %}">({% trans "Manage" %})</a>
+        </h2>
+        {% if not languages %}
+            {% trans "No language packs installed." %}
+        {% else %}
+            {{ languages|join:", " }} {% if other_languages_count %}and {{ other_languages_count }} more. {% endif %}
+        {% endif %}
+    </div>
+
+    {% if current_language != "en" %}
+    <div style="clear: both; padding-top: 15px;">
+        <h2>
+            {% blocktrans with lang_name=current_language_native_name %}Videos for language {{ lang_name }}{% endblocktrans %}
+        </h2>
+    </div>
+    {% endif %}
+
     <div style="clear: both;"></div>
 
     <div>

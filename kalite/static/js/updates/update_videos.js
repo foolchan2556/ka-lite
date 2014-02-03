@@ -148,7 +148,7 @@ $(function() {
                     } else {
                         $("#delete-videos-text").text(sprintf(gettext("Delete %(vid_count)d selected video(s)") + " (%(vid_size).1f %(vid_size_units)s)", {
                             vid_count: oldVideoCount,
-                            vid_size: (oldVideoSize < 2) ? oldVideoSize : oldVideoSize / Math.pow(2, 10),
+                            vid_size: (oldVideoSize < Math.pow(2, 10)) ? oldVideoSize : oldVideoSize / Math.pow(2, 10),
                             vid_size_units: (oldVideoSize < Math.pow(2, 10)) ? "MB" : "GB"
                         }));
                         $("#delete-videos").show();
@@ -174,12 +174,17 @@ $(function() {
         // Prep
         // Get all videos to download
         var youtube_ids = getSelectedIncompleteMetadata("youtube_id");
+        var numVideos = youtube_ids.length;
 
         // Do the request
         doRequest(URL_START_VIDEO_DOWNLOADS, {youtube_ids: youtube_ids})
             .success(function() {
-                handleSuccessAPI("id_video_download");
-                updatesStart("videodownload", 5000, video_callbacks)
+                updatesStart("videodownload", 5000, video_callbacks);
+                show_message(
+                    "success",
+                    sprintf(gettext("Download of %(num)d video(s) starting soon!"), {num: numVideos}),
+                    "id_videodownload"
+                );
             })
             .fail(function(resp) {
                 handleFailedAPI(resp, gettext("Error starting video download"), "id_video_download");
@@ -202,7 +207,7 @@ $(function() {
 
         // Prep
         // Get all videos marked for download
-        var youtube_ids = getSelectedStarted("youtube_id");
+        var youtube_ids = getSelectedStartedMetadata("youtube_id");
 
         // Do the request
         doRequest(URL_DELETE_VIDEOS, {youtube_ids: youtube_ids})
@@ -213,7 +218,7 @@ $(function() {
                 });
             })
             .fail(function(resp) {
-                handleFailedAPI(resp, gettext("Error downloading subtitles"), "id_video_download");
+                handleFailedAPI(resp, gettext("Error deleting videos"), "id_video_download");
                 $(".progress-waiting").hide();
             });
 
@@ -288,9 +293,10 @@ function getSelectedVideos(vid_type) {
     }
 
     var arr = $("#content_tree").dynatree("getSelectedNodes");
-    return _.uniq($.grep(arr, function(node) {
+    var vids = _.uniq($.grep(arr, function(node) {
         return node.data.addClass != avoid_type && node.childList == null;
     }));
+    return vids;
 }
 
 

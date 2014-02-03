@@ -26,7 +26,7 @@ from django.core.management.base import BaseCommand, CommandError
 import settings
 from settings import LOG as logging
 from shared.i18n import AMARA_HEADERS, LANG_LOOKUP_FILEPATH, LOCALE_ROOT, SRTS_JSON_FILEPATH, SUBTITLES_DATA_ROOT, SUBTITLE_COUNTS_FILEPATH
-from shared.i18n import lcode_to_django_dir, lcode_to_ietf, get_language_name, get_lang_map_filepath, LanguageNotFoundError
+from shared.i18n import lcode_to_django_dir, lcode_to_ietf, get_language_name, get_lang_map_filepath, get_srt_path, LanguageNotFoundError, get_supported_language_map
 from utils.general import convert_date_input, ensure_dir, softload_json
 from utils.internet import make_request
 
@@ -79,13 +79,14 @@ def download_srt_from_3rd_party(lang_codes=None, **kwargs):
 
     for lang_code in lang_codes:
         lang_code = lcode_to_ietf(lang_code)
+        lang_code = get_supported_language_map(lang_code)['amara']
 
         try:
             lang_map_filepath = get_lang_map_filepath(lang_code)
             if not os.path.exists(lang_map_filepath):
                 videos = {}  # happens if an unknown set for subtitles.
             else:
-                videos open(lang_map_filepath, "r") as fp:
+                with open(lang_map_filepath, "r") as fp:
                     videos = json.load(fp)
         except Exception as e:
             error_msg = "Error in subtitles metadata file for %s: %s" % (lang_code, e)
@@ -106,11 +107,6 @@ def download_srt_from_3rd_party(lang_codes=None, **kwargs):
         outstr = "Failed to download subtitles for the following languages: %s" % (bad_languages.keys())
         outstr += "\n" + str(bad_languages)
         logging.error(outstr)
-
-
-def get_srt_path(lang_code, locale_root=LOCALE_ROOT):
-    "lang_code: since srts are stored for django, must convert to django inside function"""
-    return os.path.join(locale_root, lcode_to_django_dir(lang_code), "subtitles")
 
 
 def get_all_download_status_files():
@@ -147,14 +143,15 @@ def download_if_criteria_met(videos, lang_code, force, response_code, date_since
 
     if date_specified:
         logging.info("Filtering based on date...")
-        videos_copy = copy.deepcopy(videos)
-        for k, v in videos.items():
-            if not v["last_attempt"] or datetime.datetime.strptime(v["last_attempt"], '%Y-%m-%d') < date_specified:
+        for k in videos.keys():
+            if not videos[k]["last_attempt"]:
+                continue
+            elif datetime.datetime.strptime(videos[k]["last_attempt"], '%Y-%m-%d') < date_specified:
+                continue
+            elif False:  # TODO(bcipolli): check output filename exists, as per # 1359
                 continue
             else:
-                del videos_copy[k]
-
-        videos = videos_copy
+                del videos[k]
 
         logging.info("%4d of %4d videos need refreshing (last refresh more recent than %s)" % (
             len(videos), n_videos, date_specified,
@@ -225,11 +222,12 @@ def download_subtitle(youtube_id, lang_code, format="srt"):
     """
     assert format == "srt", "We only support srt download at the moment."
 
+
     # srt map deals with amara, so uses ietf codes (e.g. en-us)
     api_info_map = softload_json(SRTS_JSON_FILEPATH, raises=True)
 
     # get amara id
-    amara_code = api_info_map.get(youtube_id).get("amara_code")
+    amara_code = api_info_map.get(youtube_id, {}).get("amara_code")
 
     # make request
     # Please see http://amara.readthedocs.org/en/latest/api.html
@@ -407,4 +405,3 @@ class Command(BaseCommand):
             raise CommandError("Unknown argument: %s" % args[0])
 
         logging.info("Process complete.")
-

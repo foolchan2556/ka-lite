@@ -42,7 +42,7 @@ from settings import LOG as logging
 from securesync.models import FacilityUser
 from shared.decorators import require_login, distributed_server_only, central_server_only
 from shared.topic_tools import get_node_cache
-from utils.internet import JsonResponse
+from utils.internet import JsonResponse, JsonResponseMessageError
 
 
 KHAN_SERVER_URL = "http://www.khanacademy.org"
@@ -115,7 +115,7 @@ def update_all_central(request):
     request.session["distributed_user_id"] = request.GET["user_id"]
     request.session["distributed_callback_url"] = request.GET["callback"]
     request.session["distributed_redirect_url"] = request.next or request.META.get("HTTP_REFERER", "") or "/"
-    request.session["distributed_csrf_token"] = request._cookies["csrftoken"]
+    request.session["distributed_csrf_token"] = request._cookies.get("csrftoken")
 
     # TODO(bcipolli)
     # Disabled oauth caching, as we don't have a good way
@@ -219,7 +219,12 @@ def update_all_central_callback(request):
         }
     )
     logging.debug("Response (%d): %s" % (response.status_code, response.content))
-    message = json.loads(response.content)
+    try:
+        message = json.loads(response.content)
+    except ValueError as e:
+        message = { "error": unicode(e) }
+    except Exception as e:
+        message = { "error": u"Loading json object: %s" % e }
 
     # If something broke on the distribute d server, we are SCREWED.
     #   For now, just show the error to users.
@@ -283,7 +288,7 @@ def update_all_distributed_callback(request):
             logging.error("Could not save video log for data with missing values: %s" % video)
         except Exception as e:
             error_message = "Unexpected error importing videos: %s" % e
-            return JsonResponse({"error": error_message}, status=500)
+            return JsonResponseMessageError(error_message)
 
     # Save exercises
     n_exercises_uploaded = 0
@@ -304,6 +309,6 @@ def update_all_distributed_callback(request):
             logging.error("Could not save exercise log for data with missing values: %s" % exercise)
         except Exception as e:
             error_message = "Unexpected error importing exercises: %s" % e
-            return JsonResponse({"error": error_message}, status=500)
+            return JsonResponseMessageError(error_message)
 
     return JsonResponse({"success": "Uploaded %d exercises and %d videos" % (n_exercises_uploaded, n_videos_uploaded)})
