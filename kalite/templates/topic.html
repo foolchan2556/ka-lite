@@ -113,7 +113,7 @@
             <span class="progress-circle" data-exercise-id="{{ exercise.name }}"></span>
             <a class="exercise-link" href="{{ exercise.path }}">{% trans exercise.title %}</a>
 
-            {# dubbed videos #}
+            {# translated exercises #}
             {% for lang in exercise_langs|get_item:exercise.id %}
                 <span class="dubbedvideo-indicator">
                     <a href="{{ exercise.path }}?lang={{ lang }}">

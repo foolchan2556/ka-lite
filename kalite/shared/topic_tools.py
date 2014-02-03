@@ -231,8 +231,6 @@ def get_topic_by_path(path, root_node=None):
         else:
             break
 
-    #assert not cur_node or cur_node["path"] == path, "Either didn't find it, or found the right thing."
-
     return cur_node or {}
 
 
