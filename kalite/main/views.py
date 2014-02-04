@@ -449,7 +449,7 @@ def search(request, topics):  # we don't use the topics variable, but this setup
 
 def license_context(node, topic_tree=None):
     topic_tree = topic_tree or get_topic_tree()
-    attributions = set(node.get("attributions", [])).union(set([node["attribution"]]))
+    attributions = set(node.get("attributions", [])).union(set([node.get("attribution", "ka")]))
 
     return {
         "licenses": [lic for key, lic in topic_tree["licenses"].iteritems() if key in attributions],

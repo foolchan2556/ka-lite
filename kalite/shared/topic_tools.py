@@ -2,6 +2,7 @@
 Important constants and helpful functions
 """
 import glob
+import json
 import os
 from functools import partial
 
@@ -21,7 +22,12 @@ TOPICS          = None
 def get_topic_tree(force=False, props=None):
     global TOPICS, topics_file
     if TOPICS is None or force:
-        TOPICS = softload_json(os.path.join(settings.DATA_PATH, topics_file), logger=logging.debug)
+        try:
+            with open(os.path.join(settings.DATA_PATH, topics_file), "r") as fp:
+                TOPICS = json.load(fp)
+        except Exception as e:
+            logging.error(_("Failed to load %(f)s file: %(err)s.") % {"f": "TOPICS", "err": e})
+            raise
         validate_ancestor_ids(TOPICS)  # make sure ancestor_ids are set properly
 
         # Limit the memory footprint by unloading particular values
