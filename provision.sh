@@ -4,9 +4,9 @@
 apt-get update --fix-missing
 apt-get install -y python2.7 python2.7-dev python-pip git phantomjs
 curl -sL https://deb.nodesource.com/setup_0.12 | bash -
-apt-get install -y nodejs
+# apt-get install -y nodejs
 pip install -r /home/vagrant/ka-lite/requirements_dev.txt
 cd /home/vagrant/ka-lite
 pip install -e .
 # --no-bin-links option is for linux guests on windows hosts
-npm install --no-bin-links
+# npm install --no-bin-links
