@@ -8,7 +8,8 @@ class TopicToolsRouter():
 
     See: https://docs.djangoproject.com/en/1.5/topics/db/multi-db/#database-routers
     """
-    MODELS = ("AssessmentItem",)
+    ASSESSMENT_ITEM_MODELS = ("AssessmentItem",)
+    CONTENT_MODELS = ("ContentNode", "ContentVideoNode")
 
     def db_for_read(self, model, **hints):
         """
@@ -27,8 +28,10 @@ class TopicToolsRouter():
         Given a model, choose the right DB depending on its name. Returning None in this case will cause it to fall back
         to the default router.
         """
-        if model.__name__ in self.MODELS:
+        if model.__name__ in self.ASSESSMENT_ITEM_MODELS:
             return "assessment_items"
+        elif model.__name__ in self.CONTENT_MODELS:
+            return "content_metadata"
         else:
             return None
 
@@ -36,7 +39,7 @@ class TopicToolsRouter():
         """
         Allow relations between the given models only.
         """
-        if type(obj1).__name__ in self.MODELS and type(obj2).__name__ in self.MODELS:
+        if type(obj1).__name__ in self.ASSESSMENT_ITEM_MODELS and type(obj2).__name__ in self.ASSESSMENT_ITEM_MODELS:
             return True
         return None
 
@@ -45,7 +48,7 @@ class TopicToolsRouter():
         Make sure the given models only appear in the assessment_items db.
         """
         if db == 'assessment_items':
-            return model.__name__ in self.MODELS
-        elif model.__name__ in self.MODELS:
+            return model.__name__ in self.ASSESSMENT_ITEM_MODELS
+        elif model.__name__ in self.ASSESSMENT_ITEM_MODELS:
             return False  # Don't sync these models to any other DB
         return None
