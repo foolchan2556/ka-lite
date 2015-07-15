@@ -106,7 +106,7 @@ if IS_SOURCE:
 
     if not _data_path:
         _data_path = '.'
-    
+
     # This is getting deprecated as we will not explicitly operate with a static
     # source structure, but have shared system-wide data and user data.
     # It's not actually even a project root, because it's also the application's
@@ -124,10 +124,10 @@ if IS_SOURCE:
             default_project_root
         )
     )
-    
+
 else:
     _data_path = os.path.join(ROOT_DATA_PATH,)
-    
+
     # BEING DEPRECATED, PLEASE DO NOT USE PROJECT_PATH!
     PROJECT_PATH = os.environ.get(
         "KALITE_HOME",
@@ -186,7 +186,7 @@ if IS_SOURCE:
     USER_WRITABLE_LOCALE_DIR = os.path.join(USER_DATA_ROOT, 'locale')
     LOCALE_PATHS = getattr(local_settings, "LOCALE_PATHS", (USER_WRITABLE_LOCALE_DIR,))
     LOCALE_PATHS = tuple([os.path.realpath(lp) + "/" for lp in LOCALE_PATHS])
-    
+
     # This is the legacy location kalite/database/data.sqlite
     DEFAULT_DATABASE_PATH = os.path.join(_data_path, "kalite", "database", "data.sqlite")
 
@@ -196,22 +196,22 @@ if IS_SOURCE:
 
 # Storing data in a user directory
 else:
-    
+
     # Ensure that path exists
     if not os.path.exists(USER_DATA_ROOT):
         os.mkdir(USER_DATA_ROOT)
-    
+
     USER_WRITABLE_LOCALE_DIR = os.path.join(USER_DATA_ROOT, 'locale')
     KALITE_APP_LOCALE_DIR = os.path.join(USER_DATA_ROOT, 'locale')
-    
+
     LOCALE_PATHS = getattr(local_settings, "LOCALE_PATHS", (USER_WRITABLE_LOCALE_DIR, KALITE_APP_LOCALE_DIR))
     if not os.path.exists(USER_WRITABLE_LOCALE_DIR):
         os.mkdir(USER_WRITABLE_LOCALE_DIR)
-    
+
     DEFAULT_DATABASE_PATH = os.path.join(USER_DATA_ROOT, "database",)
     if not os.path.exists(DEFAULT_DATABASE_PATH):
         os.mkdir(DEFAULT_DATABASE_PATH)
-    
+
     DEFAULT_DATABASE_PATH = os.path.join(DEFAULT_DATABASE_PATH, 'default.sqlite')
 
     # Stuff that can be served by the HTTP server is located the same place
@@ -260,6 +260,8 @@ KHAN_ASSESSMENT_ITEM_DATABASE_PATH = os.path.join(KHAN_ASSESSMENT_ITEM_ROOT, 'as
 KHAN_ASSESSMENT_ITEM_VERSION_PATH = os.path.join(KHAN_ASSESSMENT_ITEM_ROOT, 'assessmentitems.version')
 KHAN_ASSESSMENT_ITEM_JSON_PATH = os.path.join(KHAN_ASSESSMENT_ITEM_ROOT, 'assessmentitems.json')
 
+KHAN_CONTENT_DATABASE_PATH = os.path.join(os.path.dirname(CONTENT_DATA_PATH), "contents.sqlite")  # TODO(aron): Ask ben what the right value for this is
+
 # Necessary for Django compressor
 if not DEBUG:
     STATICFILES_FINDERS = (
@@ -286,6 +288,12 @@ DATABASES = getattr(local_settings, "DATABASES", {
     "assessment_items": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": KHAN_ASSESSMENT_ITEM_DATABASE_PATH,
+        "OPTIONS": {
+        },
+    },
+    "content_metadata": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": KHAN_CONTENT_DATABASE_PATH,
         "OPTIONS": {
         },
     }
