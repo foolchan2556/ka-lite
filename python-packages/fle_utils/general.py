@@ -9,12 +9,14 @@ import os
 import errno
 
 from distutils.version import StrictVersion
+from frozendict import frozendict
 
 
 class InvalidDateFormat(Exception):
 
     def __str__(value):
         return "Invalid date format. Please format your date (-d) flag like this: 'MM/DD/YYYY'"
+
 
 class InvalidDirectoryFormat(Exception):
 
@@ -28,7 +30,7 @@ def break_into_chunks(bigiterator, chunksize=500):
     each broken into a discrete size.
     """
     biglist = list(bigiterator)
-    return [biglist[i:i+chunksize] for i in range(0, len(biglist), chunksize)]
+    return [biglist[i:i + chunksize] for i in range(0, len(biglist), chunksize)]
 
 
 def isnumeric(obj):
@@ -55,26 +57,27 @@ def datediff(*args, **kwargs):
     assert len(args) in [1, 2], "Must specify two dates or one timedelta"
 
     units = kwargs.get("units", None)
-    if len(args)==2:
+    if len(args) == 2:
         tdelta = args[0] - args[1]
     elif len(args) == 1:
         tdelta = args[0]
 
-    diff_secs = tdelta.days*24*60*60 + tdelta.seconds + tdelta.microseconds/1000000.
+    diff_secs = tdelta.days * 24 * 60 * 60 + tdelta.seconds + tdelta.microseconds / \
+        1000000.
 
     # Put None first, so checks are minimized
     if units in [None, "second", "seconds"]:
         return diff_secs
     elif units in ["microsecond", "microseconds"]:
-        return diff_secs*1000000
+        return diff_secs * 1000000
     elif units in ["minute", "minutes"]:
-        return diff_secs/60.
+        return diff_secs / 60.
     elif units in ["hour", "hours"]:
-        return diff_secs/3600.
+        return diff_secs / 3600.
     elif units in ["day", "days"]:
-        return diff_secs/(24*3600.)
+        return diff_secs / (24 * 3600.)
     elif units in ["week", "weeks"]:
-        return diff_secs/(7*24*3600.)
+        return diff_secs / (7 * 24 * 3600.)
     else:
         raise NotImplementedError("Unrecognized units: '%s'" % units)
 
@@ -88,7 +91,8 @@ def get_host_name():
         name = eval("os.uname()[1]")
     except:
         try:
-            name = eval("os.getenv('HOSTNAME', os.getenv('COMPUTERNAME') or '').lower()")
+            name = eval(
+                "os.getenv('HOSTNAME', os.getenv('COMPUTERNAME') or '').lower()")
         except:
             name = ""
     return name
@@ -124,8 +128,8 @@ def version_diff(v1, v2):
     v1_parts += ["0"] * (len(v2_parts) - len(v1_parts))
     v2_parts += ["0"] * (len(v1_parts) - len(v2_parts))
 
-    for v1p,v2p in zip(v1_parts,v2_parts):
-        cur_diff = int(v1p)-int(v2p)
+    for v1p, v2p in zip(v1_parts, v2_parts):
+        cur_diff = int(v1p) - int(v2p)
         if cur_diff:
             return cur_diff
 
@@ -148,7 +152,7 @@ def ensure_dir(path):
             raise
 
 # http://code.activestate.com/recipes/82465-a-friendly-mkdir/
-#def _mkdir(newdir):
+# def _mkdir(newdir):
 #    """works the way a good mkdir should :)
 #        - already exists, silently complete
 #        - regular file in the way, raise an exception
@@ -165,6 +169,7 @@ def ensure_dir(path):
 #            _mkdir(head)
 #        if tail:
 #            os.mkdir(newdir)
+
 
 def convert_date_input(date_to_convert):
     """Convert from MM/DD/YYYY to Unix timestamp"""
@@ -223,11 +228,11 @@ def _decode_list(data):
 def json_ascii_decoder(data):
     """
     TODO: Delete, it doesn't seem to be used anymore
-    
+
     benjaoming: I don't see how this is more efficient. Letting the JSON
     library load files and parse them with a built-in decoder, probably even
     implemented in C would be much faster.
-    
+
     A custom JSON decoder that can be passed to json.load/s.  This
     parses strings into str instead of unicode. To use this, pass this
     function to the object_hook keyword param in json.load/s.
@@ -249,12 +254,24 @@ def json_ascii_decoder(data):
     return rv
 
 
-def softload_json(json_filepath, default={}, raises=False, logger=None, errmsg="Failed to read json file"):
+def softload_json(json_filepath, default={}, raises=False, logger=None, frozendict=True, errmsg="Failed to read json file"):
+    """
+    Mainly used to load a dict by decoding a json file.
+
+    since 0.15: upgraded to return a fronzendict as to save memory.
+    """
     if default == {}:
-        default = {}
+        if frozendict:
+            default = frozendict()
+        else:
+            default = {}
     try:
         with open(json_filepath, "r") as fp:
-            return json.load(fp, object_hook=json_ascii_decoder)
+            rv = json.load(fp, object_hook=json_ascii_decoder)
+            if frozendict:
+                pass
+            else:
+                return rv
     # TODO: This is an anti-pattern, never do this. Always expect specific
     # exceptions and handle them in a specific context.
     except Exception as e:
@@ -263,6 +280,7 @@ def softload_json(json_filepath, default={}, raises=False, logger=None, errmsg="
         if raises:
             raise
         return default
+
 
 def sort_version_list(version_list, reverse):
     """Returns sorted version list - assumes strict version number"""

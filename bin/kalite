@@ -108,6 +108,5 @@ p = subprocess.Popen(
     [python_executable, manage_py] + args,
     env=env,
 )
-
 p.communicate()
 sys.exit(p.returncode)

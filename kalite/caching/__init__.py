@@ -23,7 +23,7 @@ from django.test.client import Client
 
 from fle_utils.internet.webcache import *
 from kalite import i18n, topic_tools
-
+from memory_profiler import profile
 def create_cache_entry(path=None, url_name=None, cache=None, force=False):
     """Create a cache entry"""
 
@@ -70,6 +70,7 @@ def invalidate_all_caches():
         invalidate_web_cache()
     logging.debug("Great success emptying all caches.")
 
+@profile
 def initialize_content_caches(force=False):
     """
     Catch all function to regenerate any content caches in memory that need annotation

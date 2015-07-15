@@ -55,6 +55,7 @@ Planned features:
 
 """
 from __future__ import print_function
+from memory_profiler import profile
 # Add distributed python-packages subfolder to current path
 # DO NOT IMPORT BEFORE THIS LIKE
 import sys
@@ -360,7 +361,6 @@ class ManageThread(Thread):
         utility.prog_name = 'kalite manage'
         utility.execute()
 
-
 def manage(command, args=[], as_thread=False):
     """
     Run a django command on the kalite project
@@ -385,7 +385,7 @@ def manage(command, args=[], as_thread=False):
         thread = ManageThread(command, args=args, name=" ".join([command] + args))
         thread.start()
 
-
+@profile
 def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=None):
     """
     Start the kalite server as a daemon
@@ -566,7 +566,6 @@ status.codes = {
     STATUS_UNKNOW: 'Could not determine status',
 }
 
-
 def url():
     """
     Check the server's status. For possible statuses, see the status dictionary
@@ -643,6 +642,7 @@ def profile_memory():
 
 # TODO(benjaoming): When this PR is merged, we can stop this crazyness
 # https://github.com/docopt/docopt/pull/283
+@profile
 def docopt(doc, argv=None, help=True, version=None, options_first=False):  # @ReservedAssignment help
     """Re-implementation of docopt.docopt() function to parse ANYTHING at
     the end (for proxying django options)."""
