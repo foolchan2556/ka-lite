@@ -17,6 +17,8 @@ class AssessmentItem(models.Model):
 
 class Node(MPTTModel):
 
+    id = models.CharField(max_length=50, primary_key=True)
+
     parent = TreeForeignKey('self', null=True, blank=True,
                             related_name='children')
 
@@ -31,9 +33,7 @@ class Node(MPTTModel):
     )
 
 
-class ContentNode(MPTTModel):
-
-    id = models.CharField(max_length=50, primary_key=True)
+class ContentNode(Node):
 
     title = models.CharField(
         max_length=50,
