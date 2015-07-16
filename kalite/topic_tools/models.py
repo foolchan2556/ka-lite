@@ -34,14 +34,10 @@ class Node(MPTTModel):
 
 
 class ContentNode(Node):
-
     title = models.CharField(
         max_length=50,
         verbose_name=_("title")
     )
-
-    parent = TreeForeignKey('self', null=True, blank=True,
-                            related_name='children')
 
 
 class ContentVideoNode(ContentNode):

@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52698cf9-59fc-46df-ba57-2439e797ac60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kalite/topic_tools/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kalite/topic_tools/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/git.exe.stackdump" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ka-lite.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.eot" afterPath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.eot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.svg" afterPath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.ttf" afterPath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.ttf" />
@@ -143,7 +133,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/css/jquery-ui/images/vline-rtl.gif" afterPath="$PROJECT_DIR$/static-libraries/css/jquery-ui/images/vline-rtl.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/css/jquery-ui/images/vline.gif" afterPath="$PROJECT_DIR$/static-libraries/css/jquery-ui/images/vline.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/css/images/x-repeating-sprites.png" afterPath="$PROJECT_DIR$/static-libraries/css/images/x-repeating-sprites.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/youtube_dl/InfoExtractors.py" afterPath="$PROJECT_DIR$/python-packages/youtube_dl/InfoExtractors.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/LICENSE-JQUERY.txt" afterPath="$PROJECT_DIR$/static-libraries/admin/js/LICENSE-JQUERY.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/admin/RelatedObjectLookups.js" />
@@ -199,6 +191,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/static-libraries/fonts/fontawesome-webfont.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/css/forms.css" afterPath="$PROJECT_DIR$/static-libraries/admin/css/forms.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/getElementsBySelector.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/getElementsBySelector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git.exe.stackdump" afterPath="$PROJECT_DIR$/git.exe.stackdump" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static-libraries/fonts/glyphicons-halflings-regular.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/graph_models.sh" afterPath="$PROJECT_DIR$/scripts/graph_models.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/js/html5shiv.js" afterPath="$PROJECT_DIR$/static-libraries/js/html5shiv.js" />
@@ -211,6 +204,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/jquery.init.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/jquery.init.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/jquery.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/jquery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/jquery.min.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ka-lite.iml" afterPath="$PROJECT_DIR$/.idea/ka-lite.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/kalite" afterPath="$PROJECT_DIR$/bin/kalite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalitectl.py" afterPath="$PROJECT_DIR$/kalitectl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/css/distributed/khan-lite.css" afterPath="$PROJECT_DIR$/kalite/distributed/static/css/distributed/khan-lite.css" />
@@ -226,6 +220,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/css/mathquill.css" afterPath="$PROJECT_DIR$/static-libraries/css/mathquill.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/memory_profiler.py" afterPath="$PROJECT_DIR$/python-packages/memory_profiler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/mimeparse.py" afterPath="$PROJECT_DIR$/python-packages/mimeparse.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/facility/models.py" afterPath="$PROJECT_DIR$/kalite/facility/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/main/models.py" afterPath="$PROJECT_DIR$/kalite/main/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/topic_tools/models.py" afterPath="$PROJECT_DIR$/kalite/topic_tools/models.py" />
@@ -233,6 +228,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/securesync/models.py" afterPath="$PROJECT_DIR$/python-packages/securesync/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/securesync/devices/models.py" afterPath="$PROJECT_DIR$/python-packages/securesync/devices/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/securesync/engine/models.py" afterPath="$PROJECT_DIR$/python-packages/securesync/engine/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/optimizerpi.sh" afterPath="$PROJECT_DIR$/scripts/optimizerpi.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/admin/ordering.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/admin/ordering.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/js/prepopulate.js" afterPath="$PROJECT_DIR$/static-libraries/admin/js/prepopulate.js" />
@@ -270,11 +266,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/securesync/urls.py" afterPath="$PROJECT_DIR$/python-packages/securesync/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/securesync/devices/urls.py" afterPath="$PROJECT_DIR$/python-packages/securesync/devices/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/securesync/engine/urls.py" afterPath="$PROJECT_DIR$/python-packages/securesync/engine/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/js/distributed/exercises/views.js" afterPath="$PROJECT_DIR$/kalite/distributed/static/js/distributed/exercises/views.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/coachreports/views.py" afterPath="$PROJECT_DIR$/kalite/coachreports/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/views.py" afterPath="$PROJECT_DIR$/kalite/distributed/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-packages/fle_utils/config/views.py" afterPath="$PROJECT_DIR$/python-packages/fle_utils/config/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-libraries/admin/css/widgets.css" afterPath="$PROJECT_DIR$/static-libraries/admin/css/widgets.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ka-lite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -296,21 +294,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="kalitectl.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="kalitectl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kalitectl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.2">
-              <caret line="725" column="40" selection-start-line="725" selection-start-column="40" selection-end-line="725" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.6680498">
+              <caret line="724" column="41" selection-start-line="724" selection-start-column="41" selection-end-line="724" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kalite/topic_tools/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3692946">
-              <caret line="20" column="52" selection-start-line="19" selection-start-column="3" selection-end-line="20" selection-end-column="52" />
+            <state vertical-scroll-proportion="-6.04">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -326,8 +324,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kalitectl.py" />
         <option value="$PROJECT_DIR$/kalite/topic_tools/models.py" />
+        <option value="$PROJECT_DIR$/kalitectl.py" />
       </list>
     </option>
   </component>
@@ -340,7 +338,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="484" />
-    <option name="width" value="843" />
+    <option name="width" value="851" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -632,10 +630,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="484" y="0" width="843" height="728" extended-state="1" />
+    <frame x="484" y="0" width="851" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41112456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4071856" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14308682" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -664,21 +662,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kalitectl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.2">
-          <caret line="725" column="40" selection-start-line="725" selection-start-column="40" selection-end-line="725" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kalite/topic_tools/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3692946">
-          <caret line="20" column="52" selection-start-line="19" selection-start-column="3" selection-end-line="20" selection-end-column="52" />
+        <state vertical-scroll-proportion="-6.04">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalitectl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6680498">
+          <caret line="724" column="41" selection-start-line="724" selection-start-column="41" selection-end-line="724" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
