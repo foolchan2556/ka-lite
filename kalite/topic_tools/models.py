@@ -40,6 +40,9 @@ class ContentNode(MPTTModel):
         verbose_name=_("title")
     )
 
+    parent = TreeForeignKey('self', null=True, blank=True,
+                            related_name='children')
+
 
 class ContentVideoNode(ContentNode):
 
