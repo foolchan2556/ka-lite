@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52698cf9-59fc-46df-ba57-2439e797ac60" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kalite/topic_tools/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kalite/topic_tools/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/git.exe.stackdump" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ka-lite.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.eot" afterPath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.eot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.svg" afterPath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.ttf" afterPath="$PROJECT_DIR$/kalite/distributed/static/perseus/fonts/ProximaNova-Bold-webfont.ttf" />
