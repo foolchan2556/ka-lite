@@ -9,7 +9,7 @@ class TopicToolsRouter():
     See: https://docs.djangoproject.com/en/1.5/topics/db/multi-db/#database-routers
     """
     ASSESSMENT_ITEM_MODELS = ("AssessmentItem",)
-    CONTENT_MODELS = ("ContentNode", "ContentVideoNode")
+    CONTENT_MODELS = ("Node", "ContentNode", "ContentVideoNode")
 
     def db_for_read(self, model, **hints):
         """
