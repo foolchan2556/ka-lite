@@ -21,7 +21,6 @@ class Migration(SchemaMigration):
             ('id', self.gf('django.db.models.fields.CharField')(max_length=50, primary_key=True)),
             ('parent', self.gf('mptt.fields.TreeForeignKey')(blank=True, related_name='children', null=True, to=orm['topic_tools.Node'])),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=50)),
-            ('sort_order', self.gf('django.db.models.fields.FloatField')(max_length=50)),
             (u'lft', self.gf('django.db.models.fields.PositiveIntegerField')(db_index=True)),
             (u'rght', self.gf('django.db.models.fields.PositiveIntegerField')(db_index=True)),
             (u'tree_id', self.gf('django.db.models.fields.PositiveIntegerField')(db_index=True)),
@@ -95,7 +94,6 @@ class Migration(SchemaMigration):
             'name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
             'parent': ('mptt.fields.TreeForeignKey', [], {'blank': 'True', 'related_name': "'children'", 'null': 'True', 'to': u"orm['topic_tools.Node']"}),
             u'rght': ('django.db.models.fields.PositiveIntegerField', [], {'db_index': 'True'}),
-            'sort_order': ('django.db.models.fields.FloatField', [], {'max_length': '50'}),
             u'tree_id': ('django.db.models.fields.PositiveIntegerField', [], {'db_index': 'True'})
         }
     }
