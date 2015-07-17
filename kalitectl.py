@@ -712,13 +712,14 @@ def convert_contents(jsonurl='data/khan/contents.json'):
     osurl = os.path.join(os.environ['KALITE_DIR'], jsonurl)
     jsonfile = open(osurl)
     items = json.load(jsonfile)
-    kalitedict = SqliteDict('./content_dict.sqlite')
-    kalitedict['contents'] = items
-    kalitedict.commit()
-    for item in kalitedict['contents']:
-        print(str(kalitedict['contents'][item]['kind']))
-        break
 
+    kalitedict = SqliteDict('./content_dict.sqlite')
+    for item in items:
+        kalitedict[item] = items[item]
+    kalitedict.commit()
+    for a in kalitedict:
+        print(kalitedict[a])
+        break
     '''
     cvnodes = []
     for item in items:
