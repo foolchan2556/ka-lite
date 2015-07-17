@@ -27,11 +27,6 @@ class Node(MPTTModel):
         verbose_name=_("name")
     )
 
-    sort_order = models.FloatField(
-        max_length=50,
-        verbose_name=_("sort order")
-    )
-
 
 class ContentNode(Node):
     title = models.CharField(
