@@ -703,31 +703,39 @@ def docopt(doc, argv=None, help=True, version=None, options_first=False):
     raise DocoptExit()
 
 
-from kalite.topic_tools.models import ContentVideoNode
+#from kalite.topic_tools.models import ContentVideoNode
 import json
+from sqlitedict import SqliteDict
 
 
 def convert_contents(jsonurl='data/khan/contents.json'):
-    print('this is contents')
     osurl = os.path.join(os.environ['KALITE_DIR'], jsonurl)
     jsonfile = open(osurl)
     items = json.load(jsonfile)
+    kalitedict = SqliteDict('./content_dict.sqlite')
+    kalitedict['contents'] = items
+    kalitedict.commit()
+    for item in kalitedict['contents']:
+        print(str(kalitedict['contents'][item]['kind']))
+        break
+
+    '''
     cvnodes = []
     for item in items:
         body = items[item]
-        cvnode = ContentVideoNode(id=item,\
-                                  title=body['title'],\
-                                  download_url=body['download_urls']['mp4'],\
-                                  duration=body['duration'],\
-                                  kind=body['kind'],\
-                                  path=body['path'],\
-                                  format=body['format'],\
-                                  slug=body['slug'],\
+        cvnode = ContentVideoNode(id=item,
+                                  title=body['title'],
+                                  download_url=str(body['download_urls']),
+                                  duration=body['duration'],
+                                  kind=body['kind'],
+                                  path=body['path'],
+                                  format=body['format'],
+                                  slug=body['slug'],
                                   video_id=body['video_id']
                                   )
         cvnodes.append(cvnode)
         cvnode.save()
-        break
+    '''
 
 if __name__ == "__main__":
     # Since positional arguments should always come first, we can safely
