@@ -703,41 +703,6 @@ def docopt(doc, argv=None, help=True, version=None, options_first=False):
     raise DocoptExit()
 
 
-#from kalite.topic_tools.models import ContentVideoNode
-import json
-from sqlitedict import SqliteDict
-
-
-'''def convert_contents(jsonurl='data/khan/contents.json'):
-    osurl = os.path.join(os.environ['KALITE_DIR'], jsonurl)
-    jsonfile = open(osurl)
-    items = json.load(jsonfile)
-
-    kalitedict = SqliteDict('./content_dict.sqlite')
-    for item in items:
-        kalitedict[item] = items[item]
-    kalitedict.commit()
-    for a in kalitedict:
-        print(kalitedict[a])
-        break
-
-    cvnodes = []
-    for item in items:
-        body = items[item]
-        cvnode = ContentVideoNode(id=item,
-                                  title=body['title'],
-                                  download_url=str(body['download_urls']),
-                                  duration=body['duration'],
-                                  kind=body['kind'],
-                                  path=body['path'],
-                                  format=body['format'],
-                                  slug=body['slug'],
-                                  video_id=body['video_id']
-                                  )
-        cvnodes.append(cvnode)
-        cvnode.save()
-    '''
-
 if __name__ == "__main__":
     # Since positional arguments should always come first, we can safely
     # replace " " with "=" to make options "--xy z" same as "--xy=z".
