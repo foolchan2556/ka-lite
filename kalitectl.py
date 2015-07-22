@@ -708,7 +708,7 @@ import json
 from sqlitedict import SqliteDict
 
 
-def convert_contents(jsonurl='data/khan/contents.json'):
+'''def convert_contents(jsonurl='data/khan/contents.json'):
     osurl = os.path.join(os.environ['KALITE_DIR'], jsonurl)
     jsonfile = open(osurl)
     items = json.load(jsonfile)
@@ -720,7 +720,7 @@ def convert_contents(jsonurl='data/khan/contents.json'):
     for a in kalitedict:
         print(kalitedict[a])
         break
-    '''
+
     cvnodes = []
     for item in items:
         body = items[item]
@@ -753,8 +753,7 @@ if __name__ == "__main__":
         )
 
     elif arguments['stop']:
-        # stop(args=arguments['DJANGO_OPTIONS']) for debug
-        convert_contents()
+        stop(args=arguments['DJANGO_OPTIONS'])
 
     elif arguments['restart']:
         stop(args=arguments['DJANGO_OPTIONS'], sys_exit=False)
