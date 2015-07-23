@@ -7,15 +7,19 @@ from sqlitedict import SqliteDict
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
-        jsonurl = 'data/khan/contents.json'
-        osurl = os.path.join(os.environ['KALITE_DIR'], jsonurl)
-        jsonfile = open(osurl)
+        print("Converting...")
+        self.convert('data/khan/contents.json', 'data/khan/contents.sqlite')
+        print("Content completed!")
+        self.convert('data/khan/exercises.json', 'data/khan/exercises.sqlite')
+        print("Exercise completed!")
+
+    def convert(self, jsonurl, sqliteurl):
+        url = os.path.join(os.environ['KALITE_DIR'], jsonurl)
+        jsonfile = open(url)
         items = json.load(jsonfile)
 
-        kalitedict = SqliteDict(os.path.join(os.environ['KALITE_DIR'], 'content_dict.sqlite'))
+        kalitedict = SqliteDict(
+            os.path.join(os.environ['KALITE_DIR'], sqliteurl))
         for item in items:
             kalitedict[item] = items[item]
         kalitedict.commit()
-        for a in kalitedict:
-            print(kalitedict[a])
-            break
