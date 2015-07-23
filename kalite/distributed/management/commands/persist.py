@@ -23,3 +23,4 @@ class Command(BaseCommand):
         for item in items:
             kalitedict[item] = items[item]
         kalitedict.commit()
+        kalitedict.close()
