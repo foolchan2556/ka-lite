@@ -1,0 +1,5516 @@
+{
+    "-age-related-memory-loss----rbap48-": {
+        "uses_assessment_items": true
+    },
+    "-biochemistry-of-a-newly-discovered--pretend--neurotransmitter": {
+        "uses_assessment_items": true
+    },
+    "-laoco-n-quiz": {
+        "uses_assessment_items": true
+    },
+    "-mass-spectrometry-in-the-operating-room": {
+        "uses_assessment_items": true
+    },
+    "-using-a-freezing-point-depression-osmometer-to-measure-serum-osmolality": {
+        "uses_assessment_items": true
+    },
+    "16th-18th-century-british-art": {
+        "uses_assessment_items": true
+    },
+    "19th-century": {
+        "uses_assessment_items": true
+    },
+    "a-beginner-s-guide-to-the-baroque": {
+        "uses_assessment_items": true
+    },
+    "a-clinical-approach-to-anemia--solve-the-case": {
+        "uses_assessment_items": true
+    },
+    "a-family-history-of-marfan-syndrome": {
+        "uses_assessment_items": true
+    },
+    "a-genetic-mutation-with-prognostic-value-for-glioblastoma-patients": {
+        "uses_assessment_items": true
+    },
+    "a-potential-cure-for-ebola-hemorrhagic-fever": {
+        "uses_assessment_items": true
+    },
+    "abex-quiz": {
+        "uses_assessment_items": true
+    },
+    "absolute-value-to-find-distance": {
+        "uses_assessment_items": true
+    },
+    "absolute-value-word-problems": {
+        "uses_assessment_items": true
+    },
+    "absolute_value": {
+        "uses_assessment_items": false
+    },
+    "absolute_value_equations": {
+        "uses_assessment_items": true
+    },
+    "absolute_value_of_complex_numbers": {
+        "uses_assessment_items": false
+    },
+    "absorption-emission-lines": {
+        "uses_assessment_items": true
+    },
+    "acceleration---passage-1": {
+        "uses_assessment_items": true
+    },
+    "acceleration---passage-2": {
+        "uses_assessment_items": true
+    },
+    "acceleration-questions": {
+        "uses_assessment_items": true
+    },
+    "ace-inhibitors-and-the-renal-regulation-of-blood-pressure-": {
+        "uses_assessment_items": true
+    },
+    "add-within-100--level-1": {
+        "uses_assessment_items": true
+    },
+    "add-within-100--level-2": {
+        "uses_assessment_items": true
+    },
+    "add-within-1000--level-1": {
+        "uses_assessment_items": true
+    },
+    "add-within-1000--level-2": {
+        "uses_assessment_items": true
+    },
+    "adding-and-subtracting-fractions-with-like-denominators-word-problems": {
+        "uses_assessment_items": true
+    },
+    "adding-and-subtracting-fractions-with-unlike-denominators-word-problems": {
+        "uses_assessment_items": true
+    },
+    "adding-and-subtracting-in-scientific-notation": {
+        "uses_assessment_items": true
+    },
+    "adding-and-subtracting-mixed-numbers-with-like-denominators-2": {
+        "uses_assessment_items": true
+    },
+    "adding-and-subtracting-on-the-number-line-word-problems": {
+        "uses_assessment_items": true
+    },
+    "adding-negative-numbers-on-the-number-line": {
+        "uses_assessment_items": true
+    },
+    "adding-negative-numbers-word-problems": {
+        "uses_assessment_items": true
+    },
+    "adding-probability": {
+        "uses_assessment_items": true
+    },
+    "adding-three-numbers": {
+        "uses_assessment_items": true
+    },
+    "adding-vectors-in-magnitude-and-direction-form": {
+        "uses_assessment_items": true
+    },
+    "adding_and_subtracting_complex_numbers": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_decimals_word_problems": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_fractions": {
+        "uses_assessment_items": true
+    },
+    "adding_and_subtracting_negative_numbers": {
+        "uses_assessment_items": true
+    },
+    "adding_and_subtracting_polynomials": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_radicals": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_expressions": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_expressions_0.5": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_expressions_1.5": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_expressions_2": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_expressions_3": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_expressions_5": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_expressions_6": {
+        "uses_assessment_items": false
+    },
+    "adding_and_subtracting_rational_numbers": {
+        "uses_assessment_items": false
+    },
+    "adding_decimals": {
+        "uses_assessment_items": false
+    },
+    "adding_decimals_0.5": {
+        "uses_assessment_items": false
+    },
+    "adding_decimals_2": {
+        "uses_assessment_items": false
+    },
+    "adding_fractions": {
+        "uses_assessment_items": false
+    },
+    "adding_fractions_0.5": {
+        "uses_assessment_items": false
+    },
+    "adding_fractions_with_common_denominators": {
+        "uses_assessment_items": false
+    },
+    "adding_negative_numbers": {
+        "uses_assessment_items": true
+    },
+    "adding_subtracting_mixed_numbers_0.5": {
+        "uses_assessment_items": true
+    },
+    "adding_subtracting_mixed_numbers_1": {
+        "uses_assessment_items": false
+    },
+    "adding_vectors": {
+        "uses_assessment_items": false
+    },
+    "addition-and-subtraction-within-10": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-100--level-1": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-100--level-2": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-100--level-3": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-100--level-4": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-20--level-1": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-20--level-2": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-20--level-3": {
+        "uses_assessment_items": true
+    },
+    "addition-and-subtraction-word-problems-within-20--level-4": {
+        "uses_assessment_items": true
+    },
+    "addition-word-problems-within-10": {
+        "uses_assessment_items": true
+    },
+    "addition_1": {
+        "uses_assessment_items": false
+    },
+    "addition_2": {
+        "uses_assessment_items": false
+    },
+    "addition_3": {
+        "uses_assessment_items": false
+    },
+    "addition_4": {
+        "uses_assessment_items": false
+    },
+    "adolf-hitler": {
+        "uses_assessment_items": true
+    },
+    "advanced-heart-quiz": {
+        "uses_assessment_items": true
+    },
+    "advanced-lung-quiz": {
+        "uses_assessment_items": true
+    },
+    "advanced-muscular-quiz": {
+        "uses_assessment_items": true
+    },
+    "advanced-structure-in-expressions": {
+        "uses_assessment_items": true
+    },
+    "age_word_problems": {
+        "uses_assessment_items": false
+    },
+    "aldehydes-and-ketones": {
+        "uses_assessment_items": true
+    },
+    "alexander-mosaic-quiz": {
+        "uses_assessment_items": true
+    },
+    "algebraically-finding-inverses": {
+        "uses_assessment_items": true
+    },
+    "allegory-and-effect-of-good-and-bad-government-quiz": {
+        "uses_assessment_items": true
+    },
+    "altar-at-pergamon-quiz": {
+        "uses_assessment_items": true
+    },
+    "alternating-series": {
+        "uses_assessment_items": true
+    },
+    "alternating-series-remainder": {
+        "uses_assessment_items": true
+    },
+    "amino-acids-and-proteins": {
+        "uses_assessment_items": true
+    },
+    "amino-acids-and-proteins---passage-2": {
+        "uses_assessment_items": true
+    },
+    "amino-acids-and-proteins-questions": {
+        "uses_assessment_items": true
+    },
+    "amplitude-of-trig-functions": {
+        "uses_assessment_items": true
+    },
+    "analysis-of-image-production-by-the-human-eye": {
+        "uses_assessment_items": true
+    },
+    "analyzing-and-identifying-proportional-relationships": {
+        "uses_assessment_items": true
+    },
+    "analyzing-data-with-box-plots": {
+        "uses_assessment_items": true
+    },
+    "analyzing-electrocardiogram-voltage-signals": {
+        "uses_assessment_items": true
+    },
+    "analyzing-with-dot-plots": {
+        "uses_assessment_items": true
+    },
+    "ancient-gems-quiz": {
+        "uses_assessment_items": true
+    },
+    "ancient-greece": {
+        "uses_assessment_items": true
+    },
+    "ancient-near-eastern-art": {
+        "uses_assessment_items": true
+    },
+    "ancient-observations": {
+        "uses_assessment_items": true
+    },
+    "ancient-rome": {
+        "uses_assessment_items": true
+    },
+    "anemia-quiz": {
+        "uses_assessment_items": true
+    },
+    "angle_addition_postulate": {
+        "uses_assessment_items": false
+    },
+    "angle_bisector_theorem": {
+        "uses_assessment_items": false
+    },
+    "angle_types": {
+        "uses_assessment_items": false
+    },
+    "angles_1": {
+        "uses_assessment_items": false
+    },
+    "angles_2": {
+        "uses_assessment_items": false
+    },
+    "angles_of_a_polygon": {
+        "uses_assessment_items": false
+    },
+    "angular-measure-1": {
+        "uses_assessment_items": true
+    },
+    "angular-measure-2": {
+        "uses_assessment_items": true
+    },
+    "antibody-class-differences": {
+        "uses_assessment_items": true
+    },
+    "antiderivatives": {
+        "uses_assessment_items": true
+    },
+    "applications-of-derivatives--motion-along-a-line": {
+        "uses_assessment_items": true
+    },
+    "applications-of-derivatives--tangent-and-normal-lines": {
+        "uses_assessment_items": true
+    },
+    "applications-of-differentiation-in-biology--economics--physics--etc": {
+        "uses_assessment_items": true
+    },
+    "applications-of-hard-soft-acid-base-theory": {
+        "uses_assessment_items": true
+    },
+    "applications-of-operant-conditioning-in-daily-life": {
+        "uses_assessment_items": true
+    },
+    "applying-angle-addition-formulas": {
+        "uses_assessment_items": true
+    },
+    "applying-right-triangles": {
+        "uses_assessment_items": true
+    },
+    "approximating-irrational-numbers": {
+        "uses_assessment_items": true
+    },
+    "approximating-irrational-numbers-without-a-calculator": {
+        "uses_assessment_items": true
+    },
+    "approximating-with-orders-of-magnitude": {
+        "uses_assessment_items": true
+    },
+    "ara-pacis-quiz": {
+        "uses_assessment_items": true
+    },
+    "arachaic--anavysos-kouros-quiz": {
+        "uses_assessment_items": true
+    },
+    "arc-length-of-functions-in-one-variable": {
+        "uses_assessment_items": true
+    },
+    "arc-length-of-polar-curves": {
+        "uses_assessment_items": true
+    },
+    "ardabil-carpet-quiz": {
+        "uses_assessment_items": true
+    },
+    "are-suicidal-behaviors--contagious--in-adolescence-": {
+        "uses_assessment_items": true
+    },
+    "area--volume--and-surface-area": {
+        "uses_assessment_items": true
+    },
+    "area-and-circumference-of-circles": {
+        "uses_assessment_items": true
+    },
+    "area-and-perimeter-of-rectangles-word-problems": {
+        "uses_assessment_items": true
+    },
+    "area-and-the-distributive-property": {
+        "uses_assessment_items": true
+    },
+    "area-between-a-curve-and-an-axis": {
+        "uses_assessment_items": true
+    },
+    "area-between-two-curves": {
+        "uses_assessment_items": true
+    },
+    "area-enclosed-by-polar-graphs": {
+        "uses_assessment_items": true
+    },
+    "area-of-quadrilaterals-and-polygons": {
+        "uses_assessment_items": true
+    },
+    "area-of-triangles-2": {
+        "uses_assessment_items": true
+    },
+    "area-under-a-rate-function-equals-net-change": {
+        "uses_assessment_items": true
+    },
+    "area_of_a_circle": {
+        "uses_assessment_items": false
+    },
+    "area_of_parallelograms": {
+        "uses_assessment_items": false
+    },
+    "area_of_squares_and_rectangles": {
+        "uses_assessment_items": false
+    },
+    "area_of_triangles_1": {
+        "uses_assessment_items": true
+    },
+    "areas_of_circles_and_sectors": {
+        "uses_assessment_items": false
+    },
+    "areas_of_trapezoids_rhombi_and_kites": {
+        "uses_assessment_items": false
+    },
+    "arena-chapel-quiz": {
+        "uses_assessment_items": true
+    },
+    "arithmetic_sequences_1": {
+        "uses_assessment_items": true
+    },
+    "arithmetic_sequences_2": {
+        "uses_assessment_items": false
+    },
+    "arithmetic_series": {
+        "uses_assessment_items": false
+    },
+    "arithmetic_word_problems": {
+        "uses_assessment_items": true
+    },
+    "art-and-the-french-state": {
+        "uses_assessment_items": true
+    },
+    "art-history-media": {
+        "uses_assessment_items": true
+    },
+    "art-in-britain-and-america-in-the-age-of-revolution": {
+        "uses_assessment_items": true
+    },
+    "art-in-burgundy--1400-1500": {
+        "uses_assessment_items": true
+    },
+    "arts-of-the-islamic-world": {
+        "uses_assessment_items": true
+    },
+    "ashurbanipal-hunting-lions-quiz": {
+        "uses_assessment_items": true
+    },
+    "aspen-us-declaration-of-independence-quiz": {
+        "uses_assessment_items": true
+    },
+    "assemblies-of-molecules--cells-and-groups-of-cells-within-single-cellular-and-multicellular-organisms": {
+        "uses_assessment_items": true
+    },
+    "athenian-painted-vases-quiz": {
+        "uses_assessment_items": true
+    },
+    "atoms--nuclear-decay--electronic-structure--and-atomic-chemical-behavior": {
+        "uses_assessment_items": true
+    },
+    "attention-and-language---passage-1": {
+        "uses_assessment_items": true
+    },
+    "attention-and-language---passage-2": {
+        "uses_assessment_items": true
+    },
+    "attributes-of-shapes": {
+        "uses_assessment_items": true
+    },
+    "augustus-of-prima-porta-quiz": {
+        "uses_assessment_items": true
+    },
+    "average-rate-of-change-word-problems": {
+        "uses_assessment_items": true
+    },
+    "average-value-of-a-function": {
+        "uses_assessment_items": true
+    },
+    "average_word_problems": {
+        "uses_assessment_items": false
+    },
+    "avg-rate-of-change": {
+        "uses_assessment_items": true
+    },
+    "axis_of_symmetry": {
+        "uses_assessment_items": true
+    },
+    "balancing-chemical-equations-questions": {
+        "uses_assessment_items": true
+    },
+    "balancing_chemical_equations": {
+        "uses_assessment_items": false
+    },
+    "baroque-art-in-flanders": {
+        "uses_assessment_items": true
+    },
+    "baroque-art-in-france": {
+        "uses_assessment_items": true
+    },
+    "baroque-art-in-holland": {
+        "uses_assessment_items": true
+    },
+    "baroque-art-in-italy": {
+        "uses_assessment_items": true
+    },
+    "baroque-art-in-spain": {
+        "uses_assessment_items": true
+    },
+    "basic-concepts-in-bioenergetics--phosphoryl-group-transfers-and-atp-hydrolysis": {
+        "uses_assessment_items": true
+    },
+    "basic_set_notation": {
+        "uses_assessment_items": false
+    },
+    "beginners-guide-to-medieval-art": {
+        "uses_assessment_items": true
+    },
+    "behavior-and-genetics---passage-1": {
+        "uses_assessment_items": true
+    },
+    "behavior-and-genetics---passage-2": {
+        "uses_assessment_items": true
+    },
+    "behavior-and-genetics-questions": {
+        "uses_assessment_items": true
+    },
+    "benchmark-angles": {
+        "uses_assessment_items": true
+    },
+    "benjamin-franklin-quiz": {
+        "uses_assessment_items": true
+    },
+    "berlinghieri-s-st--francis-altarpiece-quiz": {
+        "uses_assessment_items": true
+    },
+    "bernini-s-david-quiz": {
+        "uses_assessment_items": true
+    },
+    "bernini-s-ecstasy-of-saint-teresa-quiz": {
+        "uses_assessment_items": true
+    },
+    "beyond-battle": {
+        "uses_assessment_items": true
+    },
+    "big-five-personality-traits-and-health-behaviors": {
+        "uses_assessment_items": true
+    },
+    "binomial-theorem": {
+        "uses_assessment_items": true
+    },
+    "biochemistry-changes-that-occur-after-death": {
+        "uses_assessment_items": true
+    },
+    "biodiversity-distribution-patterns": {
+        "uses_assessment_items": true
+    },
+    "bioenergetics-questions": {
+        "uses_assessment_items": true
+    },
+    "biological-adaptations-in-response-to-physical-constraints--the-case-of-atlantic-salmon": {
+        "uses_assessment_items": true
+    },
+    "biological-basis-of-behavior---endocrine-system": {
+        "uses_assessment_items": true
+    },
+    "biological-basis-of-behavior---passage-2": {
+        "uses_assessment_items": true
+    },
+    "biological-basis-of-behavior--nervous-system-passage---1": {
+        "uses_assessment_items": true
+    },
+    "biological-basis-of-behavior--nervous-system-passage---2": {
+        "uses_assessment_items": true
+    },
+    "bitwise-operators": {
+        "uses_assessment_items": true
+    },
+    "bleeding-and-impaired-hemostasis-quiz": {
+        "uses_assessment_items": true
+    },
+    "bleeding-and-impaired-hemostasis-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "bleeding-and-impaired-hemostasis-quiz-3": {
+        "uses_assessment_items": true
+    },
+    "blood-oxygen-levels-may-determine-cardiac-muscle-regeneration": {
+        "uses_assessment_items": true
+    },
+    "botticelli-s-birth-of-venus-quiz": {
+        "uses_assessment_items": true
+    },
+    "box-plots": {
+        "uses_assessment_items": true
+    },
+    "braque-s-the-portuguese-quiz": {
+        "uses_assessment_items": true
+    },
+    "brown-adipose-tissue-and-metabolism-1": {
+        "uses_assessment_items": true
+    },
+    "brown-adipose-tissue-and-metabolism-passage-2": {
+        "uses_assessment_items": true
+    },
+    "bruegel-s-hunters-in-the-snow-quiz": {
+        "uses_assessment_items": true
+    },
+    "brunelleschi-and-ghiberti-s-sacrifice-of-isaac-quiz": {
+        "uses_assessment_items": true
+    },
+    "brunelleschi-s-dome-quiz": {
+        "uses_assessment_items": true
+    },
+    "burgundy-quiz": {
+        "uses_assessment_items": true
+    },
+    "byzantine-art": {
+        "uses_assessment_items": true
+    },
+    "caesar_cipher_decryption": {
+        "uses_assessment_items": false
+    },
+    "caesar_cipher_encryption": {
+        "uses_assessment_items": false
+    },
+    "caesar_cipher_frequency_analysis": {
+        "uses_assessment_items": false
+    },
+    "calculating-the-interquartile-range--iqr-": {
+        "uses_assessment_items": true
+    },
+    "calculating-the-mean": {
+        "uses_assessment_items": true
+    },
+    "calculating-the-mean-absolute-deviation--mad-": {
+        "uses_assessment_items": true
+    },
+    "calculating-the-mean-from-various-data-displays": {
+        "uses_assessment_items": true
+    },
+    "calculating-the-median": {
+        "uses_assessment_items": true
+    },
+    "calculating-the-median-from-data-displays": {
+        "uses_assessment_items": true
+    },
+    "campin-s-merode-altarpiece": {
+        "uses_assessment_items": true
+    },
+    "can-tickling-help-us-understand-some-symptoms-of-schizophrenia-": {
+        "uses_assessment_items": true
+    },
+    "cancer-and-hexokinase": {
+        "uses_assessment_items": true
+    },
+    "capacitors---passage-1": {
+        "uses_assessment_items": true
+    },
+    "capacitors---passage-2": {
+        "uses_assessment_items": true
+    },
+    "caravaggio--calling-of-st--matthew-quiz": {
+        "uses_assessment_items": true
+    },
+    "carbohydrate-metabolism---passage-1": {
+        "uses_assessment_items": true
+    },
+    "carbohydrate-metabolism---passage-2": {
+        "uses_assessment_items": true
+    },
+    "carbohydrate-metabolism-questions": {
+        "uses_assessment_items": true
+    },
+    "carbohydrates--the-structure-and-function-of-glycogen": {
+        "uses_assessment_items": true
+    },
+    "carbohydrates-quiz-passage-1": {
+        "uses_assessment_items": true
+    },
+    "carbohydrates-quiz-passage-2": {
+        "uses_assessment_items": true
+    },
+    "carolingian": {
+        "uses_assessment_items": true
+    },
+    "cas-ecosystem-function": {
+        "uses_assessment_items": true
+    },
+    "cas-ecosystem-services": {
+        "uses_assessment_items": true
+    },
+    "cas-hotspots": {
+        "uses_assessment_items": true
+    },
+    "case-study-of-panic-disorder-in-an-adult-female": {
+        "uses_assessment_items": true
+    },
+    "categorize-quadrilaterals": {
+        "uses_assessment_items": true
+    },
+    "cathedral-of-notre-dame-de-chartres-quiz": {
+        "uses_assessment_items": true
+    },
+    "cc-4th-comparing-decimals-and-fractions": {
+        "uses_assessment_items": true
+    },
+    "cc-radians-and-arc-length": {
+        "uses_assessment_items": true
+    },
+    "cd40-receptor-expression-in-hyper-igm-syndrome": {
+        "uses_assessment_items": true
+    },
+    "cell-cell-interactions---passage-1": {
+        "uses_assessment_items": true
+    },
+    "cell-cell-interactions---passage-2": {
+        "uses_assessment_items": true
+    },
+    "cell-cell-interactions-questions": {
+        "uses_assessment_items": true
+    },
+    "cell-membrane-overview---passage-1": {
+        "uses_assessment_items": true
+    },
+    "cell-membrane-overview---passage-2": {
+        "uses_assessment_items": true
+    },
+    "cell-membrane-questions": {
+        "uses_assessment_items": true
+    },
+    "cell-theory-questions": {
+        "uses_assessment_items": true
+    },
+    "cellular-effects-of-metformin--a-drug-for-diabetes-mellitus": {
+        "uses_assessment_items": true
+    },
+    "central--inscribed--and-circumscribed-angles": {
+        "uses_assessment_items": true
+    },
+    "chain-rule-on-three-functions": {
+        "uses_assessment_items": true
+    },
+    "chain_rule_1": {
+        "uses_assessment_items": true
+    },
+    "challenging-beliefs-to-prevent-eating-disorders-": {
+        "uses_assessment_items": true
+    },
+    "changes-in-empathy-throughout-medical-school-and-residency": {
+        "uses_assessment_items": true
+    },
+    "characteristics-of-various-therapeutic-radioisotopes-": {
+        "uses_assessment_items": true
+    },
+    "chromosomal-inheritance-questions": {
+        "uses_assessment_items": true
+    },
+    "chronic-bronchitis-quiz-1": {
+        "uses_assessment_items": true
+    },
+    "chronic-bronchitis-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "chronic-myelogenous-leukemia-and-the-philadelphia-chromosome-": {
+        "uses_assessment_items": true
+    },
+    "circles-and-pythagorean-identities": {
+        "uses_assessment_items": true
+    },
+    "circles_and_arcs": {
+        "uses_assessment_items": false
+    },
+    "circulatory-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "circulatory-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "circulatory-system-questions": {
+        "uses_assessment_items": true
+    },
+    "classical-and-operant-conditioning": {
+        "uses_assessment_items": true
+    },
+    "classifying-shapes-by-line-and-angle-types": {
+        "uses_assessment_items": true
+    },
+    "clindamycin-resistance-in-staphylococcus-aureus": {
+        "uses_assessment_items": true
+    },
+    "clinical-vignette-of-an-adult-psychiatric-patient-": {
+        "uses_assessment_items": true
+    },
+    "clinical-vignette-of-persistent-depressive-disorder": {
+        "uses_assessment_items": true
+    },
+    "clue-1-test": {
+        "uses_assessment_items": true
+    },
+    "clusters--gaps--peaks--and-outliers": {
+        "uses_assessment_items": true
+    },
+    "cocaine-addiction-in-mice": {
+        "uses_assessment_items": true
+    },
+    "cognition---passage-1": {
+        "uses_assessment_items": true
+    },
+    "cognition---passage-2": {
+        "uses_assessment_items": true
+    },
+    "coin_flip_sequences": {
+        "uses_assessment_items": false
+    },
+    "cole-s-the-oxbow-quiz": {
+        "uses_assessment_items": true
+    },
+    "colosseum-quiz": {
+        "uses_assessment_items": true
+    },
+    "colossus-of-constantine-quiz": {
+        "uses_assessment_items": true
+    },
+    "column-of-trajan-quiz": {
+        "uses_assessment_items": true
+    },
+    "combinations_1": {
+        "uses_assessment_items": false
+    },
+    "combining-functions-with-arithmetic-operations": {
+        "uses_assessment_items": true
+    },
+    "combining-like-terms-0.5": {
+        "uses_assessment_items": true
+    },
+    "combining-like-terms-with-distribution": {
+        "uses_assessment_items": true
+    },
+    "combining-the-product-rule-and-chain-rule": {
+        "uses_assessment_items": true
+    },
+    "combining_like_terms_1": {
+        "uses_assessment_items": true
+    },
+    "combining_like_terms_2": {
+        "uses_assessment_items": true
+    },
+    "compare-groups-through-10": {
+        "uses_assessment_items": true
+    },
+    "compare-shapes": {
+        "uses_assessment_items": true
+    },
+    "comparing-absolute-values-2": {
+        "uses_assessment_items": true
+    },
+    "comparing-area-and-perimeter": {
+        "uses_assessment_items": true
+    },
+    "comparing-areas-by-multiplying": {
+        "uses_assessment_items": true
+    },
+    "comparing-decimal-place-value": {
+        "uses_assessment_items": true
+    },
+    "comparing-decimals-visually": {
+        "uses_assessment_items": true
+    },
+    "comparing-features-of-functions-0-5": {
+        "uses_assessment_items": true
+    },
+    "comparing-features-of-functions-1": {
+        "uses_assessment_items": true
+    },
+    "comparing-features-of-functions-2": {
+        "uses_assessment_items": true
+    },
+    "comparing-fractions-with-the-same-numerator-or-denominator": {
+        "uses_assessment_items": true
+    },
+    "comparing-growth-rates-of-exponentials-and-polynomials": {
+        "uses_assessment_items": true
+    },
+    "comparing-lengths": {
+        "uses_assessment_items": true
+    },
+    "comparing-numbers-through-10": {
+        "uses_assessment_items": true
+    },
+    "comparing-numbers-within-1000": {
+        "uses_assessment_items": true
+    },
+    "comparing-populations": {
+        "uses_assessment_items": true
+    },
+    "comparing-proportional-relationships": {
+        "uses_assessment_items": true
+    },
+    "comparing-rates": {
+        "uses_assessment_items": true
+    },
+    "comparing-rational-numbers": {
+        "uses_assessment_items": true
+    },
+    "comparing-the-stress-exerted-on-the-body-by-different-running-shoes": {
+        "uses_assessment_items": true
+    },
+    "comparing-two-digit-numbers-1": {
+        "uses_assessment_items": true
+    },
+    "comparing-with-multiplication": {
+        "uses_assessment_items": true
+    },
+    "comparing_absolute_values": {
+        "uses_assessment_items": false
+    },
+    "comparing_decimals_1": {
+        "uses_assessment_items": false
+    },
+    "comparing_decimals_2": {
+        "uses_assessment_items": false
+    },
+    "comparing_fractions_1": {
+        "uses_assessment_items": false
+    },
+    "comparing_fractions_2": {
+        "uses_assessment_items": false
+    },
+    "comparing_fractions_with_the_same_denominator": {
+        "uses_assessment_items": false
+    },
+    "comparing_fractions_with_the_same_numerator": {
+        "uses_assessment_items": false
+    },
+    "comparing_improper_fractions_and_mixed_numbers": {
+        "uses_assessment_items": true
+    },
+    "comparing_whole_numbers": {
+        "uses_assessment_items": false
+    },
+    "compass-challenge": {
+        "uses_assessment_items": true
+    },
+    "complementary_and_supplementary_angles": {
+        "uses_assessment_items": false
+    },
+    "completing_the_square_1": {
+        "uses_assessment_items": false
+    },
+    "completing_the_square_2": {
+        "uses_assessment_items": false
+    },
+    "completing_the_square_in_quadratic_expressions": {
+        "uses_assessment_items": false
+    },
+    "complex-fractions": {
+        "uses_assessment_items": true
+    },
+    "complex_number_polar_form_intuition": {
+        "uses_assessment_items": false
+    },
+    "complex_plane_operations": {
+        "uses_assessment_items": false
+    },
+    "components_of_vectors": {
+        "uses_assessment_items": true
+    },
+    "compose-shapes": {
+        "uses_assessment_items": true
+    },
+    "composing-and-decomposing-shapes": {
+        "uses_assessment_items": true
+    },
+    "composite_numbers": {
+        "uses_assessment_items": false
+    },
+    "compound-events": {
+        "uses_assessment_items": true
+    },
+    "compound_inequalities": {
+        "uses_assessment_items": false
+    },
+    "computing-in-scientific-notation": {
+        "uses_assessment_items": true
+    },
+    "concavity-and-the-second-derivative": {
+        "uses_assessment_items": true
+    },
+    "congruence-relation": {
+        "uses_assessment_items": true
+    },
+    "congruency_postulates": {
+        "uses_assessment_items": false
+    },
+    "congruent_angles": {
+        "uses_assessment_items": false
+    },
+    "congruent_segments": {
+        "uses_assessment_items": false
+    },
+    "congruent_triangles_1": {
+        "uses_assessment_items": false
+    },
+    "congruent_triangles_2": {
+        "uses_assessment_items": true
+    },
+    "constable--view-on-the-stour-near-dedham": {
+        "uses_assessment_items": true
+    },
+    "constructing-and-comparing-proportional-relationships": {
+        "uses_assessment_items": true
+    },
+    "constructing-and-interpreting-absolute-value": {
+        "uses_assessment_items": true
+    },
+    "constructing-and-interpreting-linear-functions": {
+        "uses_assessment_items": true
+    },
+    "constructing-consistent-and-inconsistent-system": {
+        "uses_assessment_items": true
+    },
+    "constructing-geometric-figures": {
+        "uses_assessment_items": true
+    },
+    "constructing-linear-and-exponential-functions": {
+        "uses_assessment_items": true
+    },
+    "constructing-linear-functions-word-problems": {
+        "uses_assessment_items": true
+    },
+    "constructing-probability-distributions": {
+        "uses_assessment_items": true
+    },
+    "constructing-proportions-to-solve-application-problems": {
+        "uses_assessment_items": true
+    },
+    "constructing-scale-drawings": {
+        "uses_assessment_items": true
+    },
+    "constructing-scatter-plots": {
+        "uses_assessment_items": true
+    },
+    "constructing-triangles": {
+        "uses_assessment_items": true
+    },
+    "constructions_1": {
+        "uses_assessment_items": false
+    },
+    "constructions_2": {
+        "uses_assessment_items": false
+    },
+    "constructions_3": {
+        "uses_assessment_items": false
+    },
+    "continuity": {
+        "uses_assessment_items": true
+    },
+    "control-of-gene-expression-in-eukaryotes--stat3-and-hyper-ige-syndrome": {
+        "uses_assessment_items": true
+    },
+    "control-of-gene-expression-in-prokaryotes--the-lac-operon-model-": {
+        "uses_assessment_items": true
+    },
+    "convergence-and-divergence-of-sequences": {
+        "uses_assessment_items": true
+    },
+    "convergence-and-divergence-of-series": {
+        "uses_assessment_items": true
+    },
+    "converting-between-fractions-and-percents": {
+        "uses_assessment_items": true
+    },
+    "converting-measurements-word-problems": {
+        "uses_assessment_items": true
+    },
+    "converting-units": {
+        "uses_assessment_items": true
+    },
+    "converting-units--us-customary-": {
+        "uses_assessment_items": true
+    },
+    "converting-units-word-problems--us-customary-": {
+        "uses_assessment_items": true
+    },
+    "converting_between_point_slope_and_slope_intercept": {
+        "uses_assessment_items": true
+    },
+    "converting_between_slope_intercept_and_standard_form": {
+        "uses_assessment_items": true
+    },
+    "converting_decimals_to_fractions_1": {
+        "uses_assessment_items": false
+    },
+    "converting_decimals_to_fractions_2": {
+        "uses_assessment_items": false
+    },
+    "converting_decimals_to_percents": {
+        "uses_assessment_items": false
+    },
+    "converting_fractions_to_decimals": {
+        "uses_assessment_items": false
+    },
+    "converting_fractions_to_decimals_0.5": {
+        "uses_assessment_items": false
+    },
+    "converting_mixed_numbers_and_improper_fractions": {
+        "uses_assessment_items": false
+    },
+    "converting_percents_to_decimals": {
+        "uses_assessment_items": false
+    },
+    "converting_repeating_decimals_to_fractions_1": {
+        "uses_assessment_items": false
+    },
+    "converting_repeating_decimals_to_fractions_2": {
+        "uses_assessment_items": false
+    },
+    "coordinate-plane-word-problems": {
+        "uses_assessment_items": true
+    },
+    "coordinate-plane-word-problems-in-the-first-quadrant": {
+        "uses_assessment_items": true
+    },
+    "coordinate-plane-word-problems-with-polygons": {
+        "uses_assessment_items": true
+    },
+    "coping-with-cancer--novel-methods-of-stress-management": {
+        "uses_assessment_items": true
+    },
+    "count-from-any-number": {
+        "uses_assessment_items": true
+    },
+    "count-to-100": {
+        "uses_assessment_items": true
+    },
+    "counting-in-scenes": {
+        "uses_assessment_items": true
+    },
+    "counting-money--us-": {
+        "uses_assessment_items": true
+    },
+    "counting-objects": {
+        "uses_assessment_items": true
+    },
+    "counting-out-1-20-objects": {
+        "uses_assessment_items": true
+    },
+    "counting_1": {
+        "uses_assessment_items": false
+    },
+    "couture--romans-of-the-decadence": {
+        "uses_assessment_items": true
+    },
+    "cranach-s-adam-and-eve-quiz": {
+        "uses_assessment_items": true
+    },
+    "cranach-s-law-and-gospel-quiz": {
+        "uses_assessment_items": true
+    },
+    "creating-dot-plots": {
+        "uses_assessment_items": true
+    },
+    "creating-expressions-with-parenthesis": {
+        "uses_assessment_items": true
+    },
+    "creating-frequency-tables": {
+        "uses_assessment_items": true
+    },
+    "creating-fuel-from-algae": {
+        "uses_assessment_items": true
+    },
+    "creating-histograms": {
+        "uses_assessment_items": true
+    },
+    "creating-line-plots-1": {
+        "uses_assessment_items": true
+    },
+    "creating-line-plots-2": {
+        "uses_assessment_items": true
+    },
+    "creating-picture-and-bar-graphs-2": {
+        "uses_assessment_items": true
+    },
+    "creating-power-series-from-geometric-series-using-algebra": {
+        "uses_assessment_items": true
+    },
+    "creating-power-series-from-geometric-series-using-differentiation-and-integration": {
+        "uses_assessment_items": true
+    },
+    "creating_bar_charts_1": {
+        "uses_assessment_items": false
+    },
+    "creating_box_and_whisker_plots": {
+        "uses_assessment_items": false
+    },
+    "critical-numbers": {
+        "uses_assessment_items": true
+    },
+    "cross-sections-of-3d-shapes": {
+        "uses_assessment_items": true
+    },
+    "crypto-checkpoint-2": {
+        "uses_assessment_items": true
+    },
+    "crypto-checkpoint-3": {
+        "uses_assessment_items": true
+    },
+    "cs-passage-1": {
+        "uses_assessment_items": true
+    },
+    "cs-passage-2": {
+        "uses_assessment_items": true
+    },
+    "cs-passage-3": {
+        "uses_assessment_items": true
+    },
+    "cs-passage-4": {
+        "uses_assessment_items": true
+    },
+    "cube_roots": {
+        "uses_assessment_items": false
+    },
+    "cube_roots_2": {
+        "uses_assessment_items": false
+    },
+    "cubism-and-its-impact": {
+        "uses_assessment_items": true
+    },
+    "cushing-s-syndrome-and-the-hypothalamic-pituitary-axis": {
+        "uses_assessment_items": true
+    },
+    "cutting-shapes-into-equal-parts": {
+        "uses_assessment_items": true
+    },
+    "d-rer-s-self-portrait-quiz": {
+        "uses_assessment_items": true
+    },
+    "dada--quiz": {
+        "uses_assessment_items": true
+    },
+    "daguerreotypes-salted-paper-prints-quiz": {
+        "uses_assessment_items": true
+    },
+    "david-s-oath-of-the-horatii-quiz": {
+        "uses_assessment_items": true
+    },
+    "de-vries-bronze-casting-quiz": {
+        "uses_assessment_items": true
+    },
+    "decimal-intuition-with-grids": {
+        "uses_assessment_items": true
+    },
+    "decimals-greater-than-one-intuition": {
+        "uses_assessment_items": true
+    },
+    "decimals-in-words": {
+        "uses_assessment_items": true
+    },
+    "decimals_on_the_number_line_1": {
+        "uses_assessment_items": false
+    },
+    "decimals_on_the_number_line_2": {
+        "uses_assessment_items": false
+    },
+    "decimals_on_the_number_line_3": {
+        "uses_assessment_items": false
+    },
+    "decompose-figures-to-find-volume": {
+        "uses_assessment_items": true
+    },
+    "decompose-fractions-with-denominators-of-100": {
+        "uses_assessment_items": true
+    },
+    "decompose-shapes-to-find-area": {
+        "uses_assessment_items": true
+    },
+    "decomposing-angles": {
+        "uses_assessment_items": true
+    },
+    "decomposing-fractions": {
+        "uses_assessment_items": true
+    },
+    "defined_and_undefined_matrix_operations": {
+        "uses_assessment_items": false
+    },
+    "defining-appropriate-units": {
+        "uses_assessment_items": true
+    },
+    "defining-congruence-through-rigid-transformations": {
+        "uses_assessment_items": true
+    },
+    "defining-reflections": {
+        "uses_assessment_items": true
+    },
+    "defining-rotations": {
+        "uses_assessment_items": true
+    },
+    "defining-similarity-through-angle-preserving-transformations": {
+        "uses_assessment_items": true
+    },
+    "defining-translations": {
+        "uses_assessment_items": true
+    },
+    "degrees_to_radians": {
+        "uses_assessment_items": false
+    },
+    "delacroix-s-liberty-leading-the-people-quiz": {
+        "uses_assessment_items": true
+    },
+    "demographic-characteristics-and-processes": {
+        "uses_assessment_items": true
+    },
+    "demographic-disparities-in-food-resources": {
+        "uses_assessment_items": true
+    },
+    "demographics---passage-1": {
+        "uses_assessment_items": true
+    },
+    "demographics---passage-2": {
+        "uses_assessment_items": true
+    },
+    "dependent-and-independent-variables": {
+        "uses_assessment_items": true
+    },
+    "dependent_probability": {
+        "uses_assessment_items": false
+    },
+    "derivative_intuition": {
+        "uses_assessment_items": false
+    },
+    "derivatives-of-inverse-functions": {
+        "uses_assessment_items": true
+    },
+    "describing-subsets-of-sample-spaces": {
+        "uses_assessment_items": true
+    },
+    "devotional-and-secular-manuscripts-quiz": {
+        "uses_assessment_items": true
+    },
+    "dice_probability": {
+        "uses_assessment_items": false
+    },
+    "different-wholes": {
+        "uses_assessment_items": true
+    },
+    "dilations": {
+        "uses_assessment_items": true
+    },
+    "dipylon-amphora-quiz": {
+        "uses_assessment_items": true
+    },
+    "direct-and-limit-comparison-tests": {
+        "uses_assessment_items": true
+    },
+    "direct_and_inverse_variation": {
+        "uses_assessment_items": false
+    },
+    "discount_tax_and_tip_word_problems": {
+        "uses_assessment_items": false
+    },
+    "discrimination-questions": {
+        "uses_assessment_items": true
+    },
+    "disorders-of-the-skeletal-system-and-bone-remodeling-": {
+        "uses_assessment_items": true
+    },
+    "disparities-in-healthcare-access": {
+        "uses_assessment_items": true
+    },
+    "distance-and-midpoint-on-the-complex-plane": {
+        "uses_assessment_items": true
+    },
+    "distance_between_point_and_line": {
+        "uses_assessment_items": false
+    },
+    "distance_formula": {
+        "uses_assessment_items": false
+    },
+    "distribution-warmup": {
+        "uses_assessment_items": true
+    },
+    "distributive-property-with-variables": {
+        "uses_assessment_items": true
+    },
+    "distributive_property": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-10": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-2": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-3": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-4": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-5": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-6": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-7": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-8": {
+        "uses_assessment_items": true
+    },
+    "dividing-by-9": {
+        "uses_assessment_items": true
+    },
+    "dividing-fractions-by-fractions-word-problems": {
+        "uses_assessment_items": true
+    },
+    "dividing-fractions-by-whole-numbers-introduction": {
+        "uses_assessment_items": true
+    },
+    "dividing-integers": {
+        "uses_assessment_items": true
+    },
+    "dividing-line-segments": {
+        "uses_assessment_items": true
+    },
+    "dividing-mixed-numbers": {
+        "uses_assessment_items": true
+    },
+    "dividing-polynomials-with-remainders": {
+        "uses_assessment_items": true
+    },
+    "dividing-whole-numbers-by-unit-fractions-introduction": {
+        "uses_assessment_items": true
+    },
+    "dividing_complex_numbers": {
+        "uses_assessment_items": false
+    },
+    "dividing_decimals": {
+        "uses_assessment_items": false
+    },
+    "dividing_decimals_0.5": {
+        "uses_assessment_items": false
+    },
+    "dividing_decimals_1": {
+        "uses_assessment_items": false
+    },
+    "dividing_decimals_2": {
+        "uses_assessment_items": false
+    },
+    "dividing_decimals_3": {
+        "uses_assessment_items": false
+    },
+    "dividing_fractions": {
+        "uses_assessment_items": false
+    },
+    "dividing_fractions_0.5": {
+        "uses_assessment_items": false
+    },
+    "dividing_fractions_1.5": {
+        "uses_assessment_items": false
+    },
+    "dividing_fractions_2": {
+        "uses_assessment_items": false
+    },
+    "dividing_fractions_word problems_2": {
+        "uses_assessment_items": false
+    },
+    "dividing_polynomials_by_binomials_1": {
+        "uses_assessment_items": false
+    },
+    "dividing_polynomials_by_binomials_2": {
+        "uses_assessment_items": false
+    },
+    "dividing_polynomials_by_binomials_3": {
+        "uses_assessment_items": false
+    },
+    "divisibility": {
+        "uses_assessment_items": false
+    },
+    "divisibility_intuition": {
+        "uses_assessment_items": false
+    },
+    "divisibility_tests": {
+        "uses_assessment_items": false
+    },
+    "division-and-composition": {
+        "uses_assessment_items": true
+    },
+    "division-using-place-value-understanding": {
+        "uses_assessment_items": true
+    },
+    "division-with-fractions-and-whole-numbers": {
+        "uses_assessment_items": true
+    },
+    "division_0.5": {
+        "uses_assessment_items": false
+    },
+    "division_1": {
+        "uses_assessment_items": false
+    },
+    "division_1.5": {
+        "uses_assessment_items": false
+    },
+    "division_2": {
+        "uses_assessment_items": false
+    },
+    "division_3": {
+        "uses_assessment_items": false
+    },
+    "division_4": {
+        "uses_assessment_items": false
+    },
+    "dna---passage-1": {
+        "uses_assessment_items": true
+    },
+    "dna---passage-2": {
+        "uses_assessment_items": true
+    },
+    "dna-motion-in-gel-electrophoresis-": {
+        "uses_assessment_items": true
+    },
+    "dna-polymerase--kinetics-and-dna-replication": {
+        "uses_assessment_items": true
+    },
+    "dna-questions": {
+        "uses_assessment_items": true
+    },
+    "dna-technology--passage-1": {
+        "uses_assessment_items": true
+    },
+    "do-artificial-sweeteners-increase-diabetes-risk-": {
+        "uses_assessment_items": true
+    },
+    "do-beliefs-about-healthy-food-inform-consumer-choices--": {
+        "uses_assessment_items": true
+    },
+    "domain-and-range-piecewise": {
+        "uses_assessment_items": true
+    },
+    "domain-of-algebraic-functions": {
+        "uses_assessment_items": true
+    },
+    "domain_and_range_0.5": {
+        "uses_assessment_items": true
+    },
+    "domain_of_a_function": {
+        "uses_assessment_items": false
+    },
+    "dome-of-the-rock-quiz": {
+        "uses_assessment_items": true
+    },
+    "donatello-s-david-quiz": {
+        "uses_assessment_items": true
+    },
+    "donatello-s-st--mark-quiz": {
+        "uses_assessment_items": true
+    },
+    "doppler-effect-in-living-tissue": {
+        "uses_assessment_items": true
+    },
+    "doris-salcedo--shibbo": {
+        "uses_assessment_items": true
+    },
+    "doryphoros-quiz": {
+        "uses_assessment_items": true
+    },
+    "drawing-angles": {
+        "uses_assessment_items": true
+    },
+    "drawing-lines": {
+        "uses_assessment_items": true
+    },
+    "drawing-polygons": {
+        "uses_assessment_items": true
+    },
+    "drawing-polygons-2": {
+        "uses_assessment_items": true
+    },
+    "drawing-right--acute--and-obtuse-angles": {
+        "uses_assessment_items": true
+    },
+    "drawings-quiz": {
+        "uses_assessment_items": true
+    },
+    "dream-of-a-sunday-afternoon-in-alameda-central-park-quiz": {
+        "uses_assessment_items": true
+    },
+    "drug-addiction-treatments": {
+        "uses_assessment_items": true
+    },
+    "duccio-s-maesta-quiz": {
+        "uses_assessment_items": true
+    },
+    "duccio-s-rucellai-madonna-quiz": {
+        "uses_assessment_items": true
+    },
+    "duchamp-s-fountain": {
+        "uses_assessment_items": true
+    },
+    "early-20th-century": {
+        "uses_assessment_items": true
+    },
+    "early-christian": {
+        "uses_assessment_items": true
+    },
+    "early-medieval-art": {
+        "uses_assessment_items": true
+    },
+    "easter-western-fronts-ww1": {
+        "uses_assessment_items": true
+    },
+    "ebola-quiz": {
+        "uses_assessment_items": true
+    },
+    "educational-attainment--income--and-psychiatric-disorders": {
+        "uses_assessment_items": true
+    },
+    "efficacy-of-cognitive-behavioral-therapy-for-social-anxiety-disorder": {
+        "uses_assessment_items": true
+    },
+    "el-anatsui-quiz": {
+        "uses_assessment_items": true
+    },
+    "elasticity-and-kinetics-of-vulcanized-rubber": {
+        "uses_assessment_items": true
+    },
+    "electronic-structure-quiz": {
+        "uses_assessment_items": true
+    },
+    "electrostatics--passage-1": {
+        "uses_assessment_items": true
+    },
+    "electrostatics--passage-2": {
+        "uses_assessment_items": true
+    },
+    "ellipse_intuition": {
+        "uses_assessment_items": false
+    },
+    "emotion---passage-1": {
+        "uses_assessment_items": true
+    },
+    "emotion---passage-2": {
+        "uses_assessment_items": true
+    },
+    "emphysema-quiz": {
+        "uses_assessment_items": true
+    },
+    "emphysema-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "empirical_rule": {
+        "uses_assessment_items": false
+    },
+    "endocrine-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "endocrine-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "enzyme-kinetics---passage-1": {
+        "uses_assessment_items": true
+    },
+    "enzyme-kinetics---passage-2": {
+        "uses_assessment_items": true
+    },
+    "enzyme-kinetics-questions": {
+        "uses_assessment_items": true
+    },
+    "enzyme-structure-and-function---passage-1": {
+        "uses_assessment_items": true
+    },
+    "enzyme-structure-and-function---passage-2": {
+        "uses_assessment_items": true
+    },
+    "enzyme-structure-and-function-questions": {
+        "uses_assessment_items": true
+    },
+    "enzymes---passage-1": {
+        "uses_assessment_items": true
+    },
+    "enzymes---passage-2": {
+        "uses_assessment_items": true
+    },
+    "equal-parts-of-circles-and-rectangles": {
+        "uses_assessment_items": true
+    },
+    "equation_of_a_circle_1": {
+        "uses_assessment_items": true
+    },
+    "equation_of_a_circle_2": {
+        "uses_assessment_items": false
+    },
+    "equation_of_a_hyperbola": {
+        "uses_assessment_items": false
+    },
+    "equation_of_an_ellipse": {
+        "uses_assessment_items": false
+    },
+    "equations-in-one-variable-1": {
+        "uses_assessment_items": true
+    },
+    "equations-w-square-and-cube-roots": {
+        "uses_assessment_items": true
+    },
+    "equestrian-sculpture-of-marcus-aurelius-quiz": {
+        "uses_assessment_items": true
+    },
+    "equiv-expressions-w-neg-and-dist": {
+        "uses_assessment_items": true
+    },
+    "equivalent-forms-of-expressions-1": {
+        "uses_assessment_items": true
+    },
+    "equivalent-forms-of-expressions-with-complex-numbers": {
+        "uses_assessment_items": true
+    },
+    "equivalent-forms-of-expressions-with-variable-exponents": {
+        "uses_assessment_items": true
+    },
+    "equivalent-forms-of-polynomial-expressions": {
+        "uses_assessment_items": true
+    },
+    "equivalent-fraction-models": {
+        "uses_assessment_items": true
+    },
+    "equivalent-fraction-models-1": {
+        "uses_assessment_items": true
+    },
+    "equivalent-fractions-with-denominators-of-10-and-100": {
+        "uses_assessment_items": true
+    },
+    "equivalent-fractions-with-denominators-of-10-and-100-intuition": {
+        "uses_assessment_items": true
+    },
+    "equivalent_fractions": {
+        "uses_assessment_items": false
+    },
+    "equivalent_fractions_2": {
+        "uses_assessment_items": false
+    },
+    "estimating-lengths": {
+        "uses_assessment_items": true
+    },
+    "etruscan-art": {
+        "uses_assessment_items": true
+    },
+    "eukaryotic-cell-questions": {
+        "uses_assessment_items": true
+    },
+    "euler-s-method": {
+        "uses_assessment_items": true
+    },
+    "europe-identity-body-quiz": {
+        "uses_assessment_items": true
+    },
+    "evaluating-a-definite-integral-from-a-graph": {
+        "uses_assessment_items": true
+    },
+    "evaluating-definite-integrals": {
+        "uses_assessment_items": true
+    },
+    "evaluating-expressions-3": {
+        "uses_assessment_items": true
+    },
+    "evaluating-expressions-in-two-variables-2": {
+        "uses_assessment_items": true
+    },
+    "evaluating-numerical-expressions-with-exponents": {
+        "uses_assessment_items": true
+    },
+    "evaluating-piecewise-functions": {
+        "uses_assessment_items": true
+    },
+    "evaluating-sequences-in-recursive-form": {
+        "uses_assessment_items": true
+    },
+    "evaluating_expressions_1": {
+        "uses_assessment_items": true
+    },
+    "evaluating_expressions_2": {
+        "uses_assessment_items": true
+    },
+    "even_and_odd_functions": {
+        "uses_assessment_items": false
+    },
+    "evolution-and-population-dynamics----passage-2": {
+        "uses_assessment_items": true
+    },
+    "evolution-and-population-dynamics---passage-1": {
+        "uses_assessment_items": true
+    },
+    "evolution-and-population-dynamics-questions": {
+        "uses_assessment_items": true
+    },
+    "exekias--amphora-with-ajax-and-achilles-playing-a-game-quiz": {
+        "uses_assessment_items": true
+    },
+    "exercise--intro-to-variables": {
+        "uses_assessment_items": true
+    },
+    "expectation-warmups": {
+        "uses_assessment_items": true
+    },
+    "expected-value-with-calculated-probabilities": {
+        "uses_assessment_items": true
+    },
+    "expected-value-with-empirical-probabilities": {
+        "uses_assessment_items": true
+    },
+    "expected_value": {
+        "uses_assessment_items": true
+    },
+    "explicit-formulas-for-arithmetic-sequences": {
+        "uses_assessment_items": true
+    },
+    "exploring-angle-preserving-transformations-and-similarity": {
+        "uses_assessment_items": true
+    },
+    "exploring-clinical-applications-of-classical-conditioning": {
+        "uses_assessment_items": true
+    },
+    "exploring-photographs-quiz": {
+        "uses_assessment_items": true
+    },
+    "exploring-rigid-transformations-and-congruence": {
+        "uses_assessment_items": true
+    },
+    "exploring_mean_and_median": {
+        "uses_assessment_items": false
+    },
+    "exploring_standard_deviation_1": {
+        "uses_assessment_items": false
+    },
+    "exponent_rules": {
+        "uses_assessment_items": false
+    },
+    "exponents-with-negative-fractional-bases": {
+        "uses_assessment_items": true
+    },
+    "exponents_1": {
+        "uses_assessment_items": false
+    },
+    "exponents_1.5": {
+        "uses_assessment_items": true
+    },
+    "exponents_2": {
+        "uses_assessment_items": false
+    },
+    "exponents_3": {
+        "uses_assessment_items": false
+    },
+    "exponents_4": {
+        "uses_assessment_items": false
+    },
+    "expression-value-intuition": {
+        "uses_assessment_items": true
+    },
+    "expressions-with-parentheses": {
+        "uses_assessment_items": true
+    },
+    "expressions_with_unknown_variables": {
+        "uses_assessment_items": false
+    },
+    "expressions_with_unknown_variables_2": {
+        "uses_assessment_items": false
+    },
+    "extraneous-solutions-to-radical-equations": {
+        "uses_assessment_items": true
+    },
+    "extraneous_solutions": {
+        "uses_assessment_items": false
+    },
+    "extreme-value-theorem": {
+        "uses_assessment_items": true
+    },
+    "extreme-values-from-graphs": {
+        "uses_assessment_items": true
+    },
+    "factor-pairs": {
+        "uses_assessment_items": true
+    },
+    "factoring_difference_of_squares_1": {
+        "uses_assessment_items": false
+    },
+    "factoring_difference_of_squares_2": {
+        "uses_assessment_items": false
+    },
+    "factoring_difference_of_squares_3": {
+        "uses_assessment_items": false
+    },
+    "factoring_linear_binomials": {
+        "uses_assessment_items": true
+    },
+    "factoring_polynomials_1": {
+        "uses_assessment_items": false
+    },
+    "factoring_polynomials_2": {
+        "uses_assessment_items": false
+    },
+    "factoring_polynomials_by_grouping_1": {
+        "uses_assessment_items": false
+    },
+    "factoring_polynomials_with_two_variables": {
+        "uses_assessment_items": false
+    },
+    "fascism-and-mussolini-exercise": {
+        "uses_assessment_items": true
+    },
+    "fat-and-protein-metabolism---passage-1": {
+        "uses_assessment_items": true
+    },
+    "fat-and-protein-metabolism---passage-2": {
+        "uses_assessment_items": true
+    },
+    "fat-and-protein-metabolism-questions": {
+        "uses_assessment_items": true
+    },
+    "fertility-rates-and-demographic-change": {
+        "uses_assessment_items": true
+    },
+    "fibulae-quiz": {
+        "uses_assessment_items": true
+    },
+    "filling-rectangles-with-same-sized-squares": {
+        "uses_assessment_items": true
+    },
+    "find-a-missing-value-given-the-mean": {
+        "uses_assessment_items": true
+    },
+    "find-the-mistake-in-solving-one-step-equations": {
+        "uses_assessment_items": true
+    },
+    "find-the-mistake-two-step-equations": {
+        "uses_assessment_items": true
+    },
+    "finding-1-on-the-number-line": {
+        "uses_assessment_items": true
+    },
+    "finding-area-by-multiplying": {
+        "uses_assessment_items": true
+    },
+    "finding-limits-numerically": {
+        "uses_assessment_items": true
+    },
+    "finding-probability": {
+        "uses_assessment_items": true
+    },
+    "finding-taylor-series": {
+        "uses_assessment_items": true
+    },
+    "finding_percents": {
+        "uses_assessment_items": false
+    },
+    "fitting-functions-to-scatter-plots": {
+        "uses_assessment_items": true
+    },
+    "florence-in-the-1300s": {
+        "uses_assessment_items": true
+    },
+    "fluids-at-rest---passage-1": {
+        "uses_assessment_items": true
+    },
+    "fluids-at-rest---passage-2": {
+        "uses_assessment_items": true
+    },
+    "fluids-in-morion---passage-2": {
+        "uses_assessment_items": true
+    },
+    "fluids-in-motion---passage-1": {
+        "uses_assessment_items": true
+    },
+    "fluids-in-motion--passage-1": {
+        "uses_assessment_items": true
+    },
+    "fluids-in-motion--passage-2": {
+        "uses_assessment_items": true
+    },
+    "follicular-lymphoma--bcl-2--and-cell-growth": {
+        "uses_assessment_items": true
+    },
+    "force-of-tension---passage-1": {
+        "uses_assessment_items": true
+    },
+    "force-of-tension-questions": {
+        "uses_assessment_items": true
+    },
+    "forces-on-inclined-planes": {
+        "uses_assessment_items": true
+    },
+    "forces-on-inclined-planes---passage-2": {
+        "uses_assessment_items": true
+    },
+    "formal-and-informal-fallacies": {
+        "uses_assessment_items": true
+    },
+    "fra-angelico-s-annunciation-quiz": {
+        "uses_assessment_items": true
+    },
+    "fraction-decimal-intuition": {
+        "uses_assessment_items": true
+    },
+    "fraction-multiplication-as-scaling": {
+        "uses_assessment_items": true
+    },
+    "fraction_word_problems_1": {
+        "uses_assessment_items": false
+    },
+    "fractions-greater-than-one": {
+        "uses_assessment_items": true
+    },
+    "fractions_as_division_by_a_multiple_of_10": {
+        "uses_assessment_items": false
+    },
+    "fractions_cut_and_copy_1": {
+        "uses_assessment_items": false
+    },
+    "fractions_cut_and_copy_2": {
+        "uses_assessment_items": false
+    },
+    "fractions_on_the_number_line_1": {
+        "uses_assessment_items": true
+    },
+    "fractions_on_the_number_line_2": {
+        "uses_assessment_items": true
+    },
+    "fractions_on_the_number_line_3": {
+        "uses_assessment_items": true
+    },
+    "fragonard-s-the-swing-quiz": {
+        "uses_assessment_items": true
+    },
+    "framing--ratification-and-amendment-quiz--": {
+        "uses_assessment_items": true
+    },
+    "frankenthaler-s-the-bay-quiz": {
+        "uses_assessment_items": true
+    },
+    "frequencies-of-bivariate-data": {
+        "uses_assessment_items": true
+    },
+    "friedrich--abbey-among-the-oak-trees-quiz": {
+        "uses_assessment_items": true
+    },
+    "friedrich--monk-by-the-sea": {
+        "uses_assessment_items": true
+    },
+    "function-notation-in-context": {
+        "uses_assessment_items": true
+    },
+    "functions-defined-by-integrals": {
+        "uses_assessment_items": true
+    },
+    "functions-from-equations": {
+        "uses_assessment_items": true
+    },
+    "functions_1": {
+        "uses_assessment_items": true
+    },
+    "functions_2": {
+        "uses_assessment_items": false
+    },
+    "functions_3": {
+        "uses_assessment_items": true
+    },
+    "functions_matching_inputs_outputs": {
+        "uses_assessment_items": true
+    },
+    "fundamental-counting-principle": {
+        "uses_assessment_items": true
+    },
+    "fuselli--the-nighmare-quiz": {
+        "uses_assessment_items": true
+    },
+    "gas-in-a-canister-with-a-piston": {
+        "uses_assessment_items": true
+    },
+    "gas-phase---passage-1": {
+        "uses_assessment_items": true
+    },
+    "gas-phase---passage-2": {
+        "uses_assessment_items": true
+    },
+    "gas-phase-questions": {
+        "uses_assessment_items": true
+    },
+    "gas-phase-quiz": {
+        "uses_assessment_items": true
+    },
+    "gastrointestinal-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "gastrointestinal-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "gastrointestinal-system-questions": {
+        "uses_assessment_items": true
+    },
+    "gcf-and-lcm-word-problems": {
+        "uses_assessment_items": true
+    },
+    "gems-of-antiquity-quiz": {
+        "uses_assessment_items": true
+    },
+    "gender-differences-in-symptoms-of-major-depressive-disorder-": {
+        "uses_assessment_items": true
+    },
+    "gene-control---passage-1": {
+        "uses_assessment_items": true
+    },
+    "gene-control---passage-2": {
+        "uses_assessment_items": true
+    },
+    "gene-expression-questions": {
+        "uses_assessment_items": true
+    },
+    "genetic-mutations---passage-1": {
+        "uses_assessment_items": true
+    },
+    "genetic-mutations---passage-2": {
+        "uses_assessment_items": true
+    },
+    "genetic-recombination-and-conditional-knockouts": {
+        "uses_assessment_items": true
+    },
+    "geometric-definitions": {
+        "uses_assessment_items": true
+    },
+    "geometric-series": {
+        "uses_assessment_items": true
+    },
+    "geometric-series--1": {
+        "uses_assessment_items": true
+    },
+    "geometric-series-of-constants": {
+        "uses_assessment_items": true
+    },
+    "geometric_sequences_1": {
+        "uses_assessment_items": false
+    },
+    "geometric_sequences_2": {
+        "uses_assessment_items": false
+    },
+    "geometry-problems-on-the-coordinate-plane": {
+        "uses_assessment_items": true
+    },
+    "gericault--raft-of-the-medusa-quiz": {
+        "uses_assessment_items": true
+    },
+    "german-art-between-the-wars": {
+        "uses_assessment_items": true
+    },
+    "german-romanticism": {
+        "uses_assessment_items": true
+    },
+    "ghent-altarpiece-quiz": {
+        "uses_assessment_items": true
+    },
+    "giotto-s-ognissanti-madonna-quiz": {
+        "uses_assessment_items": true
+    },
+    "glass-making-quiz": {
+        "uses_assessment_items": true
+    },
+    "gold-ground-paintings-quiz": {
+        "uses_assessment_items": true
+    },
+    "gothic-art": {
+        "uses_assessment_items": true
+    },
+    "goya--the-sleep-of-reason-produces-monsters-quiz": {
+        "uses_assessment_items": true
+    },
+    "goya--the-third-of-may-quiz": {
+        "uses_assessment_items": true
+    },
+    "graph-from-slope-intercept-equation": {
+        "uses_assessment_items": true
+    },
+    "graph-from-standard-form-equation": {
+        "uses_assessment_items": true
+    },
+    "graphical-solutions-to-systems": {
+        "uses_assessment_items": true
+    },
+    "graphically-adding-and-subtracting-vectors": {
+        "uses_assessment_items": true
+    },
+    "graphing-linear-functions-word-problems": {
+        "uses_assessment_items": true
+    },
+    "graphing-piecewise-functions": {
+        "uses_assessment_items": true
+    },
+    "graphing-proportional-relationships": {
+        "uses_assessment_items": true
+    },
+    "graphing-solutions-to-two-variable-linear-equations": {
+        "uses_assessment_items": true
+    },
+    "graphing_circles": {
+        "uses_assessment_items": false
+    },
+    "graphing_circles_2": {
+        "uses_assessment_items": false
+    },
+    "graphing_inequalities": {
+        "uses_assessment_items": false
+    },
+    "graphing_inequalities_2": {
+        "uses_assessment_items": false
+    },
+    "graphing_parabolas_0.5": {
+        "uses_assessment_items": false
+    },
+    "graphing_parabolas_1": {
+        "uses_assessment_items": false
+    },
+    "graphing_parabolas_2": {
+        "uses_assessment_items": false
+    },
+    "graphing_points": {
+        "uses_assessment_items": false
+    },
+    "graphing_points_2": {
+        "uses_assessment_items": true
+    },
+    "graphing_systems_of_equations": {
+        "uses_assessment_items": true
+    },
+    "graphing_systems_of_inequalities": {
+        "uses_assessment_items": false
+    },
+    "graphing_systems_of_inequalities_2": {
+        "uses_assessment_items": false
+    },
+    "graphs-of-absolute-value-functions": {
+        "uses_assessment_items": true
+    },
+    "graphs-of-antiderivatives": {
+        "uses_assessment_items": true
+    },
+    "graphs-of-exponentials-and-logarithms": {
+        "uses_assessment_items": true
+    },
+    "graphs-of-functions-and-their-derivatives": {
+        "uses_assessment_items": true
+    },
+    "graphs-of-polynomials": {
+        "uses_assessment_items": true
+    },
+    "graphs-of-radical-functions": {
+        "uses_assessment_items": true
+    },
+    "graphs-of-rational-functions": {
+        "uses_assessment_items": true
+    },
+    "graphs-of-trigonometric-functions": {
+        "uses_assessment_items": true
+    },
+    "graphs_of_inequalities": {
+        "uses_assessment_items": false
+    },
+    "graphs_of_sine_and_cosine": {
+        "uses_assessment_items": false
+    },
+    "grave-stele-of-hegeso": {
+        "uses_assessment_items": true
+    },
+    "great-mosque-of-cordoba-quiz": {
+        "uses_assessment_items": true
+    },
+    "greatest_common_divisor": {
+        "uses_assessment_items": true
+    },
+    "groups-of-tens": {
+        "uses_assessment_items": true
+    },
+    "hagia-sophia-quiz": {
+        "uses_assessment_items": true
+    },
+    "halves-and-fourths": {
+        "uses_assessment_items": true
+    },
+    "health-after-trauma--correlates-of-ptsd": {
+        "uses_assessment_items": true
+    },
+    "healthcare-exercise": {
+        "uses_assessment_items": true
+    },
+    "heart-quiz": {
+        "uses_assessment_items": true
+    },
+    "helicobacter-pylori-and-the-gastrointestinal-system": {
+        "uses_assessment_items": true
+    },
+    "hellenistic--dying-gaul-quiz": {
+        "uses_assessment_items": true
+    },
+    "hematologic-system--passage-2": {
+        "uses_assessment_items": true
+    },
+    "hematologic-system-questions": {
+        "uses_assessment_items": true
+    },
+    "hematologic-system-quiz": {
+        "uses_assessment_items": true
+    },
+    "hildesheim-doors-quiz": {
+        "uses_assessment_items": true
+    },
+    "holoprosencephaly--a-medical-condition-with-devastating-consequences": {
+        "uses_assessment_items": true
+    },
+    "house-altar-with-akhenaten--nefertiti--and-three-daughters-quiz": {
+        "uses_assessment_items": true
+    },
+    "houses-of-parliament-quiz": {
+        "uses_assessment_items": true
+    },
+    "how-do-geckoes-stick-to-surfaces-": {
+        "uses_assessment_items": true
+    },
+    "how-do-organisms-maintain-a-constant-ph-range-": {
+        "uses_assessment_items": true
+    },
+    "how-many-objects-1": {
+        "uses_assessment_items": true
+    },
+    "how-many-objects-2": {
+        "uses_assessment_items": true
+    },
+    "hundreds--tens--and-ones": {
+        "uses_assessment_items": true
+    },
+    "hunt--our-english-coast-quiz": {
+        "uses_assessment_items": true
+    },
+    "hypothesis-testing-in-experiments": {
+        "uses_assessment_items": true
+    },
+    "hypothesis-testing-with-simulations": {
+        "uses_assessment_items": true
+    },
+    "ideal_stoichiometry": {
+        "uses_assessment_items": false
+    },
+    "identifying-dependent-and-independent-events": {
+        "uses_assessment_items": true
+    },
+    "identifying-factors-and-multiples": {
+        "uses_assessment_items": true
+    },
+    "identifying-parts-of-expressions": {
+        "uses_assessment_items": true
+    },
+    "identifying-whole--integer--and-rational-numbers": {
+        "uses_assessment_items": true
+    },
+    "identifying_points_1": {
+        "uses_assessment_items": true
+    },
+    "imaginary_unit_powers": {
+        "uses_assessment_items": true
+    },
+    "imaging-tissue-structures-using-muon-tomography": {
+        "uses_assessment_items": true
+    },
+    "immune-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "immune-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "immune-system-questions": {
+        "uses_assessment_items": true
+    },
+    "implicit-differentiation": {
+        "uses_assessment_items": true
+    },
+    "implicit-premise-quiz": {
+        "uses_assessment_items": true
+    },
+    "impressionism": {
+        "uses_assessment_items": true
+    },
+    "improper-integrals": {
+        "uses_assessment_items": true
+    },
+    "increasing-decreasing-intervals-of-functions": {
+        "uses_assessment_items": false
+    },
+    "indefinite-integrals": {
+        "uses_assessment_items": true
+    },
+    "independent_probability": {
+        "uses_assessment_items": false
+    },
+    "induced-stem-cells-from-healthy-adults": {
+        "uses_assessment_items": true
+    },
+    "inequalities-in-one-variable-1": {
+        "uses_assessment_items": true
+    },
+    "inequalities_on_a_number_line": {
+        "uses_assessment_items": false
+    },
+    "information-processing-and-the-discovery-of-iconic-memory": {
+        "uses_assessment_items": true
+    },
+    "infrared-and-ultraviolet-visible-spectroscopy-questions": {
+        "uses_assessment_items": true
+    },
+    "ingres--la-grande-odalisque-quiz": {
+        "uses_assessment_items": true
+    },
+    "inheritance-patterns-in-flowering-plants": {
+        "uses_assessment_items": true
+    },
+    "inherited-disorders--duchenne-muscular-dystrophy": {
+        "uses_assessment_items": true
+    },
+    "inherited-disorders--marfan-syndrome": {
+        "uses_assessment_items": true
+    },
+    "innate-vs-adaptive-immunity": {
+        "uses_assessment_items": true
+    },
+    "inscribed_angles_1": {
+        "uses_assessment_items": false
+    },
+    "inscribing_and_circumscribing_circles_on_a_triangle": {
+        "uses_assessment_items": false
+    },
+    "instrumental-vs-intrinsic-value": {
+        "uses_assessment_items": true
+    },
+    "integer-addition-and-subtraction": {
+        "uses_assessment_items": true
+    },
+    "integer-addition-and-subtraction-2": {
+        "uses_assessment_items": true
+    },
+    "integer-addition-and-subtraction-with-substitution": {
+        "uses_assessment_items": true
+    },
+    "integer_sums": {
+        "uses_assessment_items": false
+    },
+    "integration-and-differentiation-of-power-series": {
+        "uses_assessment_items": true
+    },
+    "integration-by-parts": {
+        "uses_assessment_items": true
+    },
+    "integration-by-the-reverse-chain-rule": {
+        "uses_assessment_items": true
+    },
+    "integration-by-u-substitution": {
+        "uses_assessment_items": true
+    },
+    "integration-of-rational-functions-by-division-and-partial-fractions": {
+        "uses_assessment_items": true
+    },
+    "integration-using-trigonometric-identities": {
+        "uses_assessment_items": true
+    },
+    "integration-using-trigonometric-substitution": {
+        "uses_assessment_items": true
+    },
+    "integumentary-quiz-passage-1": {
+        "uses_assessment_items": true
+    },
+    "integumentary-quiz-passage-2": {
+        "uses_assessment_items": true
+    },
+    "integumentary-system-questions": {
+        "uses_assessment_items": true
+    },
+    "intercepts-from-table": {
+        "uses_assessment_items": true
+    },
+    "intermediate-circulatory-system-quiz": {
+        "uses_assessment_items": true
+    },
+    "intermediate-lung-quiz": {
+        "uses_assessment_items": true
+    },
+    "international-style-architecture": {
+        "uses_assessment_items": true
+    },
+    "interpret-features-func-2": {
+        "uses_assessment_items": true
+    },
+    "interpreting-and-comparing-data-distributions": {
+        "uses_assessment_items": true
+    },
+    "interpreting-domain": {
+        "uses_assessment_items": true
+    },
+    "interpreting-expressions": {
+        "uses_assessment_items": true
+    },
+    "interpreting-features-of-linear-functions": {
+        "uses_assessment_items": true
+    },
+    "interpreting-graphs-of-linear-and-nonlinear-functions": {
+        "uses_assessment_items": true
+    },
+    "interpreting-line-plots-with-fraction-addition-and-subtraction": {
+        "uses_assessment_items": true
+    },
+    "interpreting-line-plots-with-fraction-multiplication-and-division": {
+        "uses_assessment_items": true
+    },
+    "interpreting-linear-graphs": {
+        "uses_assessment_items": true
+    },
+    "interpreting-quartiles-on-box-plots": {
+        "uses_assessment_items": true
+    },
+    "interpreting-scale-drawings": {
+        "uses_assessment_items": true
+    },
+    "interpreting-scatter-plots": {
+        "uses_assessment_items": true
+    },
+    "interpreting-tables": {
+        "uses_assessment_items": true
+    },
+    "interpreting-the-balance-sheet": {
+        "uses_assessment_items": true
+    },
+    "interpreting-the-income-statement-2": {
+        "uses_assessment_items": true
+    },
+    "interpreting-the-structure-of-expressions": {
+        "uses_assessment_items": true
+    },
+    "interpretting-solving-linear-inequalities": {
+        "uses_assessment_items": true
+    },
+    "intersecting-functions": {
+        "uses_assessment_items": true
+    },
+    "intro-to-simple-data": {
+        "uses_assessment_items": true
+    },
+    "introduction-to-critical-thinking": {
+        "uses_assessment_items": true
+    },
+    "introduction-to-critical-thinking-part-2": {
+        "uses_assessment_items": true
+    },
+    "introduction-to-decorative-arts": {
+        "uses_assessment_items": true
+    },
+    "introduction-to-differential-equations-and-initial-value-problems": {
+        "uses_assessment_items": true
+    },
+    "introductory-muscular-quiz": {
+        "uses_assessment_items": true
+    },
+    "introductory-renal-quiz": {
+        "uses_assessment_items": true
+    },
+    "inverse-domain-range": {
+        "uses_assessment_items": true
+    },
+    "inverse-trig-word-problems": {
+        "uses_assessment_items": true
+    },
+    "inverse_trig_functions": {
+        "uses_assessment_items": false
+    },
+    "inverses_of_functions": {
+        "uses_assessment_items": false
+    },
+    "is-obesity-contagious-": {
+        "uses_assessment_items": true
+    },
+    "isenheim-altarpiece-quiz": {
+        "uses_assessment_items": true
+    },
+    "ishtar-gate-quiz": {
+        "uses_assessment_items": true
+    },
+    "jade-cong": {
+        "uses_assessment_items": true
+    },
+    "jade-cong-ap": {
+        "uses_assessment_items": true
+    },
+    "justification-vs-explanation": {
+        "uses_assessment_items": true
+    },
+    "kahlo--the-two-fridas-quiz": {
+        "uses_assessment_items": true
+    },
+    "key-features-quadratics": {
+        "uses_assessment_items": true
+    },
+    "klimt-s-the-kiss-quiz": {
+        "uses_assessment_items": true
+    },
+    "krebs--citric-acid--cycle-and-oxidative-phosphorylation-questions": {
+        "uses_assessment_items": true
+    },
+    "krebs-cycle-and-oxidative-phosphorylation---passage-1": {
+        "uses_assessment_items": true
+    },
+    "krebs-cycle-and-oxidative-phosphorylation---passage-2": {
+        "uses_assessment_items": true
+    },
+    "kritios-boy-quiz": {
+        "uses_assessment_items": true
+    },
+    "lam--the-jungle-quiz": {
+        "uses_assessment_items": true
+    },
+    "language-location-in-the-brain---asl": {
+        "uses_assessment_items": true
+    },
+    "last-judgement-of-hu-nefer-quiz": {
+        "uses_assessment_items": true
+    },
+    "last-judgment-tympanum--autun--quiz": {
+        "uses_assessment_items": true
+    },
+    "late-victorian": {
+        "uses_assessment_items": true
+    },
+    "latin-american-modernism": {
+        "uses_assessment_items": true
+    },
+    "law-code-of-hammurabi-quiz": {
+        "uses_assessment_items": true
+    },
+    "law-of-sines-and-cosines-word-problems": {
+        "uses_assessment_items": true
+    },
+    "law_of_cosines": {
+        "uses_assessment_items": false
+    },
+    "law_of_sines": {
+        "uses_assessment_items": false
+    },
+    "learning---passage-1": {
+        "uses_assessment_items": true
+    },
+    "learning---passage-2": {
+        "uses_assessment_items": true
+    },
+    "learning-questions": {
+        "uses_assessment_items": true
+    },
+    "least_common_multiple": {
+        "uses_assessment_items": false
+    },
+    "length-word-problems": {
+        "uses_assessment_items": true
+    },
+    "leonardo-s": {
+        "uses_assessment_items": true
+    },
+    "leukemia-quiz": {
+        "uses_assessment_items": true
+    },
+    "leukemia-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "leukocytes-roll-on-blood-vessel-walls": {
+        "uses_assessment_items": true
+    },
+    "lhopitals_rule": {
+        "uses_assessment_items": true
+    },
+    "lights-puzzles-1": {
+        "uses_assessment_items": true
+    },
+    "lights-puzzles-2": {
+        "uses_assessment_items": true
+    },
+    "lights-puzzles-3": {
+        "uses_assessment_items": true
+    },
+    "lights-puzzles-x-1": {
+        "uses_assessment_items": true
+    },
+    "lights-puzzles-x-2": {
+        "uses_assessment_items": true
+    },
+    "lights-puzzles-x-3": {
+        "uses_assessment_items": true
+    },
+    "limiting_reagent_stoichiometry": {
+        "uses_assessment_items": false
+    },
+    "limits-at-infinity-where-f-x--is-unbounded": {
+        "uses_assessment_items": true
+    },
+    "limits-at-infinity-where-x-is-unbounded": {
+        "uses_assessment_items": true
+    },
+    "limits_2": {
+        "uses_assessment_items": true
+    },
+    "lindau-gospels-cover-quiz": {
+        "uses_assessment_items": true
+    },
+    "lindisfarne-gospels-quiz": {
+        "uses_assessment_items": true
+    },
+    "line-and-angle-proofs": {
+        "uses_assessment_items": true
+    },
+    "line_graph_intuition": {
+        "uses_assessment_items": false
+    },
+    "line_relationships": {
+        "uses_assessment_items": false
+    },
+    "linear-equation-world-problems-2": {
+        "uses_assessment_items": true
+    },
+    "linear-function-intercepts": {
+        "uses_assessment_items": true
+    },
+    "linear-models-of-bivariate-data": {
+        "uses_assessment_items": true
+    },
+    "linear-non-linear-functions": {
+        "uses_assessment_items": true
+    },
+    "linear_equations_1": {
+        "uses_assessment_items": true
+    },
+    "linear_equations_2": {
+        "uses_assessment_items": true
+    },
+    "linear_equations_3": {
+        "uses_assessment_items": false
+    },
+    "linear_equations_4": {
+        "uses_assessment_items": false
+    },
+    "linear_inequalities": {
+        "uses_assessment_items": false
+    },
+    "lion-gate--mycenae": {
+        "uses_assessment_items": true
+    },
+    "lippi-s-madonna-and-child-with-two-angels-quiz": {
+        "uses_assessment_items": true
+    },
+    "local-linearization": {
+        "uses_assessment_items": true
+    },
+    "logarithmic-differentiation": {
+        "uses_assessment_items": true
+    },
+    "logarithms_1": {
+        "uses_assessment_items": false
+    },
+    "logarithms_1.5": {
+        "uses_assessment_items": false
+    },
+    "logarithms_2": {
+        "uses_assessment_items": false
+    },
+    "ludovisi-battle-sarcophagus-quiz": {
+        "uses_assessment_items": true
+    },
+    "lung-cancer-quiz": {
+        "uses_assessment_items": true
+    },
+    "lung-cancer-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "lung-quiz": {
+        "uses_assessment_items": true
+    },
+    "lymphatic-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "lymphatic-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "maclaurin-series-for-sin-x--cos-x--and-e-x": {
+        "uses_assessment_items": true
+    },
+    "maiolica-quiz": {
+        "uses_assessment_items": true
+    },
+    "making-100": {
+        "uses_assessment_items": true
+    },
+    "making-100-and-1000": {
+        "uses_assessment_items": true
+    },
+    "making-100-level-2": {
+        "uses_assessment_items": true
+    },
+    "making-decisions-with-expected-values": {
+        "uses_assessment_items": true
+    },
+    "making-five": {
+        "uses_assessment_items": true
+    },
+    "making-inferences-from-random-samples": {
+        "uses_assessment_items": true
+    },
+    "making-ten": {
+        "uses_assessment_items": true
+    },
+    "making-ten-2": {
+        "uses_assessment_items": true
+    },
+    "making-totals-in-different-ways-within-10": {
+        "uses_assessment_items": true
+    },
+    "malthusian-population-growth-and-population-pyramids": {
+        "uses_assessment_items": true
+    },
+    "manet-s-olympia-quiz": {
+        "uses_assessment_items": true
+    },
+    "manipulating-formulas": {
+        "uses_assessment_items": true
+    },
+    "manipulating-fractional-exponents": {
+        "uses_assessment_items": true
+    },
+    "manipulating-linear-expressions-with-rational-coefficients": {
+        "uses_assessment_items": true
+    },
+    "mannerism": {
+        "uses_assessment_items": true
+    },
+    "manuscripts-overview-quiz": {
+        "uses_assessment_items": true
+    },
+    "marble-sculpture-quiz": {
+        "uses_assessment_items": true
+    },
+    "marijuana-usage-as-social-behavior": {
+        "uses_assessment_items": true
+    },
+    "markup_and_commission_word_problems": {
+        "uses_assessment_items": false
+    },
+    "marriage-a-la-mode-quiz": {
+        "uses_assessment_items": true
+    },
+    "masaccio-s-holy-trinity-quiz": {
+        "uses_assessment_items": true
+    },
+    "masaccio-s-tribute-money-quiz": {
+        "uses_assessment_items": true
+    },
+    "mask-of-agamemnon-quiz": {
+        "uses_assessment_items": true
+    },
+    "masters-of-marquetry-quiz": {
+        "uses_assessment_items": true
+    },
+    "math-patterns": {
+        "uses_assessment_items": true
+    },
+    "matrix_addition_and_subtraction": {
+        "uses_assessment_items": true
+    },
+    "matrix_determinant": {
+        "uses_assessment_items": false
+    },
+    "matrix_determinant_3x3": {
+        "uses_assessment_items": false
+    },
+    "matrix_dimensions": {
+        "uses_assessment_items": false
+    },
+    "matrix_inverse_2x2": {
+        "uses_assessment_items": true
+    },
+    "matrix_inverse_3x3": {
+        "uses_assessment_items": true
+    },
+    "matrix_transpose": {
+        "uses_assessment_items": true
+    },
+    "mausoleum-of-galla-placidia-quiz": {
+        "uses_assessment_items": true
+    },
+    "mean-value-theorem": {
+        "uses_assessment_items": true
+    },
+    "mean_median_and_mode": {
+        "uses_assessment_items": false
+    },
+    "meaning-of-division": {
+        "uses_assessment_items": true
+    },
+    "meaning-of-equal-sign-1": {
+        "uses_assessment_items": true
+    },
+    "meaning-of-multiplication": {
+        "uses_assessment_items": true
+    },
+    "measure-mass": {
+        "uses_assessment_items": true
+    },
+    "measurement-precision": {
+        "uses_assessment_items": true
+    },
+    "measurement-units": {
+        "uses_assessment_items": true
+    },
+    "measurement-word-problems-with-metric-units": {
+        "uses_assessment_items": true
+    },
+    "measurement-word-problems-with-us-customary-units": {
+        "uses_assessment_items": true
+    },
+    "measuring-and-converting-money-word-problems": {
+        "uses_assessment_items": true
+    },
+    "measuring-area-with-unit-squares": {
+        "uses_assessment_items": true
+    },
+    "measuring-lengths-1": {
+        "uses_assessment_items": true
+    },
+    "measuring-lengths-2": {
+        "uses_assessment_items": true
+    },
+    "measuring-lengths-with-different-units": {
+        "uses_assessment_items": true
+    },
+    "measuring-time-word-problems": {
+        "uses_assessment_items": true
+    },
+    "measuring_angles": {
+        "uses_assessment_items": false
+    },
+    "measuring_segments": {
+        "uses_assessment_items": false
+    },
+    "mechanisms-of-antibody-variability-during-b-cell-development": {
+        "uses_assessment_items": true
+    },
+    "median-and-range-puzzlers": {
+        "uses_assessment_items": true
+    },
+    "mehretu--stadia-ii-quiz": {
+        "uses_assessment_items": true
+    },
+    "melting-point-and-thermodynamics-of-double-stranded-dna-1": {
+        "uses_assessment_items": true
+    },
+    "memory---passage-1": {
+        "uses_assessment_items": true
+    },
+    "memory---passage-2": {
+        "uses_assessment_items": true
+    },
+    "mendelian-genetics---passage-2": {
+        "uses_assessment_items": true
+    },
+    "mendelian-genetics-questions": {
+        "uses_assessment_items": true
+    },
+    "michelangelo-s-ceiling-of-the-sistine-chapel-quiz": {
+        "uses_assessment_items": true
+    },
+    "mideast-ww1": {
+        "uses_assessment_items": true
+    },
+    "midline-of-trig-functions": {
+        "uses_assessment_items": true
+    },
+    "midpoint_formula": {
+        "uses_assessment_items": false
+    },
+    "midpoint_of_a_segment": {
+        "uses_assessment_items": false
+    },
+    "millais--ophelia-quiz": {
+        "uses_assessment_items": true
+    },
+    "miller-s-law--chunking--and-the-capacity-of-working-memory": {
+        "uses_assessment_items": true
+    },
+    "minimalism-and-the-land": {
+        "uses_assessment_items": true
+    },
+    "mitosis-questions": {
+        "uses_assessment_items": true
+    },
+    "modeling-constraints": {
+        "uses_assessment_items": true
+    },
+    "modeling-with-composite-functions": {
+        "uses_assessment_items": true
+    },
+    "modeling-with-exponential-functions": {
+        "uses_assessment_items": true
+    },
+    "modeling-with-one-variable-equations-and-inequalities": {
+        "uses_assessment_items": true
+    },
+    "modeling-with-periodic-functions": {
+        "uses_assessment_items": true
+    },
+    "modeling-with-periodic-functions-2": {
+        "uses_assessment_items": true
+    },
+    "modern-discoveries": {
+        "uses_assessment_items": true
+    },
+    "modular-addition": {
+        "uses_assessment_items": true
+    },
+    "modular-multiplication": {
+        "uses_assessment_items": true
+    },
+    "modulo-operator": {
+        "uses_assessment_items": true
+    },
+    "molecular-genetics-and-microbiology-of-zaire-ebolavirus": {
+        "uses_assessment_items": true
+    },
+    "molecular-targets-of-antiretroviral-therapies": {
+        "uses_assessment_items": true
+    },
+    "monet-s-gare-st--lazare-quiz": {
+        "uses_assessment_items": true
+    },
+    "monticello-quiz": {
+        "uses_assessment_items": true
+    },
+    "more-square-and-cube-root-problems": {
+        "uses_assessment_items": true
+    },
+    "motivations-and-attitudes---passage-1": {
+        "uses_assessment_items": true
+    },
+    "motivations-and-attitudes---passage-2": {
+        "uses_assessment_items": true
+    },
+    "motivations-and-attitudes-questions": {
+        "uses_assessment_items": true
+    },
+    "move-three-disks-in-towers-of-hanoi": {
+        "uses_assessment_items": true
+    },
+    "msl-brief": {
+        "uses_assessment_items": true
+    },
+    "mtu-1-unit-quiz": {
+        "uses_assessment_items": true
+    },
+    "multi-digit-division-with-visual-models": {
+        "uses_assessment_items": true
+    },
+    "multi-step-word-problems-with-whole-numbers": {
+        "uses_assessment_items": true
+    },
+    "multiplication-with-place-value-understanding": {
+        "uses_assessment_items": true
+    },
+    "multiplication_0.5": {
+        "uses_assessment_items": false
+    },
+    "multiplication_1": {
+        "uses_assessment_items": false
+    },
+    "multiplication_1.5": {
+        "uses_assessment_items": false
+    },
+    "multiplication_2": {
+        "uses_assessment_items": false
+    },
+    "multiplication_3": {
+        "uses_assessment_items": false
+    },
+    "multiplication_4": {
+        "uses_assessment_items": false
+    },
+    "multiplicative-comparison-word-problems": {
+        "uses_assessment_items": true
+    },
+    "multiply-and-divide-rational-numbers": {
+        "uses_assessment_items": true
+    },
+    "multiply-by-tens-word-problems": {
+        "uses_assessment_items": true
+    },
+    "multiplying-2-digit-numbers-with-area-models": {
+        "uses_assessment_items": true
+    },
+    "multiplying-and-dividing-decimals-by-powers-of-10": {
+        "uses_assessment_items": true
+    },
+    "multiplying-and-dividing-whole-numbers-by-powers-of-10": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-2": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-3": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-4": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-4-digit-numbers-with-visual-models": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-5": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-6": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-7": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-8": {
+        "uses_assessment_items": true
+    },
+    "multiplying-by-9": {
+        "uses_assessment_items": true
+    },
+    "multiplying-dependent-probabilities": {
+        "uses_assessment_items": true
+    },
+    "multiplying-fractions-and-whole-numbers-intuition": {
+        "uses_assessment_items": true
+    },
+    "multiplying-fractions-and-whole-numbers-word-problems": {
+        "uses_assessment_items": true
+    },
+    "multiplying-fractions-by-fractions-word-problems": {
+        "uses_assessment_items": true
+    },
+    "multiplying-unit-fractions-and-whole-numbers": {
+        "uses_assessment_items": true
+    },
+    "multiplying_a_matrix_by_a_matrix": {
+        "uses_assessment_items": true
+    },
+    "multiplying_a_matrix_by_a_vector": {
+        "uses_assessment_items": true
+    },
+    "multiplying_and_dividing_complex_number_polar_forms": {
+        "uses_assessment_items": false
+    },
+    "multiplying_and_dividing_negative_numbers": {
+        "uses_assessment_items": false
+    },
+    "multiplying_and_dividing_rational_expressions_1": {
+        "uses_assessment_items": false
+    },
+    "multiplying_and_dividing_rational_expressions_2": {
+        "uses_assessment_items": false
+    },
+    "multiplying_and_dividing_rational_expressions_3": {
+        "uses_assessment_items": false
+    },
+    "multiplying_and_dividing_rational_expressions_4": {
+        "uses_assessment_items": false
+    },
+    "multiplying_and_dividing_rational_expressions_5": {
+        "uses_assessment_items": false
+    },
+    "multiplying_and_dividing_scientific_notation": {
+        "uses_assessment_items": false
+    },
+    "multiplying_complex_numbers": {
+        "uses_assessment_items": false
+    },
+    "multiplying_decimals": {
+        "uses_assessment_items": false
+    },
+    "multiplying_decimals_0.5": {
+        "uses_assessment_items": false
+    },
+    "multiplying_decimals_1": {
+        "uses_assessment_items": false
+    },
+    "multiplying_expressions_0.5": {
+        "uses_assessment_items": false
+    },
+    "multiplying_expressions_1": {
+        "uses_assessment_items": false
+    },
+    "multiplying_fractions": {
+        "uses_assessment_items": false
+    },
+    "multiplying_fractions_0.5": {
+        "uses_assessment_items": false
+    },
+    "multiplying_fractions_by_integers": {
+        "uses_assessment_items": true
+    },
+    "multiplying_mixed_numbers_1": {
+        "uses_assessment_items": false
+    },
+    "multiplying_polynomials": {
+        "uses_assessment_items": false
+    },
+    "multiplying_radicals": {
+        "uses_assessment_items": false
+    },
+    "multistep-equations-without-variables": {
+        "uses_assessment_items": true
+    },
+    "multistep_equations_with_distribution": {
+        "uses_assessment_items": false
+    },
+    "muscular-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "muscular-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "myelogenous-leukemia-and-two-chemotherapeutic-agents": {
+        "uses_assessment_items": true
+    },
+    "naming-angles": {
+        "uses_assessment_items": true
+    },
+    "naming-shapes": {
+        "uses_assessment_items": true
+    },
+    "naming-shapes-2": {
+        "uses_assessment_items": true
+    },
+    "naming-the-whole": {
+        "uses_assessment_items": true
+    },
+    "navigating-the-stages-of-sleep": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-anemia-2": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-asthma-1": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-asthma-2": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-asthma-3": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-asthma-4": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-bronchiolitis": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-bronchiolitis-2": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-heart-valve-disease-1": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-heart-valve-disease-2": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-iron-deficiency-anemia-1": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-iron-deficiency-anemia-2": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-shock-1-1": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-shock-2-1": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-stroke-1-1": {
+        "uses_assessment_items": true
+    },
+    "nclex-rn-questions-on-stroke-2": {
+        "uses_assessment_items": true
+    },
+    "necessary-vs-sufficient-conditions": {
+        "uses_assessment_items": true
+    },
+    "negative-number-addition-and-subtraction--equations-and-number-lines": {
+        "uses_assessment_items": true
+    },
+    "negative-number-addition-and-subtraction--interpretation-problems": {
+        "uses_assessment_items": true
+    },
+    "negative-number-addition-and-subtraction-equivalent-expressions": {
+        "uses_assessment_items": true
+    },
+    "negative-number-word-problems-1": {
+        "uses_assessment_items": true
+    },
+    "negative-signs-in-numerators-and-denominators": {
+        "uses_assessment_items": true
+    },
+    "negative_number_word_problems": {
+        "uses_assessment_items": true
+    },
+    "neoclassicism": {
+        "uses_assessment_items": true
+    },
+    "nervous-system-disorders-i--als": {
+        "uses_assessment_items": true
+    },
+    "nervous-system-disorders-ii--ms": {
+        "uses_assessment_items": true
+    },
+    "nervous-system-questions": {
+        "uses_assessment_items": true
+    },
+    "nested-fractions": {
+        "uses_assessment_items": true
+    },
+    "nets-of-3d-figures": {
+        "uses_assessment_items": true
+    },
+    "neural-cells---passage-1": {
+        "uses_assessment_items": true
+    },
+    "neural-cells---passage-2": {
+        "uses_assessment_items": true
+    },
+    "neural-cells-questions": {
+        "uses_assessment_items": true
+    },
+    "neurofibromin-mutations-in-mice-populations": {
+        "uses_assessment_items": true
+    },
+    "neurofibromin-mutations-in-mice-populations---passage-2": {
+        "uses_assessment_items": true
+    },
+    "neuron-membrane-potentials---passage-1": {
+        "uses_assessment_items": true
+    },
+    "neuron-membrane-potentials---passage-2": {
+        "uses_assessment_items": true
+    },
+    "neuron-membrane-potentials-questions": {
+        "uses_assessment_items": true
+    },
+    "neuronal-membranes--nature-s-capacitors": {
+        "uses_assessment_items": true
+    },
+    "neuronal-synapses-questions": {
+        "uses_assessment_items": true
+    },
+    "new-york-kouros-quiz": {
+        "uses_assessment_items": true
+    },
+    "new_definitions_1": {
+        "uses_assessment_items": false
+    },
+    "new_definitions_2": {
+        "uses_assessment_items": false
+    },
+    "newton-s-laws-and-equilibrium---passage-1": {
+        "uses_assessment_items": true
+    },
+    "newton-s-laws-and-equilibrium---passage-2": {
+        "uses_assessment_items": true
+    },
+    "newtons-laws": {
+        "uses_assessment_items": true
+    },
+    "newtons-third-law": {
+        "uses_assessment_items": true
+    },
+    "newtonsfirst": {
+        "uses_assessment_items": true
+    },
+    "niobid-krater-quiz": {
+        "uses_assessment_items": true
+    },
+    "non-cyanotic-heart-disease-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "non-cyanotic-heart-diseases-quiz": {
+        "uses_assessment_items": true
+    },
+    "non-right-triangle-proofs": {
+        "uses_assessment_items": true
+    },
+    "normal-forces---passage-1": {
+        "uses_assessment_items": true
+    },
+    "normal-forces---passage-2": {
+        "uses_assessment_items": true
+    },
+    "normative-and-descriptive-claims": {
+        "uses_assessment_items": true
+    },
+    "normative-and-non-normative-behavior---passage-1": {
+        "uses_assessment_items": true
+    },
+    "normative-and-non-normative-behavior---passage-2": {
+        "uses_assessment_items": true
+    },
+    "normative-and-nonnormative-behavior-questions": {
+        "uses_assessment_items": true
+    },
+    "northern-renaissance-in-the-16th-century": {
+        "uses_assessment_items": true
+    },
+    "nth-term-test": {
+        "uses_assessment_items": true
+    },
+    "nude-woman--venus-of-willendorf--quiz": {
+        "uses_assessment_items": true
+    },
+    "number-opposites": {
+        "uses_assessment_items": true
+    },
+    "number_line": {
+        "uses_assessment_items": false
+    },
+    "number_line_2": {
+        "uses_assessment_items": false
+    },
+    "number_line_3": {
+        "uses_assessment_items": false
+    },
+    "numbers-to-120": {
+        "uses_assessment_items": true
+    },
+    "occultation-transit-eclipse": {
+        "uses_assessment_items": true
+    },
+    "ocd-and-hoarding-disorder": {
+        "uses_assessment_items": true
+    },
+    "one-more--one-less": {
+        "uses_assessment_items": true
+    },
+    "one-sided-limits-from-graphs": {
+        "uses_assessment_items": true
+    },
+    "one-step-add-sub-equations-2": {
+        "uses_assessment_items": true
+    },
+    "one-step-mult-div-equations-2": {
+        "uses_assessment_items": true
+    },
+    "one_step_equation_intuition": {
+        "uses_assessment_items": false
+    },
+    "one_step_equations": {
+        "uses_assessment_items": true
+    },
+    "one_step_inequalities": {
+        "uses_assessment_items": false
+    },
+    "oppenheim-s-object-quiz": {
+        "uses_assessment_items": true
+    },
+    "opposites-on-the-number-line": {
+        "uses_assessment_items": true
+    },
+    "optimization": {
+        "uses_assessment_items": true
+    },
+    "order-by-length": {
+        "uses_assessment_items": true
+    },
+    "order_of_operations": {
+        "uses_assessment_items": false
+    },
+    "order_of_operations_2": {
+        "uses_assessment_items": false
+    },
+    "ordering-rational-numbers": {
+        "uses_assessment_items": true
+    },
+    "ordering_decimals": {
+        "uses_assessment_items": false
+    },
+    "ordering_fractions": {
+        "uses_assessment_items": false
+    },
+    "ordering_negative_numbers": {
+        "uses_assessment_items": false
+    },
+    "orders-of-magnitude": {
+        "uses_assessment_items": true
+    },
+    "ottonian-art": {
+        "uses_assessment_items": true
+    },
+    "overview-of-metabolism---passage-1": {
+        "uses_assessment_items": true
+    },
+    "overview-of-metabolism---passage-2": {
+        "uses_assessment_items": true
+    },
+    "oxidative-phosphorylation-questions": {
+        "uses_assessment_items": true
+    },
+    "palazzo-rucellai-quiz": {
+        "uses_assessment_items": true
+    },
+    "palette-of-narmer-quiz": {
+        "uses_assessment_items": true
+    },
+    "pantheon-quiz": {
+        "uses_assessment_items": true
+    },
+    "parabola_intuition_1": {
+        "uses_assessment_items": false
+    },
+    "parabola_intuition_2": {
+        "uses_assessment_items": false
+    },
+    "parabola_intuition_3": {
+        "uses_assessment_items": false
+    },
+    "parallax-method": {
+        "uses_assessment_items": true
+    },
+    "parallel_lines_1": {
+        "uses_assessment_items": true
+    },
+    "parallel_lines_2": {
+        "uses_assessment_items": false
+    },
+    "parthenon-quiz": {
+        "uses_assessment_items": true
+    },
+    "partial_fraction_expansion_1": {
+        "uses_assessment_items": false
+    },
+    "patients-in-a-wheelchair-on-a-ramp": {
+        "uses_assessment_items": true
+    },
+    "patterns": {
+        "uses_assessment_items": true
+    },
+    "patterns-in-the-addition-table-and-multiplication-table": {
+        "uses_assessment_items": true
+    },
+    "pazzi-chapel-quiz": {
+        "uses_assessment_items": true
+    },
+    "peplos-kore-quiz": {
+        "uses_assessment_items": true
+    },
+    "percentage_word_problems_1": {
+        "uses_assessment_items": true
+    },
+    "performing-reflections-on-the-coordinate-plane": {
+        "uses_assessment_items": true
+    },
+    "performing-rotations-on-the-coordinate-plane": {
+        "uses_assessment_items": true
+    },
+    "performing-translations-on-the-coordinate-plane": {
+        "uses_assessment_items": true
+    },
+    "perimeter-2": {
+        "uses_assessment_items": true
+    },
+    "perimeter_1": {
+        "uses_assessment_items": false
+    },
+    "perimeter_of_squares_and_rectangles": {
+        "uses_assessment_items": false
+    },
+    "period-of-trig-functions": {
+        "uses_assessment_items": true
+    },
+    "permutations_1": {
+        "uses_assessment_items": false
+    },
+    "permutations_and_combinations_2": {
+        "uses_assessment_items": false
+    },
+    "physiological-stress-response-to-cuss-words-": {
+        "uses_assessment_items": true
+    },
+    "piecewise-graphs-linear": {
+        "uses_assessment_items": true
+    },
+    "piero-della-francesca-s-baptism-of-christ-quiz": {
+        "uses_assessment_items": true
+    },
+    "place_value": {
+        "uses_assessment_items": false
+    },
+    "pleural-effusion-quiz": {
+        "uses_assessment_items": true
+    },
+    "pleural-effusion-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "plotting_the_line_of_best_fit": {
+        "uses_assessment_items": false
+    },
+    "plugging_in_values": {
+        "uses_assessment_items": true
+    },
+    "pneumonia": {
+        "uses_assessment_items": true
+    },
+    "pneumonia-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "points_lines_and_planes": {
+        "uses_assessment_items": false
+    },
+    "polychrome-sculpture-quiz": {
+        "uses_assessment_items": true
+    },
+    "polygons-in-the-coordinate-plane": {
+        "uses_assessment_items": true
+    },
+    "polynomial-identities": {
+        "uses_assessment_items": true
+    },
+    "pontormo-s-entombment-quiz": {
+        "uses_assessment_items": true
+    },
+    "pop-and-after": {
+        "uses_assessment_items": true
+    },
+    "portrait-of-giovanni-arnolfini-and-his-wife-quiz": {
+        "uses_assessment_items": true
+    },
+    "portraits-of-the-duke-and-duchess-of-urbino-quiz": {
+        "uses_assessment_items": true
+    },
+    "positive_and_negative_parts_of_functions": {
+        "uses_assessment_items": false
+    },
+    "positive_and_zero_exponents": {
+        "uses_assessment_items": true
+    },
+    "post-impressionism": {
+        "uses_assessment_items": true
+    },
+    "power-rule-basic": {
+        "uses_assessment_items": true
+    },
+    "power_rule": {
+        "uses_assessment_items": true
+    },
+    "powers-of-fractions": {
+        "uses_assessment_items": true
+    },
+    "powers-of-ten": {
+        "uses_assessment_items": true
+    },
+    "powers_of_complex_numbers_1": {
+        "uses_assessment_items": false
+    },
+    "pre-raphaelites": {
+        "uses_assessment_items": true
+    },
+    "prehistoric-art-quiz": {
+        "uses_assessment_items": true
+    },
+    "pressure-regulation-and-fluid-dynamics-of-the-respiratory-system": {
+        "uses_assessment_items": true
+    },
+    "preventing-barotrauma-in-deep-sea-divers": {
+        "uses_assessment_items": true
+    },
+    "preventing-lipopolysaccharide-formation-in-cystic-fibrosis-patients": {
+        "uses_assessment_items": true
+    },
+    "prime_factorization": {
+        "uses_assessment_items": false
+    },
+    "prime_numbers": {
+        "uses_assessment_items": false
+    },
+    "principle-s-of-bioenergetics": {
+        "uses_assessment_items": true
+    },
+    "principles-of-bioenergetics---passage-2": {
+        "uses_assessment_items": true
+    },
+    "principles-of-bioenergetics-questions": {
+        "uses_assessment_items": true
+    },
+    "principles-of-chemical-thermodynamics-and-kinetics": {
+        "uses_assessment_items": true
+    },
+    "probability-models": {
+        "uses_assessment_items": true
+    },
+    "probability_1": {
+        "uses_assessment_items": true
+    },
+    "probability_with_perm_comb": {
+        "uses_assessment_items": false
+    },
+    "product_rule": {
+        "uses_assessment_items": true
+    },
+    "properties-of-integer-exponents": {
+        "uses_assessment_items": true
+    },
+    "properties-of-integrals": {
+        "uses_assessment_items": true
+    },
+    "properties-of-matrix-multiplication": {
+        "uses_assessment_items": true
+    },
+    "properties-of-multiplication-1": {
+        "uses_assessment_items": true
+    },
+    "properties-of-multiplication-with-negative-numbers": {
+        "uses_assessment_items": true
+    },
+    "properties-of-shapes": {
+        "uses_assessment_items": true
+    },
+    "proportions_1": {
+        "uses_assessment_items": false
+    },
+    "proportions_2": {
+        "uses_assessment_items": false
+    },
+    "prosopagnosia----you-seem-familiar--but-i-can-t-place-your-face--": {
+        "uses_assessment_items": true
+    },
+    "proteins---passage-1": {
+        "uses_assessment_items": true
+    },
+    "proteins---passage-2": {
+        "uses_assessment_items": true
+    },
+    "protestant-reformation": {
+        "uses_assessment_items": true
+    },
+    "protestant-reformation-quiz": {
+        "uses_assessment_items": true
+    },
+    "pulmonary-conditions-quiz": {
+        "uses_assessment_items": true
+    },
+    "pure-tone-audiometry-in-diagnosing-hearing-loss": {
+        "uses_assessment_items": true
+    },
+    "purification-of-caffeine": {
+        "uses_assessment_items": true
+    },
+    "put-together": {
+        "uses_assessment_items": true
+    },
+    "pythagorean-theorem-and-the-equation-of-a-circle": {
+        "uses_assessment_items": true
+    },
+    "pythagorean-theorem-in-3d": {
+        "uses_assessment_items": true
+    },
+    "pythagorean-theorem-proofs": {
+        "uses_assessment_items": true
+    },
+    "pythagorean-theorem-word-problems": {
+        "uses_assessment_items": true
+    },
+    "pythagorean_identities": {
+        "uses_assessment_items": false
+    },
+    "pythagorean_theorem_1": {
+        "uses_assessment_items": false
+    },
+    "pythagorean_theorem_2": {
+        "uses_assessment_items": false
+    },
+    "pyxis-of-al-mughira-quiz": {
+        "uses_assessment_items": true
+    },
+    "quadratic-formula-with-complex-solutions": {
+        "uses_assessment_items": true
+    },
+    "quadratic_equation": {
+        "uses_assessment_items": false
+    },
+    "quadrilateral_angles": {
+        "uses_assessment_items": false
+    },
+    "quadrilateral_types": {
+        "uses_assessment_items": true
+    },
+    "qualitative-analysis-of-contaminated-water-supply": {
+        "uses_assessment_items": true
+    },
+    "qualitatively-defining-rigid-transformations": {
+        "uses_assessment_items": true
+    },
+    "quiz-": {
+        "uses_assessment_items": true
+    },
+    "quiz--acceleration": {
+        "uses_assessment_items": true
+    },
+    "quiz--agriculture-and-civilization": {
+        "uses_assessment_items": true
+    },
+    "quiz--asymptotic-notation": {
+        "uses_assessment_items": true
+    },
+    "quiz--changing-economies": {
+        "uses_assessment_items": true
+    },
+    "quiz--collective-learning": {
+        "uses_assessment_items": true
+    },
+    "quiz--commerce---collective-learning": {
+        "uses_assessment_items": true
+    },
+    "quiz--comparing-function-growth": {
+        "uses_assessment_items": true
+    },
+    "quiz--css-layout": {
+        "uses_assessment_items": true
+    },
+    "quiz--css-specificity-rules": {
+        "uses_assessment_items": true
+    },
+    "quiz--describing-graphs": {
+        "uses_assessment_items": true
+    },
+    "quiz--early-humans": {
+        "uses_assessment_items": true
+    },
+    "quiz--earth---the-formation-of-our-solar-system": {
+        "uses_assessment_items": true
+    },
+    "quiz--expansion---interconnection": {
+        "uses_assessment_items": true
+    },
+    "quiz--exploration---interconnection": {
+        "uses_assessment_items": true
+    },
+    "quiz--how-did-life-begin-and-change": {
+        "uses_assessment_items": true
+    },
+    "quiz--how-did-the-first-humans-live-": {
+        "uses_assessment_items": true
+    },
+    "quiz--how-do-earth-and-life-interact": {
+        "uses_assessment_items": true
+    },
+    "quiz--how-our-ancestors-evolved": {
+        "uses_assessment_items": true
+    },
+    "quiz--html-css-recap": {
+        "uses_assessment_items": true
+    },
+    "quiz--javascript-recap": {
+        "uses_assessment_items": true
+    },
+    "quiz--life": {
+        "uses_assessment_items": true
+    },
+    "quiz--looking-back": {
+        "uses_assessment_items": true
+    },
+    "quiz--looking-forward": {
+        "uses_assessment_items": true
+    },
+    "quiz--my-timeline": {
+        "uses_assessment_items": true
+    },
+    "quiz--our-solar-system-and-earth": {
+        "uses_assessment_items": true
+    },
+    "quiz--representing-graphs": {
+        "uses_assessment_items": true
+    },
+    "quiz--simple-css-selectors": {
+        "uses_assessment_items": true
+    },
+    "quiz--text-properties": {
+        "uses_assessment_items": true
+    },
+    "quiz--the-anthropocene": {
+        "uses_assessment_items": true
+    },
+    "quiz--the-bioshpere": {
+        "uses_assessment_items": true
+    },
+    "quiz--the-first-cities-and-states-appear": {
+        "uses_assessment_items": true
+    },
+    "quiz--the-rise-of-agriculture": {
+        "uses_assessment_items": true
+    },
+    "quiz--use-variable-expressions": {
+        "uses_assessment_items": true
+    },
+    "quiz--validate-this-html": {
+        "uses_assessment_items": true
+    },
+    "quiz--what-is-dom": {
+        "uses_assessment_items": true
+    },
+    "quiz--what-was-young-earth-like-": {
+        "uses_assessment_items": true
+    },
+    "quiz--why-is-plate-tectonics-important-": {
+        "uses_assessment_items": true
+    },
+    "quiz-1-4-origin-stories": {
+        "uses_assessment_items": true
+    },
+    "quiz-1-5-ways-of-knowing": {
+        "uses_assessment_items": true
+    },
+    "quiz-darwin-and-evolution-by-natural-selection": {
+        "uses_assessment_items": true
+    },
+    "quiz-dinosaur-extinction": {
+        "uses_assessment_items": true
+    },
+    "quiz-dinosaur-fossils": {
+        "uses_assessment_items": true
+    },
+    "quiz-evolution-and-human-health": {
+        "uses_assessment_items": true
+    },
+    "quiz-fashion-meets-art": {
+        "uses_assessment_items": true
+    },
+    "quiz-film-meets-art": {
+        "uses_assessment_items": true
+    },
+    "quiz-galaxies": {
+        "uses_assessment_items": true
+    },
+    "quiz-how-did-our-view-of-the-universe-change-": {
+        "uses_assessment_items": true
+    },
+    "quiz-how-do-scientists-study-dinosaurs": {
+        "uses_assessment_items": true
+    },
+    "quiz-how-were-stars-formed-": {
+        "uses_assessment_items": true
+    },
+    "quiz-human-evolution-the-evidence": {
+        "uses_assessment_items": true
+    },
+    "quiz-literature-meets-art": {
+        "uses_assessment_items": true
+    },
+    "quiz-mid-century-to-today": {
+        "uses_assessment_items": true
+    },
+    "quiz-planets": {
+        "uses_assessment_items": true
+    },
+    "quiz-scale": {
+        "uses_assessment_items": true
+    },
+    "quiz-stars": {
+        "uses_assessment_items": true
+    },
+    "quiz-stars-and-big-history": {
+        "uses_assessment_items": true
+    },
+    "quiz-stars-and-elements": {
+        "uses_assessment_items": true
+    },
+    "quiz-the-big-bang": {
+        "uses_assessment_items": true
+    },
+    "quiz-the-universe": {
+        "uses_assessment_items": true
+    },
+    "quiz-welcome-to-the-big-history": {
+        "uses_assessment_items": true
+    },
+    "quiz-what-emerged-from-the-big-bang-": {
+        "uses_assessment_items": true
+    },
+    "quiz-what-is-a-dinosaur": {
+        "uses_assessment_items": true
+    },
+    "quotient_rule": {
+        "uses_assessment_items": true
+    },
+    "race--socioeconomic-status--and-nutrition": {
+        "uses_assessment_items": true
+    },
+    "radians-on-the-unit-circle": {
+        "uses_assessment_items": true
+    },
+    "radical_equations": {
+        "uses_assessment_items": false
+    },
+    "radius_diameter_and_circumference": {
+        "uses_assessment_items": false
+    },
+    "random-sample-warmup": {
+        "uses_assessment_items": true
+    },
+    "range_of_a_function": {
+        "uses_assessment_items": false
+    },
+    "raphael-s-school-of-athens-quiz": {
+        "uses_assessment_items": true
+    },
+    "rate_problems_0.5": {
+        "uses_assessment_items": true
+    },
+    "rate_problems_1": {
+        "uses_assessment_items": true
+    },
+    "rate_problems_2": {
+        "uses_assessment_items": false
+    },
+    "ratio-test": {
+        "uses_assessment_items": true
+    },
+    "ratio_word_problems": {
+        "uses_assessment_items": true
+    },
+    "reading-histograms": {
+        "uses_assessment_items": true
+    },
+    "reading_bar_charts_1": {
+        "uses_assessment_items": false
+    },
+    "reading_bar_charts_2": {
+        "uses_assessment_items": false
+    },
+    "reading_bar_charts_3": {
+        "uses_assessment_items": false
+    },
+    "reading_pictographs_1": {
+        "uses_assessment_items": false
+    },
+    "reading_pictographs_2": {
+        "uses_assessment_items": false
+    },
+    "reading_stem_and_leaf_plots": {
+        "uses_assessment_items": false
+    },
+    "realism": {
+        "uses_assessment_items": true
+    },
+    "reciprocal-altruism--vampire-bats--and-relatedness": {
+        "uses_assessment_items": true
+    },
+    "reciprocal_trig_funcs": {
+        "uses_assessment_items": false
+    },
+    "recog-features-func-2": {
+        "uses_assessment_items": true
+    },
+    "recog-func-2": {
+        "uses_assessment_items": true
+    },
+    "recognize-maxima-and-minima": {
+        "uses_assessment_items": true
+    },
+    "recognizing-angles": {
+        "uses_assessment_items": true
+    },
+    "recognizing-parallel-and-perpendicular-lines": {
+        "uses_assessment_items": true
+    },
+    "recognizing-rational-and-irrational-expressions": {
+        "uses_assessment_items": true
+    },
+    "recognizing-rational-and-irrational-numbers": {
+        "uses_assessment_items": true
+    },
+    "recognizing-shapes": {
+        "uses_assessment_items": true
+    },
+    "recognizing-triangles": {
+        "uses_assessment_items": true
+    },
+    "recognizing-vector-quantities": {
+        "uses_assessment_items": true
+    },
+    "recognizing_concavity": {
+        "uses_assessment_items": false
+    },
+    "recognizing_conic_sections": {
+        "uses_assessment_items": false
+    },
+    "recognizing_fractions": {
+        "uses_assessment_items": false
+    },
+    "recognizing_fractions_0.5": {
+        "uses_assessment_items": false
+    },
+    "recognizing_functions": {
+        "uses_assessment_items": true
+    },
+    "recognizing_rays_lines_and_line_segments": {
+        "uses_assessment_items": true
+    },
+    "recognizing_slope": {
+        "uses_assessment_items": false
+    },
+    "rectangular-and-polar-forms-of-complex-numbers": {
+        "uses_assessment_items": true
+    },
+    "recursive-formulas-for-arithmetic-sequences": {
+        "uses_assessment_items": true
+    },
+    "recursive-formulas-for-geometric-sequences": {
+        "uses_assessment_items": true
+    },
+    "recursive_explicit": {
+        "uses_assessment_items": true
+    },
+    "reflecting-points": {
+        "uses_assessment_items": true
+    },
+    "reflection-and-refraction": {
+        "uses_assessment_items": true
+    },
+    "reflection-and-refraction---passage-1": {
+        "uses_assessment_items": true
+    },
+    "reflection-and-refraction---passage-2": {
+        "uses_assessment_items": true
+    },
+    "reflections-1": {
+        "uses_assessment_items": true
+    },
+    "reflections-2": {
+        "uses_assessment_items": true
+    },
+    "regrouping-decimals": {
+        "uses_assessment_items": true
+    },
+    "regrouping-whole-numbers": {
+        "uses_assessment_items": true
+    },
+    "relate-addition-and-subtraction": {
+        "uses_assessment_items": true
+    },
+    "relate-division-to-multiplication": {
+        "uses_assessment_items": true
+    },
+    "relate-division-to-multiplication-word-problems": {
+        "uses_assessment_items": true
+    },
+    "related-rates": {
+        "uses_assessment_items": true
+    },
+    "relative-position-on-the-coordinate-plane": {
+        "uses_assessment_items": true
+    },
+    "remainder-theorem-of-polynomials": {
+        "uses_assessment_items": true
+    },
+    "renaissance-venice-in-the-1400s": {
+        "uses_assessment_items": true
+    },
+    "renal-regulation-of-blood-pressure---passage-1": {
+        "uses_assessment_items": true
+    },
+    "renal-regulation-of-blood-pressure---passage-2": {
+        "uses_assessment_items": true
+    },
+    "renal-regulation-of-blood-pressure-questions": {
+        "uses_assessment_items": true
+    },
+    "renal-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "renal-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "renal-system-questions": {
+        "uses_assessment_items": true
+    },
+    "repeated-addition": {
+        "uses_assessment_items": true
+    },
+    "representing-ratios": {
+        "uses_assessment_items": true
+    },
+    "representing-relationships-with-matrices": {
+        "uses_assessment_items": true
+    },
+    "reproductive-questions-2": {
+        "uses_assessment_items": true
+    },
+    "reproductive-system-questions": {
+        "uses_assessment_items": true
+    },
+    "respiratory-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "respiratory-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "respiratory-system-questions": {
+        "uses_assessment_items": true
+    },
+    "reverse-transcriptase-polymerase-chain-reaction--rt-pcr--of-a-uv-dependent-gene": {
+        "uses_assessment_items": true
+    },
+    "review-loops": {
+        "uses_assessment_items": true
+    },
+    "rewriting-and-interpreting-exponential-functions": {
+        "uses_assessment_items": true
+    },
+    "rewriting-expressions-to-reveal-information": {
+        "uses_assessment_items": true
+    },
+    "riemann-sums-and-sigma-notation": {
+        "uses_assessment_items": true
+    },
+    "rococo-art": {
+        "uses_assessment_items": true
+    },
+    "roman-silver-quiz": {
+        "uses_assessment_items": true
+    },
+    "romanesque-art": {
+        "uses_assessment_items": true
+    },
+    "romantic-and-sexual-networks-of-adolescents": {
+        "uses_assessment_items": true
+    },
+    "romanticism-in-england": {
+        "uses_assessment_items": true
+    },
+    "romanticism-in-france": {
+        "uses_assessment_items": true
+    },
+    "romanticism-in-the-united-states": {
+        "uses_assessment_items": true
+    },
+    "roots-of-decimals-and-fractions": {
+        "uses_assessment_items": true
+    },
+    "rotate-2d-shapes-to-make-3d-objects": {
+        "uses_assessment_items": true
+    },
+    "rotations-1": {
+        "uses_assessment_items": true
+    },
+    "rotations-2": {
+        "uses_assessment_items": true
+    },
+    "rounding-decimals": {
+        "uses_assessment_items": true
+    },
+    "rounding-to-the-nearest-ten-or-hundred": {
+        "uses_assessment_items": true
+    },
+    "rounding_numbers": {
+        "uses_assessment_items": false
+    },
+    "rounding_whole_numbers": {
+        "uses_assessment_items": false
+    },
+    "running-time-of-binary-search": {
+        "uses_assessment_items": true
+    },
+    "sample-spaces-for-compound-events": {
+        "uses_assessment_items": true
+    },
+    "san-vitale-quiz": {
+        "uses_assessment_items": true
+    },
+    "santa-sabina-quiz": {
+        "uses_assessment_items": true
+    },
+    "sarcophagus-of-junius-bassus-quiz": {
+        "uses_assessment_items": true
+    },
+    "sat-math--level-1": {
+        "uses_assessment_items": true
+    },
+    "sat-math--level-2": {
+        "uses_assessment_items": true
+    },
+    "sat-math--level-3": {
+        "uses_assessment_items": true
+    },
+    "sat-math--level-4": {
+        "uses_assessment_items": true
+    },
+    "sat-math--level-5": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-1-part-2": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-1-quiz-3": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-2-part-2": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-2-quiz-3": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-3-part-2": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-3-part-3": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-3-part-4": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-3-quiz-5": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-4-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-4-quiz-3": {
+        "uses_assessment_items": true
+    },
+    "sat-math-level-5-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "sat-reading--sentence-completion": {
+        "uses_assessment_items": true
+    },
+    "sat-writing--identifying-sentence-errors": {
+        "uses_assessment_items": true
+    },
+    "sat-writing--improving-sentences": {
+        "uses_assessment_items": true
+    },
+    "scalar_matrix_multiplication": {
+        "uses_assessment_items": true
+    },
+    "scaling_vectors": {
+        "uses_assessment_items": true
+    },
+    "scientific_notation": {
+        "uses_assessment_items": false
+    },
+    "scientific_notation_intuition": {
+        "uses_assessment_items": false
+    },
+    "seagram-building-quiz": {
+        "uses_assessment_items": true
+    },
+    "seated-boxer-quiz": {
+        "uses_assessment_items": true
+    },
+    "second-derivative-test": {
+        "uses_assessment_items": true
+    },
+    "segment_addition": {
+        "uses_assessment_items": false
+    },
+    "self-identity---passage-1": {
+        "uses_assessment_items": true
+    },
+    "self-identity---passage-2": {
+        "uses_assessment_items": true
+    },
+    "self-identity-questions": {
+        "uses_assessment_items": true
+    },
+    "sensory-perception---passage-1": {
+        "uses_assessment_items": true
+    },
+    "sensory-perception---passage-2": {
+        "uses_assessment_items": true
+    },
+    "separable-differential-equations": {
+        "uses_assessment_items": true
+    },
+    "separations-and-purifications---passage-1": {
+        "uses_assessment_items": true
+    },
+    "separations-and-purifications---passage-2": {
+        "uses_assessment_items": true
+    },
+    "sequences-as-functions": {
+        "uses_assessment_items": true
+    },
+    "shaded_areas": {
+        "uses_assessment_items": false
+    },
+    "shape-of-distributions": {
+        "uses_assessment_items": true
+    },
+    "shifting_and_reflecting_functions": {
+        "uses_assessment_items": false
+    },
+    "shonibare--the-swing-quiz": {
+        "uses_assessment_items": true
+    },
+    "siena-in-the-1300s": {
+        "uses_assessment_items": true
+    },
+    "sight--vision----passage-1": {
+        "uses_assessment_items": true
+    },
+    "sight--vision----passage-2": {
+        "uses_assessment_items": true
+    },
+    "significant_figures_1": {
+        "uses_assessment_items": false
+    },
+    "signs-of-sums": {
+        "uses_assessment_items": true
+    },
+    "similar_triangles_1": {
+        "uses_assessment_items": false
+    },
+    "similar_triangles_2": {
+        "uses_assessment_items": false
+    },
+    "simone-martini-s-annunciation-quiz": {
+        "uses_assessment_items": true
+    },
+    "simplifying_expressions_with_exponents": {
+        "uses_assessment_items": false
+    },
+    "simplifying_fractions": {
+        "uses_assessment_items": false
+    },
+    "simplifying_radicals": {
+        "uses_assessment_items": false
+    },
+    "simplifying_rational_expressions_1": {
+        "uses_assessment_items": false
+    },
+    "simplifying_rational_expressions_2": {
+        "uses_assessment_items": true
+    },
+    "simplifying_rational_expressions_3": {
+        "uses_assessment_items": false
+    },
+    "simplifying_rational_expressions_4": {
+        "uses_assessment_items": false
+    },
+    "simultaneous-hermaphroditism--egg-trading--and-the-prisoner-s-dilemma": {
+        "uses_assessment_items": true
+    },
+    "skeletal-system---passage-1": {
+        "uses_assessment_items": true
+    },
+    "skeletal-system---passage-2": {
+        "uses_assessment_items": true
+    },
+    "skeletal-system-questions": {
+        "uses_assessment_items": true
+    },
+    "skip-counting-by-100s": {
+        "uses_assessment_items": true
+    },
+    "skip-counting-by-10s": {
+        "uses_assessment_items": true
+    },
+    "skip-counting-by-5s": {
+        "uses_assessment_items": true
+    },
+    "sleep-and-consciousness---passage-1": {
+        "uses_assessment_items": true
+    },
+    "sleep-and-consciousness---passage-2": {
+        "uses_assessment_items": true
+    },
+    "slicing-3d-figures": {
+        "uses_assessment_items": true
+    },
+    "slope-fields": {
+        "uses_assessment_items": true
+    },
+    "slope-from-a-graph": {
+        "uses_assessment_items": true
+    },
+    "slope-from-an-equation-in-slope-intercept-form": {
+        "uses_assessment_items": true
+    },
+    "slope-from-an-equation-in-standard-form": {
+        "uses_assessment_items": true
+    },
+    "slope-from-two-points": {
+        "uses_assessment_items": true
+    },
+    "slope-intercept-equation-from-graph": {
+        "uses_assessment_items": true
+    },
+    "slope-intercept-equation-from-two-points": {
+        "uses_assessment_items": true
+    },
+    "slope-of-secant-lines": {
+        "uses_assessment_items": true
+    },
+    "sluter-s-well-of-moses-quiz": {
+        "uses_assessment_items": true
+    },
+    "sn-passage-1": {
+        "uses_assessment_items": true
+    },
+    "sn-passage-2": {
+        "uses_assessment_items": true
+    },
+    "social-behavior-questions": {
+        "uses_assessment_items": true
+    },
+    "social-conflict-theory-in-an-historical-context": {
+        "uses_assessment_items": true
+    },
+    "social-interactions-questions-1": {
+        "uses_assessment_items": true
+    },
+    "social-interactions-questions-2": {
+        "uses_assessment_items": true
+    },
+    "social-psychology---passage-1": {
+        "uses_assessment_items": true
+    },
+    "social-psychology---passage-2": {
+        "uses_assessment_items": true
+    },
+    "social-psychology-questions": {
+        "uses_assessment_items": true
+    },
+    "social-structures---passage-1": {
+        "uses_assessment_items": true
+    },
+    "social-structures---passage-2": {
+        "uses_assessment_items": true
+    },
+    "socioeconomic-gradients-in-health": {
+        "uses_assessment_items": true
+    },
+    "socioeconomic-status-and-mental-illnesses": {
+        "uses_assessment_items": true
+    },
+    "solid_geometry": {
+        "uses_assessment_items": false
+    },
+    "solutions-to-linear-equations": {
+        "uses_assessment_items": true
+    },
+    "solutions_to_quadratic_equations": {
+        "uses_assessment_items": false
+    },
+    "solutions_to_systems_of_equations": {
+        "uses_assessment_items": false
+    },
+    "solving-2-step-inequalities": {
+        "uses_assessment_items": true
+    },
+    "solving-basic-multiplication-and-division-equations": {
+        "uses_assessment_items": true
+    },
+    "solving-for-unknown-angles": {
+        "uses_assessment_items": true
+    },
+    "solving-matrix-equations": {
+        "uses_assessment_items": true
+    },
+    "solving-problems-with-bar-graphs-1": {
+        "uses_assessment_items": true
+    },
+    "solving-problems-with-bar-graphs-2": {
+        "uses_assessment_items": true
+    },
+    "solving-problems-with-bar-graphs-3": {
+        "uses_assessment_items": true
+    },
+    "solving-problems-with-line-plots-1": {
+        "uses_assessment_items": true
+    },
+    "solving-problems-with-picture-graphs-1": {
+        "uses_assessment_items": true
+    },
+    "solving-problems-with-picture-graphs-2": {
+        "uses_assessment_items": true
+    },
+    "solving-problems-with-similar-and-congruent-triangles": {
+        "uses_assessment_items": true
+    },
+    "solving-ratio-problems-with-tables": {
+        "uses_assessment_items": true
+    },
+    "solving_for_a_variable": {
+        "uses_assessment_items": false
+    },
+    "solving_for_the_x-intercept": {
+        "uses_assessment_items": true
+    },
+    "solving_quadratics_by_factoring": {
+        "uses_assessment_items": false
+    },
+    "solving_quadratics_by_factoring_2": {
+        "uses_assessment_items": false
+    },
+    "solving_quadratics_by_taking_the_square_root": {
+        "uses_assessment_items": true
+    },
+    "solving_rational_equations_2": {
+        "uses_assessment_items": false
+    },
+    "solving_similar_triangles_1": {
+        "uses_assessment_items": false
+    },
+    "solving_similar_triangles_2": {
+        "uses_assessment_items": false
+    },
+    "somatosensation---passage-1": {
+        "uses_assessment_items": true
+    },
+    "somatosensation---passage-2": {
+        "uses_assessment_items": true
+    },
+    "somatosensory-effects-of-temple-grandin-s-squeeze-box-on-hypersensitivity-": {
+        "uses_assessment_items": true
+    },
+    "sort-groups-by-count": {
+        "uses_assessment_items": true
+    },
+    "sound--audition----passage-1": {
+        "uses_assessment_items": true
+    },
+    "sound--audition----passage-2": {
+        "uses_assessment_items": true
+    },
+    "sound--passage-2": {
+        "uses_assessment_items": true
+    },
+    "sound-quiz-passage-1": {
+        "uses_assessment_items": true
+    },
+    "special-derivatives-quiz": {
+        "uses_assessment_items": true
+    },
+    "special_derivatives": {
+        "uses_assessment_items": true
+    },
+    "speed-and-velocity---passage-1": {
+        "uses_assessment_items": true
+    },
+    "speed-and-velocity---passage-2": {
+        "uses_assessment_items": true
+    },
+    "speed-and-velocity-questions": {
+        "uses_assessment_items": true
+    },
+    "spherical-mirrors---passage-1": {
+        "uses_assessment_items": true
+    },
+    "spherical-mirrors---passage-2": {
+        "uses_assessment_items": true
+    },
+    "spinal-nerves-and-guillain-barre-syndrome": {
+        "uses_assessment_items": true
+    },
+    "spiral-jetty-quiz": {
+        "uses_assessment_items": true
+    },
+    "square_roots": {
+        "uses_assessment_items": false
+    },
+    "square_roots_2": {
+        "uses_assessment_items": true
+    },
+    "squeeze-theorem": {
+        "uses_assessment_items": true
+    },
+    "st--denis-ambulatory-quiz": {
+        "uses_assessment_items": true
+    },
+    "stained-glass-quiz": {
+        "uses_assessment_items": true
+    },
+    "standard-of-ur-quiz": {
+        "uses_assessment_items": true
+    },
+    "standard_deviation": {
+        "uses_assessment_items": false
+    },
+    "standard_deviation_of_a_population": {
+        "uses_assessment_items": false
+    },
+    "statistical-questions": {
+        "uses_assessment_items": true
+    },
+    "stoichiometry-i-passage--properties-of-acetic-acid": {
+        "uses_assessment_items": true
+    },
+    "stress---passage-1": {
+        "uses_assessment_items": true
+    },
+    "stress---passage-2": {
+        "uses_assessment_items": true
+    },
+    "structure-in-expressions-1": {
+        "uses_assessment_items": true
+    },
+    "structure-of-the-central-nervous-system": {
+        "uses_assessment_items": true
+    },
+    "subtract-tens": {
+        "uses_assessment_items": true
+    },
+    "subtract-with-in-100-level-1": {
+        "uses_assessment_items": true
+    },
+    "subtract-within-100-level-2": {
+        "uses_assessment_items": true
+    },
+    "subtract-within-1000--level-1": {
+        "uses_assessment_items": true
+    },
+    "subtract-within-1000--level-2": {
+        "uses_assessment_items": true
+    },
+    "subtracting_decimals": {
+        "uses_assessment_items": false
+    },
+    "subtracting_decimals_0.5": {
+        "uses_assessment_items": false
+    },
+    "subtracting_decimals_2": {
+        "uses_assessment_items": false
+    },
+    "subtracting_fractions": {
+        "uses_assessment_items": false
+    },
+    "subtracting_fractions_with_common_denominators": {
+        "uses_assessment_items": false
+    },
+    "subtraction-word-problems-within-10": {
+        "uses_assessment_items": true
+    },
+    "subtraction_1": {
+        "uses_assessment_items": false
+    },
+    "subtraction_2": {
+        "uses_assessment_items": false
+    },
+    "subtraction_3": {
+        "uses_assessment_items": false
+    },
+    "subtraction_4": {
+        "uses_assessment_items": false
+    },
+    "surface-and-volume-density-word-problems": {
+        "uses_assessment_items": true
+    },
+    "surface-area": {
+        "uses_assessment_items": true
+    },
+    "surface-areas": {
+        "uses_assessment_items": true
+    },
+    "surrealism--quiz": {
+        "uses_assessment_items": true
+    },
+    "sutton-hoo-ship-burial-quiz": {
+        "uses_assessment_items": true
+    },
+    "symbolic-differentiation": {
+        "uses_assessment_items": true
+    },
+    "symbolism-art-nouveau": {
+        "uses_assessment_items": true
+    },
+    "symmetry-and-periodicity-of-trig-functions": {
+        "uses_assessment_items": true
+    },
+    "symmetry-of-two-dimensional-shapes": {
+        "uses_assessment_items": true
+    },
+    "synthesis-of-anti-tumor-drug-combretastatin-and-its-derivatives": {
+        "uses_assessment_items": true
+    },
+    "systems-of-nonlinear-equations": {
+        "uses_assessment_items": true
+    },
+    "systems_of_equations": {
+        "uses_assessment_items": true
+    },
+    "systems_of_equations_with_elimination": {
+        "uses_assessment_items": true
+    },
+    "systems_of_equations_with_elimination_0.5": {
+        "uses_assessment_items": true
+    },
+    "systems_of_equations_with_substitution": {
+        "uses_assessment_items": true
+    },
+    "systems_of_equations_word_problems": {
+        "uses_assessment_items": false
+    },
+    "tachycardias-quiz-1": {
+        "uses_assessment_items": true
+    },
+    "tachycardias-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "take-apart": {
+        "uses_assessment_items": true
+    },
+    "tangent-slope-is-limiting-value-of-secant-slope": {
+        "uses_assessment_items": true
+    },
+    "tangents-to-polar-curves": {
+        "uses_assessment_items": true
+    },
+    "taste--gustation--and-smell--olfaction----passage-1": {
+        "uses_assessment_items": true
+    },
+    "taste--gustation--and-smell--olfaction----passage-2": {
+        "uses_assessment_items": true
+    },
+    "teen-numbers-1": {
+        "uses_assessment_items": true
+    },
+    "telling-time-word-problems": {
+        "uses_assessment_items": true
+    },
+    "telling-time-word-problems-with-the-number-line": {
+        "uses_assessment_items": true
+    },
+    "telling_time": {
+        "uses_assessment_items": false
+    },
+    "telling_time_0.5": {
+        "uses_assessment_items": false
+    },
+    "tens-and-ones": {
+        "uses_assessment_items": true
+    },
+    "tension-in-the-muscles": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge--biodiversity-and-the-tree-of-life": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge--biodiversity-patterns-of-speciation-and-extinction": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge--genetic-and-ecosystem-biodiversity": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge--harnessing-science-and-education-for-biodiversity-conservation-": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge--the-evolutionary-causes-of-biodiversity": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge-of-biodiversity-analyses-and-unknowns": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge-of-biodiversity-champions": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge-of-biodiversity-fieldwork": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge-of-global-threats-to-biodiversity": {
+        "uses_assessment_items": true
+    },
+    "test-your-knowledge-of-local-threats-to-biodiversity": {
+        "uses_assessment_items": true
+    },
+    "testing-new-suture-material": {
+        "uses_assessment_items": true
+    },
+    "testing-solutions-of-equations-inequalities": {
+        "uses_assessment_items": true
+    },
+    "testing-solutions-of-inequalities": {
+        "uses_assessment_items": true
+    },
+    "that-s-not-fair-": {
+        "uses_assessment_items": true
+    },
+    "the--speed-limit--of-dna-polymerase-": {
+        "uses_assessment_items": true
+    },
+    "the-alhambra-quiz": {
+        "uses_assessment_items": true
+    },
+    "the-bicarbonate-buffering-system-and-titration-curves": {
+        "uses_assessment_items": true
+    },
+    "the-chemical-structure-consequences-of-beta-lactams": {
+        "uses_assessment_items": true
+    },
+    "the-circuit-elements-of-a-simple-defibrillator": {
+        "uses_assessment_items": true
+    },
+    "the-definite-integral-as-the-limit-of-a-riemann-sum": {
+        "uses_assessment_items": true
+    },
+    "the-discovery-of-leptin": {
+        "uses_assessment_items": true
+    },
+    "the-early-renaissance-in-florence": {
+        "uses_assessment_items": true
+    },
+    "the-effect-of-contrast-agents-on-mri-signals": {
+        "uses_assessment_items": true
+    },
+    "the-effects-of-ear-canal-acoustics-on-hearing-ability": {
+        "uses_assessment_items": true
+    },
+    "the-effects-of-microgravity-on-muscle-tissues": {
+        "uses_assessment_items": true
+    },
+    "the-effects-of-ultrasound-on-different-tissue-types": {
+        "uses_assessment_items": true
+    },
+    "the-electrophoretic-separation-of-proteins": {
+        "uses_assessment_items": true
+    },
+    "the-evolution-of-gecko-toepads": {
+        "uses_assessment_items": true
+    },
+    "the-forces-and-torques-acting-on-the-hip-joint": {
+        "uses_assessment_items": true
+    },
+    "the-forearm-as-an-example-of-a-third-class-lever": {
+        "uses_assessment_items": true
+    },
+    "the-formal-and-alternate-form-of-the-derivative": {
+        "uses_assessment_items": true
+    },
+    "the-fundamental-theorem-of-algebra": {
+        "uses_assessment_items": true
+    },
+    "the-fundamental-theorem-of-calculus": {
+        "uses_assessment_items": true
+    },
+    "the-gates-quiz": {
+        "uses_assessment_items": true
+    },
+    "the-great-mosque-of-isfahan-quiz": {
+        "uses_assessment_items": true
+    },
+    "the-great-pyramids-at-giza-quiz": {
+        "uses_assessment_items": true
+    },
+    "the-high-renaissance-in-florence-and-rome": {
+        "uses_assessment_items": true
+    },
+    "the-imaginary-unit-and-complex-numbers": {
+        "uses_assessment_items": true
+    },
+    "the-kinetic-properties-of-ideal-gases": {
+        "uses_assessment_items": true
+    },
+    "the-mechanics-of-standing-balance": {
+        "uses_assessment_items": true
+    },
+    "the-only-known-case-of-an-hiv-cure": {
+        "uses_assessment_items": true
+    },
+    "the-radioactivity-of-iodine-131": {
+        "uses_assessment_items": true
+    },
+    "the-refraction-of-light-through-the-human-eye": {
+        "uses_assessment_items": true
+    },
+    "the-renaissance-in-venice-in-the-1500s": {
+        "uses_assessment_items": true
+    },
+    "the-role-of-alcohol-abuse-in-pancreatitis": {
+        "uses_assessment_items": true
+    },
+    "the-role-of-glycolysis-and-the-pentose-phosphate-pathway-in-fatty-acid-synthesis-1": {
+        "uses_assessment_items": true
+    },
+    "the-structure--growth--physiology--and-genetics-of-prokaryotes-and-viruses": {
+        "uses_assessment_items": true
+    },
+    "the-structure--growth--physiology--and-genetics-of-prokaryotes-and-viruses-2": {
+        "uses_assessment_items": true
+    },
+    "the-structure-and-function-of-glycogen-": {
+        "uses_assessment_items": true
+    },
+    "the-synapse---passage-1": {
+        "uses_assessment_items": true
+    },
+    "the-synapse---passage-2": {
+        "uses_assessment_items": true
+    },
+    "the-thermodynamics-of-atp-hydrolysis-in-living-cells": {
+        "uses_assessment_items": true
+    },
+    "the-underlying-mechanism-of-milk-allergies-": {
+        "uses_assessment_items": true
+    },
+    "the_complex_plane": {
+        "uses_assessment_items": false
+    },
+    "the_fundamental_theorem_of_arithmetic": {
+        "uses_assessment_items": false
+    },
+    "theories-of-language-acquisition": {
+        "uses_assessment_items": true
+    },
+    "theories-of-personality": {
+        "uses_assessment_items": true
+    },
+    "theories-of-personality---passage-1": {
+        "uses_assessment_items": true
+    },
+    "thin-lens-quiz-passage-1": {
+        "uses_assessment_items": true
+    },
+    "thin-lens-quiz-passage-2": {
+        "uses_assessment_items": true
+    },
+    "thutmose-bust-of-nefertiti-quiz": {
+        "uses_assessment_items": true
+    },
+    "tickle-me-nim--do-primates-speak-language-": {
+        "uses_assessment_items": true
+    },
+    "titian-s-venus-of-urbino-quiz": {
+        "uses_assessment_items": true
+    },
+    "titration-questions": {
+        "uses_assessment_items": true
+    },
+    "to-cohabit-or-not-to-cohabit-": {
+        "uses_assessment_items": true
+    },
+    "transformation-matrices-1": {
+        "uses_assessment_items": true
+    },
+    "transformation-puzzles": {
+        "uses_assessment_items": true
+    },
+    "transformation-puzzles-1-5": {
+        "uses_assessment_items": true
+    },
+    "transformation-puzzles-2": {
+        "uses_assessment_items": true
+    },
+    "transforming-polygons": {
+        "uses_assessment_items": true
+    },
+    "translating-expressions-with-parentheses": {
+        "uses_assessment_items": true
+    },
+    "translations": {
+        "uses_assessment_items": true
+    },
+    "translocations-in-the-germline": {
+        "uses_assessment_items": true
+    },
+    "transport-across-a-cell-membrane-questions": {
+        "uses_assessment_items": true
+    },
+    "trapezoid-rule": {
+        "uses_assessment_items": true
+    },
+    "trends-in-categorical-data": {
+        "uses_assessment_items": true
+    },
+    "triangle_angles_1": {
+        "uses_assessment_items": false
+    },
+    "triangle_inequality_theorem": {
+        "uses_assessment_items": false
+    },
+    "trig_addition_identities": {
+        "uses_assessment_items": false
+    },
+    "trigonometric-functions-and-side-ratios-in-right-triangles": {
+        "uses_assessment_items": true
+    },
+    "trigonometric-functions-of-special-angles": {
+        "uses_assessment_items": true
+    },
+    "trigonometry_0.5": {
+        "uses_assessment_items": false
+    },
+    "trigonometry_1": {
+        "uses_assessment_items": true
+    },
+    "trigonometry_1.5": {
+        "uses_assessment_items": false
+    },
+    "trigonometry_2": {
+        "uses_assessment_items": false
+    },
+    "turner-s-slave-ship-quiz": {
+        "uses_assessment_items": true
+    },
+    "two-sided-limits-from-graphs": {
+        "uses_assessment_items": true
+    },
+    "two-sided-limits-using-algebra": {
+        "uses_assessment_items": true
+    },
+    "two-step-equations-with-decimals-and-fractions": {
+        "uses_assessment_items": true
+    },
+    "two-step-word-problems-with-addition--subtraction--multiplication--and-division": {
+        "uses_assessment_items": true
+    },
+    "two-way-frequency-tables": {
+        "uses_assessment_items": true
+    },
+    "two-way-relative-frequency-tables": {
+        "uses_assessment_items": true
+    },
+    "type-2-diabetes-mellitus": {
+        "uses_assessment_items": true
+    },
+    "types-of-statistical-studies": {
+        "uses_assessment_items": true
+    },
+    "understanding-2-digit-numbers": {
+        "uses_assessment_items": true
+    },
+    "understanding-addition-and-subtraction-on-the-number-line": {
+        "uses_assessment_items": true
+    },
+    "understanding-addition-and-subtraction-with-negative-numbers": {
+        "uses_assessment_items": true
+    },
+    "understanding-angle-addition-formulas": {
+        "uses_assessment_items": true
+    },
+    "understanding-area": {
+        "uses_assessment_items": true
+    },
+    "understanding-dividing-fractions-by-fractions": {
+        "uses_assessment_items": true
+    },
+    "understanding-fractional-exponents": {
+        "uses_assessment_items": true
+    },
+    "understanding-fractions-as-division": {
+        "uses_assessment_items": true
+    },
+    "understanding-fractions-as-division--word-problems": {
+        "uses_assessment_items": true
+    },
+    "understanding-inequalities-and-the-number-line": {
+        "uses_assessment_items": true
+    },
+    "understanding-inverse-functions": {
+        "uses_assessment_items": true
+    },
+    "understanding-inverse-trig-functions": {
+        "uses_assessment_items": true
+    },
+    "understanding-linear-and-exponential-models": {
+        "uses_assessment_items": true
+    },
+    "understanding-logs-as-inverse-exponentials": {
+        "uses_assessment_items": true
+    },
+    "understanding-multiplying-fractions-and-whole-numbers": {
+        "uses_assessment_items": true
+    },
+    "understanding-multiplying-fractions-and-whole-numbers-2": {
+        "uses_assessment_items": true
+    },
+    "understanding-multiplying-fractions-by-fractions": {
+        "uses_assessment_items": true
+    },
+    "understanding-place-value-1": {
+        "uses_assessment_items": true
+    },
+    "understanding-probability": {
+        "uses_assessment_items": true
+    },
+    "understanding-sequences": {
+        "uses_assessment_items": true
+    },
+    "understanding-series": {
+        "uses_assessment_items": true
+    },
+    "understanding-social-structures-questions": {
+        "uses_assessment_items": true
+    },
+    "understanding-solution-methods-to-systems-of-equations": {
+        "uses_assessment_items": true
+    },
+    "understanding-systems-of-equations-word-problems": {
+        "uses_assessment_items": true
+    },
+    "understanding-the-ballistics-of-gene-bombardment": {
+        "uses_assessment_items": true
+    },
+    "understanding-the-equation-solving-process": {
+        "uses_assessment_items": true
+    },
+    "understanding-the-process-for-solving-linear-equations": {
+        "uses_assessment_items": true
+    },
+    "understanding-the-properties-of-radioactive-tracers": {
+        "uses_assessment_items": true
+    },
+    "understanding-whole-number-representations": {
+        "uses_assessment_items": true
+    },
+    "understanding_decimals_place_value": {
+        "uses_assessment_items": false
+    },
+    "understanding_moving_the_decimal": {
+        "uses_assessment_items": false
+    },
+    "unit-circle-trigonometry": {
+        "uses_assessment_items": true
+    },
+    "unit-sense": {
+        "uses_assessment_items": true
+    },
+    "unit-vector": {
+        "uses_assessment_items": true
+    },
+    "unit_circle": {
+        "uses_assessment_items": false
+    },
+    "units": {
+        "uses_assessment_items": true
+    },
+    "us-identity--the-body-quiz": {
+        "uses_assessment_items": true
+    },
+    "using-logarithms-to-solve-exponential-equations": {
+        "uses_assessment_items": true
+    },
+    "using-probability-to-make-fair-decisions": {
+        "uses_assessment_items": true
+    },
+    "using-probability-to-make-predictions": {
+        "uses_assessment_items": true
+    },
+    "using-rectangles-to-approximate-area-under-a-curve": {
+        "uses_assessment_items": true
+    },
+    "using-ultrasounds-to-measure-blood-flow-velocity-1": {
+        "uses_assessment_items": true
+    },
+    "using-zeros-to-graph-polynomials": {
+        "uses_assessment_items": true
+    },
+    "valid-claims": {
+        "uses_assessment_items": true
+    },
+    "validity": {
+        "uses_assessment_items": true
+    },
+    "van-der-weyden-s-deposition-quiz": {
+        "uses_assessment_items": true
+    },
+    "variance": {
+        "uses_assessment_items": false
+    },
+    "vasculitis-quiz": {
+        "uses_assessment_items": true
+    },
+    "vasculitis-quiz-2": {
+        "uses_assessment_items": true
+    },
+    "vector-word-problems": {
+        "uses_assessment_items": true
+    },
+    "vectors-and-scalers---passage-1": {
+        "uses_assessment_items": true
+    },
+    "vectors-and-scalers---passage-2": {
+        "uses_assessment_items": true
+    },
+    "vel-zquez-s-las-meninas-quiz": {
+        "uses_assessment_items": true
+    },
+    "verifying-solutions-to-systems-of-equations": {
+        "uses_assessment_items": true
+    },
+    "veristic-male-portrait-quiz": {
+        "uses_assessment_items": true
+    },
+    "vermeer-s-woman-holding-a-balance-quiz": {
+        "uses_assessment_items": true
+    },
+    "versailles-quiz": {
+        "uses_assessment_items": true
+    },
+    "vertex_of_a_parabola": {
+        "uses_assessment_items": false
+    },
+    "vertical_angles": {
+        "uses_assessment_items": false
+    },
+    "vertical_angles_2": {
+        "uses_assessment_items": false
+    },
+    "victory--nike--adjusting-her-sandal-quiz": {
+        "uses_assessment_items": true
+    },
+    "victory-stele-of-naram-sin-quiz": {
+        "uses_assessment_items": true
+    },
+    "vietnam-veterans-memorial-quiz": {
+        "uses_assessment_items": true
+    },
+    "views_of_a_function": {
+        "uses_assessment_items": false
+    },
+    "vigenere_cipher_encryption": {
+        "uses_assessment_items": false
+    },
+    "virulence-factors-in-outbreak-strain-cholera": {
+        "uses_assessment_items": true
+    },
+    "virulence-factors-of-listeria-monocytogenes": {
+        "uses_assessment_items": true
+    },
+    "visual-pathways-in-the-brain--and-what-happens-when-they-break": {
+        "uses_assessment_items": true
+    },
+    "visualizing-and-interpreting-relationships-between-patterns": {
+        "uses_assessment_items": true
+    },
+    "visualizing-equivalent-fractions": {
+        "uses_assessment_items": true
+    },
+    "visualizing_derivatives": {
+        "uses_assessment_items": false
+    },
+    "visually-comparing-fractions": {
+        "uses_assessment_items": true
+    },
+    "volume-formula-intuition": {
+        "uses_assessment_items": true
+    },
+    "volume-word-problems-1": {
+        "uses_assessment_items": true
+    },
+    "volume-word-problems-with-cones--cylinders--and-spheres": {
+        "uses_assessment_items": true
+    },
+    "volume-word-problems-with-fractions": {
+        "uses_assessment_items": true
+    },
+    "volume_1": {
+        "uses_assessment_items": false
+    },
+    "volume_2": {
+        "uses_assessment_items": true
+    },
+    "volume_with_fractions": {
+        "uses_assessment_items": false
+    },
+    "volume_with_unit_cubes": {
+        "uses_assessment_items": false
+    },
+    "volume_with_unit_cubes_2": {
+        "uses_assessment_items": false
+    },
+    "volumes-of-solids-of-known-cross-section": {
+        "uses_assessment_items": true
+    },
+    "volumes-of-solids-of-revolution--discs-and-washers": {
+        "uses_assessment_items": true
+    },
+    "volumes-of-solids-of-revolution-by-shells": {
+        "uses_assessment_items": true
+    },
+    "volumes-with-unit-cubes": {
+        "uses_assessment_items": true
+    },
+    "walker--darkytown-rebellion--quiz": {
+        "uses_assessment_items": true
+    },
+    "watteau--pilgrimage-to-cythera": {
+        "uses_assessment_items": true
+    },
+    "what-are-your-chances-of-getting-divorced-": {
+        "uses_assessment_items": true
+    },
+    "what-causes-red-blood-cells-to-sickle-": {
+        "uses_assessment_items": true
+    },
+    "what-conditions-influence-lyophilisation-": {
+        "uses_assessment_items": true
+    },
+    "which-has-more-": {
+        "uses_assessment_items": true
+    },
+    "why-do-we-believe-that-there-are-universal-emotions-": {
+        "uses_assessment_items": true
+    },
+    "wilton-diptych-quiz": {
+        "uses_assessment_items": true
+    },
+    "work-and-energy---passage-1": {
+        "uses_assessment_items": true
+    },
+    "work-and-energy---passage-2": {
+        "uses_assessment_items": true
+    },
+    "working-with-units": {
+        "uses_assessment_items": true
+    },
+    "world-war-I-causes": {
+        "uses_assessment_items": true
+    },
+    "world_war_i": {
+        "uses_assessment_items": true
+    },
+    "wright-s-fallingwater-quiz": {
+        "uses_assessment_items": true
+    },
+    "writing-and-interpreting-decimals": {
+        "uses_assessment_items": true
+    },
+    "writing-basic-algebraic-expressions-word-problems-2": {
+        "uses_assessment_items": true
+    },
+    "writing-expressions-with-variables-1": {
+        "uses_assessment_items": true
+    },
+    "writing-expressions-with-variables-word-problems": {
+        "uses_assessment_items": true
+    },
+    "writing-fractions-as-repeating-decimals": {
+        "uses_assessment_items": true
+    },
+    "writing-fractions-as-whole-numbers": {
+        "uses_assessment_items": true
+    },
+    "writing-numbers-to-1000": {
+        "uses_assessment_items": true
+    },
+    "writing-numerical-inequalities": {
+        "uses_assessment_items": true
+    },
+    "writing-systems-of-equations-as-matrix-equations": {
+        "uses_assessment_items": true
+    },
+    "writing-the-equation-of-a-line-in-any-form": {
+        "uses_assessment_items": true
+    },
+    "writing_expressions_1": {
+        "uses_assessment_items": false
+    },
+    "writing_expressions_2": {
+        "uses_assessment_items": false
+    },
+    "writing_proportions": {
+        "uses_assessment_items": false
+    },
+    "ww1-aftermath": {
+        "uses_assessment_items": true
+    },
+    "ww1-secondary-fronts": {
+        "uses_assessment_items": true
+    },
+    "ww1blockades": {
+        "uses_assessment_items": true
+    },
+    "xu-bing--book-from-the-sky-quiz": {
+        "uses_assessment_items": true
+    },
+    "your-heart-does-work--a-relationship-of-pressure-and-volume": {
+        "uses_assessment_items": true
+    },
+    "z_scores_1": {
+        "uses_assessment_items": false
+    },
+    "z_scores_2": {
+        "uses_assessment_items": false
+    },
+    "z_scores_3": {
+        "uses_assessment_items": false
+    },
+    "zaha-hadid--maxii-national-museum-quiz": {
+        "uses_assessment_items": true
+    },
+    "zero-and-identity-matrices": {
+        "uses_assessment_items": true
+    }
+}
