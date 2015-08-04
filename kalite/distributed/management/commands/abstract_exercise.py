@@ -6,7 +6,7 @@ import json
 logging = settings.LOG
 EXERCISES_FILEPATH = os.path.join(settings.CHANNEL_DATA_PATH, "exercises.json")
 EXERCISES_FILEPATH_BRIEF = os.path.join(
-    settings.CHANNEL_DATA_PATH, "exercises_brief.json")
+    settings.CHANNEL_DATA_PATH, "exercises_index.json")
 
 
 class Command(BaseCommand):
@@ -15,27 +15,22 @@ class Command(BaseCommand):
         logging.info("Abstracting...")
         self.convert(EXERCISES_FILEPATH, EXERCISES_FILEPATH_BRIEF)
 
-    def convert(self, jsonurl, jsonurl_brief):
+    def convert(self, jsonurl, jsonurl_index):
         try:
             jsonfile = open(jsonurl)
             items = json.load(jsonfile)
-            jsonfile_brief = open(jsonurl_brief, 'w')
+            jsonfile_index = open(jsonurl_index, 'w')
         except IOError as e:
             logging.error(e)
             return
 
         outputitem = {}
         for item in items:
-            thisitem = items[item]
-            for entry in thisitem:
-                if entry == "all_assessment_items" or entry == "uses_assessment_items":
-                    outputitem[item] = {}
-                    outputitem[item][entry] = thisitem[entry]
-
+            outputitem[item] = None
         try:
-            json.dump(outputitem, jsonfile_brief)
-            jsonfile_brief.close()
-            logging.info(jsonurl + " has been converted to " + jsonurl_brief)
+            json.dump(outputitem, jsonfile_index)
+            jsonfile_index.close()
+            logging.info(jsonurl + " has been converted to " + jsonurl_index)
         except IOError as e:
             logging.error(e)
             return
