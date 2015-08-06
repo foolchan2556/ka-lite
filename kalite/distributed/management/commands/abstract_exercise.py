@@ -1,3 +1,8 @@
+""" abstract_exercise
+    This module is used to convert exercises.json file into index for reducing memory usage.
+    Usage: kalite manage abstract_exercise
+"""
+
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 import os
