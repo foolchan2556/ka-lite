@@ -4,6 +4,8 @@ import os
 from sqlitedict import SqliteDict
 
 logging = settings.LOG
+kalitedict = None
+sqlitepath = None
 
 # Class for the node objects.
 
@@ -15,15 +17,13 @@ class _dlnode(object):
 
 
 class jsoncache(lrucache):
-    kalitedict = None
-    sqlitepath = None
 
     def __init__(self, cachesize=10, sqlpath="exercises.sqlite"):
         lrucache.__init__(self, size=cachesize)
-        self.sqlitepath = os.path.join(
+        sqlitepath = os.path.join(
             settings.CHANNEL_DATA_PATH, sqlpath)
-        self.kalitedict = SqliteDict(sqlitepath, autocommit=True)
-        logging.info("Constructed a lrucache of size " + self.size)
+        kalitedict = SqliteDict(sqlitepath, autocommit=True)
+        logging.info("Constructed a lrucache of size " + str(cachesize))
 
     def __getitem__(self, key):
         default = '[]'
@@ -74,7 +74,7 @@ class jsoncache(lrucache):
             if self.callback is not None:
                 self.callback(node.key, node.value)
             # store the item into sqlite before we remove the key
-            self.kalitedict[node.key] = node.value
+            kalitedict[node.key] = node.value
             del self.table[node.key]
 
         # Place the new key and value in the node
