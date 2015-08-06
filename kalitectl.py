@@ -28,6 +28,7 @@ Options:
                         automatic job scheduler required for downloading videos
                         and sync'ing with online sources. If you don't need this
                         you can skip it!
+  --traceback           Print the traceback.
   DJANGO_OPTIONS        All options are passed on to the django manage command.
                         Notice that all django options must appear *last* and
                         should not be mixed with other options. Only long-name
@@ -361,7 +362,7 @@ class ManageThread(Thread):
         utility.execute()
 
 
-def manage(command, args=[], as_thread=False):
+def manage(command, traceback=False, args=None, as_thread=False):
     """
     Run a django command on the kalite project
 
@@ -370,7 +371,13 @@ def manage(command, args=[], as_thread=False):
     :param as_daemon: Creates a new process for the command
     :param as_thread: Runs command in thread and returns immediately
     """
-    
+
+    if not args:
+        args = []
+
+    if traceback:
+        args.append("--traceback")
+
     if not as_thread:
         if PROFILE:
             profile_memory()
@@ -386,7 +393,7 @@ def manage(command, args=[], as_thread=False):
         thread.start()
 
 
-def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=None):
+def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=None, traceback=False):
     """
     Start the kalite server as a daemon
 
@@ -397,16 +404,16 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
     :param skip_job_scheduler: Skips running the job scheduler in a separate thread
     """
     # TODO: Do we want to fail if running as root?
-    
+
     port = int(port or DEFAULT_LISTEN_PORT)
-    
+
     if not daemonize:
         sys.stderr.write("Running 'kalite start' in foreground...\n")
     else:
         sys.stderr.write("Running 'kalite start' as daemon (system service)\n")
-    
+
     sys.stderr.write("\nStand by while the server loads its data...\n\n")
-    
+
     if os.path.exists(STARTUP_LOCK):
         try:
             pid, __ = read_pid_file(STARTUP_LOCK)
@@ -431,8 +438,8 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
     # Write current PID and optional port to a startup lock file
     with open(STARTUP_LOCK, "w") as f:
         f.write("%s\n%d" % (str(os.getpid()), port))
-    
-    manage('initialize_kalite')
+
+    manage('initialize_kalite', traceback=traceback)
 
     # Start the job scheduler (not Celery yet...)
     # This command is run before starting the server, in case the server
@@ -448,7 +455,7 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
     # Remove the startup lock at this point
     if STARTUP_LOCK:
         os.unlink(STARTUP_LOCK)
-    
+
     # Print output to user about where to find the server
     addresses = get_ip_addresses(include_loopback=False)
     sys.stdout.write("To access KA Lite from another connected computer, try the following address(es):\n")
@@ -456,10 +463,10 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
         sys.stdout.write("\thttp://%s:%s/\n" % (addr, port))
     sys.stdout.write("To access KA Lite from this machine, try the following address:\n")
     sys.stdout.write("\thttp://127.0.0.1:%s/\n" % port)
-    
+
     # Daemonize at this point, no more user output is needed
     if daemonize:
-        
+
         from django.utils.daemonize import become_daemon
         kwargs = {}
         # Truncate the file
@@ -471,7 +478,7 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
         # Write the new PID
         with open(PID_FILE, 'w') as f:
             f.write("%d\n%d" % (os.getpid(), port))
-    
+
     # Start cherrypy service
     cherrypy.config.update({
         'server.socket_host': LISTEN_ADDRESS,
@@ -486,7 +493,7 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
         # Switch-off that functionality here to save cpu cycles
         # http://docs.cherrypy.org/stable/appendix/faq.html
         cherrypy.engine.autoreload.unsubscribe()
-    
+
     cherrypy.quickstart()
 
     print("FINISHED serving HTTP")
@@ -660,7 +667,7 @@ def docopt(doc, argv=None, help=True, version=None, options_first=False):  # @Re
         ao.children = list(set(doc_options) - pattern_options)
     extras(help, version, argv, doc)
     __matched, __left, collected = pattern.fix().match(argv)
-    
+
     # if matched and left == []:  # better error message if left?
     if collected:  # better error message if left?
         result = Dict((a.name, a.value) for a in (pattern.flat() + collected))
@@ -686,14 +693,15 @@ if __name__ == "__main__":
     # Since positional arguments should always come first, we can safely
     # replace " " with "=" to make options "--xy z" same as "--xy=z".
     arguments = docopt(__doc__, version=str(VERSION), options_first=False)
-    
+
     if arguments['start']:
         start(
             debug=arguments['--debug'],
             skip_job_scheduler=arguments['--skip-job-scheduler'],
             args=arguments['DJANGO_OPTIONS'],
             daemonize=not arguments['--foreground'],
-            port=arguments["--port"]
+            port=arguments["--port"],
+            traceback=arguments["--traceback"]
         )
 
     elif arguments['stop']:
@@ -712,11 +720,11 @@ if __name__ == "__main__":
         sys.exit(status_code)
 
     elif arguments['shell']:
-        manage('shell', args=arguments['DJANGO_OPTIONS'])
+        manage('shell', traceback=arguments['--traceback'], args=arguments['DJANGO_OPTIONS'])
 
     elif arguments['test']:
-        manage('test', args=arguments['DJANGO_OPTIONS'])
+        manage('test', traceback=arguments['--traceback'], args=arguments['DJANGO_OPTIONS'])
 
     elif arguments['manage']:
         command = arguments['COMMAND']
-        manage(command, args=arguments['DJANGO_OPTIONS'])
+        manage(command, traceback=arguments['--traceback'], args=arguments['DJANGO_OPTIONS'])
