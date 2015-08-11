@@ -344,6 +344,7 @@ def _get_installed_language_packs():
             # Inside each folder, read from the JSON file - language name, % UI trans, version number
             try:
                 # Get the metadata
+                metadata = None
                 metadata_filepath = os.path.join(locale_dir, django_disk_code, "%s_metadata.json" % lcode_to_ietf(django_disk_code))
                 lang_meta = softload_json(metadata_filepath, raises=True)
 
