@@ -30,13 +30,14 @@ logging = settings.LOG
 from django.contrib import messages
 from django.db import DatabaseError
 from django.utils.translation import gettext as _
-from memory_profiler import profile
 
 from fle_utils.general import softload_json, json_ascii_decoder
 from kalite import i18n
 
 from kalite.topic_tools import models as main_models
 from kalite.topic_tools import jsoncache
+from memory_profiler import profile
+
 
 TOPICS_FILEPATHS = {
     settings.CHANNEL: os.path.join(settings.CHANNEL_DATA_PATH, "topics.json")

@@ -55,6 +55,7 @@ Planned features:
 
 """
 from __future__ import print_function
+from memory_profiler import profile
 # Add distributed python-packages subfolder to current path
 # DO NOT IMPORT BEFORE THIS LIKE
 import sys
@@ -70,7 +71,8 @@ if 'KALITE_DIR' in os.environ:
 # KALITE_DIR not set, so called from some other source
 else:
     filedir = os.path.dirname(__file__)
-    sys.path = [os.path.join(filedir, 'python-packages'), os.path.join(filedir, 'kalite')] + sys.path
+    sys.path = [os.path.join(
+        filedir, 'python-packages'), os.path.join(filedir, 'kalite')] + sys.path
 
 
 import httplib
@@ -81,7 +83,8 @@ import cherrypy
 # Match all patterns of "--option value" and fail if they exist
 __validate_cmd_options = re.compile(r"--[^\s-]+\s+[^-\s][^-\s]+")
 if __validate_cmd_options.search(" ".join(sys.argv[1:])):
-    sys.stderr.write("Please only use --option=value patterns. The option parser gets confused if you do otherwise.\n")
+    sys.stderr.write(
+        "Please only use --option=value patterns. The option parser gets confused if you do otherwise.\n")
     sys.exit(1)
 
 from threading import Thread
@@ -100,7 +103,8 @@ from fle_utils.internet.functions import get_ip_addresses
 
 # Environment variables that are used by django+kalite
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "kalite.project.settings.base")
-os.environ.setdefault("KALITE_HOME", os.path.join(os.path.expanduser("~"), ".kalite"))
+os.environ.setdefault(
+    "KALITE_HOME", os.path.join(os.path.expanduser("~"), ".kalite"))
 os.environ.setdefault("KALITE_LISTEN_PORT", "8008")
 
 # Where to store user data
@@ -140,6 +144,7 @@ STATUS_UNKNOW = 101
 
 
 class NotRunning(Exception):
+
     """
     Raised when server was expected to run, but didn't. Contains a status
     code explaining why.
@@ -233,8 +238,10 @@ else:
         """Kill the proces using pywin32 and pid"""
         import ctypes
         PROCESS_TERMINATE = 1
-        handle = ctypes.windll.kernel32.OpenProcess(PROCESS_TERMINATE, False, pid)  # @UndefinedVariable
-        ctypes.windll.kernel32.TerminateProcess(handle, -1)  # @UndefinedVariable
+        handle = ctypes.windll.kernel32.OpenProcess(
+            PROCESS_TERMINATE, False, pid)  # @UndefinedVariable
+        ctypes.windll.kernel32.TerminateProcess(
+            handle, -1)  # @UndefinedVariable
         ctypes.windll.kernel32.CloseHandle(handle)  # @UndefinedVariable
 
 
@@ -354,7 +361,8 @@ class ManageThread(Thread):
         return super(ManageThread, self).__init__(*args, **kwargs)
 
     def run(self):
-        utility = ManagementUtility([os.path.basename(sys.argv[0]), self.command] + self.args)
+        utility = ManagementUtility(
+            [os.path.basename(sys.argv[0]), self.command] + self.args)
         # This ensures that 'kalite' is printed in help menus instead of
         # 'kalitectl.py' (a part from the top most text in `kalite manage help`
         utility.prog_name = 'kalite manage'
@@ -370,19 +378,23 @@ def manage(command, args=[], as_thread=False):
     :param as_daemon: Creates a new process for the command
     :param as_thread: Runs command in thread and returns immediately
     """
-    
+
     if not as_thread:
         if PROFILE:
             profile_memory()
 
-        utility = ManagementUtility([os.path.basename(sys.argv[0]), command] + args)
+        utility = ManagementUtility(
+            [os.path.basename(sys.argv[0]), command] + args)
         # This ensures that 'kalite' is printed in help menus instead of
         # 'kalitectl.py' (a part from the top most text in `kalite manage help`
         utility.prog_name = 'kalite manage'
         utility.execute()
     else:
-        get_commands()  # Needed to populate the available commands before issuing one in a thread
-        thread = ManageThread(command, args=args, name=" ".join([command] + args))
+        # Needed to populate the available commands before issuing one in a
+        # thread
+        get_commands()
+        thread = ManageThread(
+            command, args=args, name=" ".join([command] + args))
         thread.start()
 
 
@@ -397,16 +409,16 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
     :param skip_job_scheduler: Skips running the job scheduler in a separate thread
     """
     # TODO: Do we want to fail if running as root?
-    
+
     port = int(port or DEFAULT_LISTEN_PORT)
-    
+
     if not daemonize:
         sys.stderr.write("Running 'kalite start' in foreground...\n")
     else:
         sys.stderr.write("Running 'kalite start' as daemon (system service)\n")
-    
+
     sys.stderr.write("\nStand by while the server loads its data...\n\n")
-    
+
     if os.path.exists(STARTUP_LOCK):
         try:
             pid, __ = read_pid_file(STARTUP_LOCK)
@@ -431,7 +443,7 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
     # Write current PID and optional port to a startup lock file
     with open(STARTUP_LOCK, "w") as f:
         f.write("%s\n%d" % (str(os.getpid()), port))
-    
+
     manage('initialize_kalite')
 
     # Start the job scheduler (not Celery yet...)
@@ -448,18 +460,20 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
     # Remove the startup lock at this point
     if STARTUP_LOCK:
         os.unlink(STARTUP_LOCK)
-    
+
     # Print output to user about where to find the server
     addresses = get_ip_addresses(include_loopback=False)
-    sys.stdout.write("To access KA Lite from another connected computer, try the following address(es):\n")
+    sys.stdout.write(
+        "To access KA Lite from another connected computer, try the following address(es):\n")
     for addr in addresses:
         sys.stdout.write("\thttp://%s:%s/\n" % (addr, port))
-    sys.stdout.write("To access KA Lite from this machine, try the following address:\n")
+    sys.stdout.write(
+        "To access KA Lite from this machine, try the following address:\n")
     sys.stdout.write("\thttp://127.0.0.1:%s/\n" % port)
-    
+
     # Daemonize at this point, no more user output is needed
     if daemonize:
-        
+
         from django.utils.daemonize import become_daemon
         kwargs = {}
         # Truncate the file
@@ -471,7 +485,7 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
         # Write the new PID
         with open(PID_FILE, 'w') as f:
             f.write("%d\n%d" % (os.getpid(), port))
-    
+
     # Start cherrypy service
     cherrypy.config.update({
         'server.socket_host': LISTEN_ADDRESS,
@@ -486,7 +500,7 @@ def start(debug=False, daemonize=True, args=[], skip_job_scheduler=False, port=N
         # Switch-off that functionality here to save cpu cycles
         # http://docs.cherrypy.org/stable/appendix/faq.html
         cherrypy.engine.autoreload.unsubscribe()
-    
+
     cherrypy.quickstart()
 
     print("FINISHED serving HTTP")
@@ -602,13 +616,17 @@ def profile_memory():
 
     def print_results():
         try:
-            highest_mem_usage = next(s for s in sorted(mem_usage, key=lambda x: x['mem_usage'], reverse=True))
+            highest_mem_usage = next(
+                s for s in sorted(mem_usage, key=lambda x: x['mem_usage'], reverse=True))
         except StopIteration:
-            highest_mem_usage = {"pid": os.getpid(), "timestamp": 0, "mem_usage": 0}
+            highest_mem_usage = {
+                "pid": os.getpid(), "timestamp": 0, "mem_usage": 0}
 
-        graph = sparkline.sparkify([m['mem_usage'] for m in mem_usage]).encode("utf-8")
+        graph = sparkline.sparkify([m['mem_usage']
+                                    for m in mem_usage]).encode("utf-8")
 
-        print("PID: {pid} Highest memory usage: {mem_usage}MB. Usage over time: {sparkline}".format(sparkline=graph, **highest_mem_usage))
+        print("PID: {pid} Highest memory usage: {mem_usage}MB. Usage over time: {sparkline}".format(
+            sparkline=graph, **highest_mem_usage))
 
     def write_profile_results(filename=None):
 
@@ -633,7 +651,8 @@ def profile_memory():
         pid = os.getpid()
         m = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
         curtime = time.time() - starttime
-        mem_usage.append({"pid": pid, "timestamp": curtime, "mem_usage": m / 1024})
+        mem_usage.append(
+            {"pid": pid, "timestamp": curtime, "mem_usage": m / 1024})
 
     signal.setitimer(signal.ITIMER_PROF, 1, 1)
 
@@ -643,7 +662,8 @@ def profile_memory():
 
 # TODO(benjaoming): When this PR is merged, we can stop this crazyness
 # https://github.com/docopt/docopt/pull/283
-def docopt(doc, argv=None, help=True, version=None, options_first=False):  # @ReservedAssignment help
+# @ReservedAssignment help
+def docopt(doc, argv=None, help=True, version=None, options_first=False):
     """Re-implementation of docopt.docopt() function to parse ANYTHING at
     the end (for proxying django options)."""
     if argv is None:
@@ -660,7 +680,7 @@ def docopt(doc, argv=None, help=True, version=None, options_first=False):  # @Re
         ao.children = list(set(doc_options) - pattern_options)
     extras(help, version, argv, doc)
     __matched, __left, collected = pattern.fix().match(argv)
-    
+
     # if matched and left == []:  # better error message if left?
     if collected:  # better error message if left?
         result = Dict((a.name, a.value) for a in (pattern.flat() + collected))
@@ -686,7 +706,7 @@ if __name__ == "__main__":
     # Since positional arguments should always come first, we can safely
     # replace " " with "=" to make options "--xy z" same as "--xy=z".
     arguments = docopt(__doc__, version=str(VERSION), options_first=False)
-    
+
     if arguments['start']:
         start(
             debug=arguments['--debug'],
